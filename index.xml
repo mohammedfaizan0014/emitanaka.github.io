@@ -11,6 +11,31 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>What can social media do for academic and professional statisticians?</title>
+      <link>https://emitanaka.github.io/talk/2019-08-18-isiwsc2019/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +1100</pubDate>
+      
+      <guid>https://emitanaka.github.io/talk/2019-08-18-isiwsc2019/</guid>
+      <description>&lt;p&gt;Special Topic Session organised by Mst Howlader Tamanna with other speakers:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Louise M Ryan&lt;/li&gt;
+&lt;li&gt;John Bailer&lt;/li&gt;
+&lt;li&gt;Anil Gore&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Don&#39;t be so negative about negative estimates of variance components</title>
+      <link>https://emitanaka.github.io/talk/2018-12-06-aasc2018/</link>
+      <pubDate>Thu, 06 Dec 2018 00:00:00 +1100</pubDate>
+      
+      <guid>https://emitanaka.github.io/talk/2018-12-06-aasc2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Statisitcal fallacy and storytelling via data visualisation</title>
       <link>https://emitanaka.github.io/talk/2018-10-18-sums2018/</link>
       <pubDate>Thu, 18 Oct 2018 00:00:00 +1100</pubDate>
@@ -152,24 +177,6 @@ Making hexagon stickers have become popular for R-packages with the range of pac
       <pubDate>Tue, 10 Jan 2017 00:00:00 +1100</pubDate>
       
       <guid>https://emitanaka.github.io/talk/2018-08-28-asc2018/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Statistical Bioinformatics</title>
-      <link>https://emitanaka.github.io/project/statistical-bioinformatics/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +1000</pubDate>
-      
-      <guid>https://emitanaka.github.io/project/statistical-bioinformatics/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Statistical Computing</title>
-      <link>https://emitanaka.github.io/project/statistical-computing/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +1000</pubDate>
-      
-      <guid>https://emitanaka.github.io/project/statistical-computing/</guid>
       <description></description>
     </item>
     
