@@ -1,40 +1,347 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Authors on Academic</title>
-    <link>/authors/</link>
-    <description>Recent content in Authors on Academic</description>
+    <title>Authors on Emi Tanaka</title>
+    <link>https://emitanaka.github.io/authors/</link>
+    <description>Recent content in Authors on Emi Tanaka</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 20 Apr 2016 00:00:00 +1000</lastBuildDate>
+    <copyright>&amp;copy; 2018-2019</copyright>
+    <lastBuildDate>Sat, 21 Jul 2018 00:00:00 +1000</lastBuildDate>
     
-	<atom:link href="/authors/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://emitanaka.github.io/authors/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Admin</title>
-      <link>/authors/admin/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +1000</pubDate>
+      <title>A B Smith</title>
+      <link>https://emitanaka.github.io/authors/a-b-smith/</link>
+      <pubDate>Sat, 21 Jul 2018 00:00:00 +1000</pubDate>
       
-      <guid>/authors/admin/</guid>
+      <guid>https://emitanaka.github.io/authors/a-b-smith/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>GA Cushen</title>
-      <link>/authors/ga-cushen/</link>
-      <pubDate>Tue, 01 Sep 2015 00:00:00 +1000</pubDate>
+      <title>A Norman</title>
+      <link>https://emitanaka.github.io/authors/a-norman/</link>
+      <pubDate>Wed, 06 Dec 2017 00:00:00 +1100</pubDate>
       
-      <guid>/authors/ga-cushen/</guid>
+      <guid>https://emitanaka.github.io/authors/a-norman/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>MS Nixon</title>
-      <link>/authors/ms-nixon/</link>
-      <pubDate>Mon, 01 Jul 2013 00:00:00 +1000</pubDate>
+      <title>A Seher</title>
+      <link>https://emitanaka.github.io/authors/a-seher/</link>
+      <pubDate>Wed, 04 May 2011 00:00:00 +1000</pubDate>
       
-      <guid>/authors/ms-nixon/</guid>
+      <guid>https://emitanaka.github.io/authors/a-seher/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Whan</title>
+      <link>https://emitanaka.github.io/authors/a-whan/</link>
+      <pubDate>Wed, 06 Dec 2017 00:00:00 +1100</pubDate>
+      
+      <guid>https://emitanaka.github.io/authors/a-whan/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>B R Cullis</title>
+      <link>https://emitanaka.github.io/authors/b-r-cullis/</link>
+      <pubDate>Sat, 21 Jul 2018 00:00:00 +1000</pubDate>
+      
+      <guid>https://emitanaka.github.io/authors/b-r-cullis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>B Tye</title>
+      <link>https://emitanaka.github.io/authors/b-tye/</link>
+      <pubDate>Wed, 04 May 2011 00:00:00 +1000</pubDate>
+      
+      <guid>https://emitanaka.github.io/authors/b-tye/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>BR Cullis</title>
+      <link>https://emitanaka.github.io/authors/br-cullis/</link>
+      <pubDate>Wed, 06 Dec 2017 00:00:00 +1100</pubDate>
+      
+      <guid>https://emitanaka.github.io/authors/br-cullis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>C E Grant</title>
+      <link>https://emitanaka.github.io/authors/c-e-grant/</link>
+      <pubDate>Wed, 04 May 2011 00:00:00 +1000</pubDate>
+      
+      <guid>https://emitanaka.github.io/authors/c-e-grant/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CR Cavanagh</title>
+      <link>https://emitanaka.github.io/authors/cr-cavanagh/</link>
+      <pubDate>Wed, 06 Dec 2017 00:00:00 +1100</pubDate>
+      
+      <guid>https://emitanaka.github.io/authors/cr-cavanagh/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>D Warton</title>
+      <link>https://emitanaka.github.io/authors/d-warton/</link>
+      <pubDate>Thu, 01 Mar 2018 00:00:00 +1100</pubDate>
+      
+      <guid>https://emitanaka.github.io/authors/d-warton/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>David Warton</title>
+      <link>https://emitanaka.github.io/authors/david-warton/</link>
+      <pubDate>Sat, 02 Dec 2017 00:00:00 +1100</pubDate>
+      
+      <guid>https://emitanaka.github.io/authors/david-warton/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>E Cha</title>
+      <link>https://emitanaka.github.io/authors/e-cha/</link>
+      <pubDate>Wed, 04 May 2011 00:00:00 +1000</pubDate>
+      
+      <guid>https://emitanaka.github.io/authors/e-cha/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>E Tanaka</title>
+      <link>https://emitanaka.github.io/authors/e-tanaka/</link>
+      <pubDate>Sat, 21 Jul 2018 00:00:00 +1000</pubDate>
+      
+      <guid>https://emitanaka.github.io/authors/e-tanaka/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Emi Tanaka</title>
+      <link>https://emitanaka.github.io/authors/emi-tanaka/</link>
+      <pubDate>Fri, 06 Apr 2018 00:00:00 +1000</pubDate>
+      
+      <guid>https://emitanaka.github.io/authors/emi-tanaka/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>FKC Hui</title>
+      <link>https://emitanaka.github.io/authors/fkc-hui/</link>
+      <pubDate>Thu, 01 Mar 2018 00:00:00 +1100</pubDate>
+      
+      <guid>https://emitanaka.github.io/authors/fkc-hui/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Francis K. C. Hui</title>
+      <link>https://emitanaka.github.io/authors/francis-k.-c.-hui/</link>
+      <pubDate>Sat, 02 Dec 2017 00:00:00 +1100</pubDate>
+      
+      <guid>https://emitanaka.github.io/authors/francis-k.-c.-hui/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>G Kang</title>
+      <link>https://emitanaka.github.io/authors/g-kang/</link>
+      <pubDate>Wed, 04 May 2011 00:00:00 +1000</pubDate>
+      
+      <guid>https://emitanaka.github.io/authors/g-kang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>H Kuchel</title>
+      <link>https://emitanaka.github.io/authors/h-kuchel/</link>
+      <pubDate>Wed, 06 Dec 2017 00:00:00 +1100</pubDate>
+      
+      <guid>https://emitanaka.github.io/authors/h-kuchel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>H Pace</title>
+      <link>https://emitanaka.github.io/authors/h-pace/</link>
+      <pubDate>Wed, 04 May 2011 00:00:00 +1000</pubDate>
+      
+      <guid>https://emitanaka.github.io/authors/h-pace/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>I Liachko</title>
+      <link>https://emitanaka.github.io/authors/i-liachko/</link>
+      <pubDate>Wed, 04 May 2011 00:00:00 +1000</pubDate>
+      
+      <guid>https://emitanaka.github.io/authors/i-liachko/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>J Barrow</title>
+      <link>https://emitanaka.github.io/authors/j-barrow/</link>
+      <pubDate>Wed, 04 May 2011 00:00:00 +1000</pubDate>
+      
+      <guid>https://emitanaka.github.io/authors/j-barrow/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>J Edwards</title>
+      <link>https://emitanaka.github.io/authors/j-edwards/</link>
+      <pubDate>Wed, 06 Dec 2017 00:00:00 +1100</pubDate>
+      
+      <guid>https://emitanaka.github.io/authors/j-edwards/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>J Taylor</title>
+      <link>https://emitanaka.github.io/authors/j-taylor/</link>
+      <pubDate>Wed, 06 Dec 2017 00:00:00 +1100</pubDate>
+      
+      <guid>https://emitanaka.github.io/authors/j-taylor/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>JP Martinant</title>
+      <link>https://emitanaka.github.io/authors/jp-martinant/</link>
+      <pubDate>Wed, 06 Dec 2017 00:00:00 +1100</pubDate>
+      
+      <guid>https://emitanaka.github.io/authors/jp-martinant/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>JPF Ral</title>
+      <link>https://emitanaka.github.io/authors/jpf-ral/</link>
+      <pubDate>Wed, 06 Dec 2017 00:00:00 +1100</pubDate>
+      
+      <guid>https://emitanaka.github.io/authors/jpf-ral/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>K Cox</title>
+      <link>https://emitanaka.github.io/authors/k-cox/</link>
+      <pubDate>Wed, 04 May 2011 00:00:00 +1000</pubDate>
+      
+      <guid>https://emitanaka.github.io/authors/k-cox/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>K Mathews</title>
+      <link>https://emitanaka.github.io/authors/k-mathews/</link>
+      <pubDate>Sat, 21 Jul 2018 00:00:00 +1000</pubDate>
+      
+      <guid>https://emitanaka.github.io/authors/k-mathews/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>L Hallas</title>
+      <link>https://emitanaka.github.io/authors/l-hallas/</link>
+      <pubDate>Wed, 04 May 2011 00:00:00 +1000</pubDate>
+      
+      <guid>https://emitanaka.github.io/authors/l-hallas/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>L Yang</title>
+      <link>https://emitanaka.github.io/authors/l-yang/</link>
+      <pubDate>Wed, 04 May 2011 00:00:00 +1000</pubDate>
+      
+      <guid>https://emitanaka.github.io/authors/l-yang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>M Inada</title>
+      <link>https://emitanaka.github.io/authors/m-inada/</link>
+      <pubDate>Wed, 04 May 2011 00:00:00 +1000</pubDate>
+      
+      <guid>https://emitanaka.github.io/authors/m-inada/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>P Telfer</title>
+      <link>https://emitanaka.github.io/authors/p-telfer/</link>
+      <pubDate>Wed, 06 Dec 2017 00:00:00 +1100</pubDate>
+      
+      <guid>https://emitanaka.github.io/authors/p-telfer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>R Gaire</title>
+      <link>https://emitanaka.github.io/authors/r-gaire/</link>
+      <pubDate>Wed, 06 Dec 2017 00:00:00 +1100</pubDate>
+      
+      <guid>https://emitanaka.github.io/authors/r-gaire/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>S C C Chung</title>
+      <link>https://emitanaka.github.io/authors/s-c-c-chung/</link>
+      <pubDate>Wed, 04 May 2011 00:00:00 +1000</pubDate>
+      
+      <guid>https://emitanaka.github.io/authors/s-c-c-chung/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>S Li</title>
+      <link>https://emitanaka.github.io/authors/s-li/</link>
+      <pubDate>Wed, 06 Dec 2017 00:00:00 +1100</pubDate>
+      
+      <guid>https://emitanaka.github.io/authors/s-li/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>T Bailey</title>
+      <link>https://emitanaka.github.io/authors/t-bailey/</link>
+      <pubDate>Mon, 24 Mar 2014 00:00:00 +1100</pubDate>
+      
+      <guid>https://emitanaka.github.io/authors/t-bailey/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>U Keich</title>
+      <link>https://emitanaka.github.io/authors/u-keich/</link>
+      <pubDate>Mon, 24 Mar 2014 00:00:00 +1100</pubDate>
+      
+      <guid>https://emitanaka.github.io/authors/u-keich/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>W S Noble</title>
+      <link>https://emitanaka.github.io/authors/w-s-noble/</link>
+      <pubDate>Wed, 04 May 2011 00:00:00 +1000</pubDate>
+      
+      <guid>https://emitanaka.github.io/authors/w-s-noble/</guid>
       <description></description>
     </item>
     

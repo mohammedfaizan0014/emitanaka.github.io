@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Emi Tanaka</title>
+    <link>https://emitanaka.github.io/authors/emi-tanaka/</link>
+    <description>Recent content on Emi Tanaka</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018-2019</copyright>
+    <lastBuildDate>Fri, 06 Apr 2018 00:00:00 +1000</lastBuildDate>
+    
+	<atom:link href="https://emitanaka.github.io/authors/emi-tanaka/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Making a Hexagon Sticker</title>
+      <link>https://emitanaka.github.io/post/hexsticker/</link>
+      <pubDate>Fri, 06 Apr 2018 00:00:00 +1000</pubDate>
+      
+      <guid>https://emitanaka.github.io/post/hexsticker/</guid>
+      <description>Making hexagon stickers have become popular for R-packages with the range of packages associated with RStudio, such as ggplot2, knitr, devtools and so on, having its own hex stickers.
+This trend even spanned a R-package hexSticker that can be found here.
+Powerpoint template for hex stickers For the sticker that I made for my R-package shinycustomloader, I found it easier, partly due to its long name, to use powerpoint to manipulate the image and create a semi-circular text.</description>
+    </item>
+    
+    <item>
+      <title>Order selection of factor analytic models for genotype x environment interaction</title>
+      <link>https://emitanaka.github.io/talk/2017-11-29-biometrics2017/</link>
+      <pubDate>Sat, 02 Dec 2017 00:00:00 +1100</pubDate>
+      
+      <guid>https://emitanaka.github.io/talk/2017-11-29-biometrics2017/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

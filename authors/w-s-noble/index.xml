@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>W S Noble on Emi Tanaka</title>
+    <link>https://emitanaka.github.io/authors/w-s-noble/</link>
+    <description>Recent content in W S Noble on Emi Tanaka</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018-2019</copyright>
+    <lastBuildDate>Wed, 04 May 2011 00:00:00 +1000</lastBuildDate>
+    
+	<atom:link href="https://emitanaka.github.io/authors/w-s-noble/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Improved similarity scores for comparing motifs</title>
+      <link>https://emitanaka.github.io/publication/2011-05-04-motif_comparison/</link>
+      <pubDate>Wed, 04 May 2011 00:00:00 +1000</pubDate>
+      
+      <guid>https://emitanaka.github.io/publication/2011-05-04-motif_comparison/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
