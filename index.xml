@@ -54,6 +54,35 @@
     </item>
     
     <item>
+      <title>Statistical Methods for Plant Breeding</title>
+      <link>https://emitanaka.github.io/workshop/plantbreeding/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 +1000</pubDate>
+      
+      <guid>https://emitanaka.github.io/workshop/plantbreeding/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;📊 &lt;a href=&#34;http://bit.ly/UT-WS-DataVis&#34; target=&#34;_blank&#34;&gt;Data Visualisation in R&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;💾 &lt;a href=&#34;http://bit.ly/UT-WS-asreml-R&#34; target=&#34;_blank&#34;&gt;Introduction to asreml-R&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;📈 &lt;a href=&#34;http://bit.ly/UT-WS-FAmodel&#34; target=&#34;_blank&#34;&gt;Factor analytic model for genotype by environment effects&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;🚜 &lt;a href=&#34;http://bit.ly/UT-WS-spatial&#34; target=&#34;_blank&#34;&gt;Spatial analysis of crop field trials&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;💠 &lt;a href=&#34;http://bit.ly/UT-WS-expdesign&#34; target=&#34;_blank&#34;&gt;Experimental design&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Statistical Computing</title>
+      <link>https://emitanaka.github.io/workshop/statscomputing/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 +1000</pubDate>
+      
+      <guid>https://emitanaka.github.io/workshop/statscomputing/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://bit.ly/rladies-sydney-shiny&#34; target=&#34;_blank&#34;&gt;Shiny September: Making an interactive web app with R&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://bit.ly/rladies-melb-blogdown&#34; target=&#34;_blank&#34;&gt;Getting down and up with blogging in R&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Effective storytelling via data visualisation</title>
       <link>https://emitanaka.github.io/talk/2018-08-30-asc2018/</link>
       <pubDate>Thu, 30 Aug 2018 00:00:00 +1000</pubDate>
@@ -159,24 +188,6 @@ Making hexagon stickers have become popular for R-packages with the range of pac
       <pubDate>Sat, 02 Dec 2017 00:00:00 +1100</pubDate>
       
       <guid>https://emitanaka.github.io/talk/rladies-shiny/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Order selection of factor analytic models for genotype x environment interaction</title>
-      <link>https://emitanaka.github.io/talk/2017-11-29-biometrics2017/</link>
-      <pubDate>Sat, 02 Dec 2017 00:00:00 +1100</pubDate>
-      
-      <guid>https://emitanaka.github.io/talk/2017-11-29-biometrics2017/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Don&#39;t be so negative about negative estimates of variance components</title>
-      <link>https://emitanaka.github.io/talk/2018-08-28-asc2018/</link>
-      <pubDate>Tue, 10 Jan 2017 00:00:00 +1100</pubDate>
-      
-      <guid>https://emitanaka.github.io/talk/2018-08-28-asc2018/</guid>
       <description></description>
     </item>
     

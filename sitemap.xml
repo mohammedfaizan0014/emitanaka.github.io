@@ -36,6 +36,30 @@
     
     <url>
     
+      <loc>https://emitanaka.github.io/workshop/</loc>
+      <lastmod>2018-09-09T00:00:00+10:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://emitanaka.github.io/workshop/plantbreeding/</loc>
+      <lastmod>2018-09-09T00:00:00+10:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://emitanaka.github.io/workshop/statscomputing/</loc>
+      <lastmod>2018-09-09T00:00:00+10:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>https://emitanaka.github.io/talk/2018-08-30-asc2018/</loc>
       <lastmod>2018-08-30T00:00:00+10:00</lastmod>
     </url>
@@ -108,7 +132,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/talk/2017-11-29-biometrics2017/</loc>
+      <loc>https://emitanaka.github.io/talk/2018-07-09-ibc2018/</loc>
       <lastmod>2017-12-02T00:00:00+11:00</lastmod>
     </url>
     
@@ -363,15 +387,6 @@
     
       <loc>https://emitanaka.github.io/authors/d-warton/</loc>
       <lastmod>2018-03-01T00:00:00+11:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://emitanaka.github.io/authors/david-warton/</loc>
-      <lastmod>2017-12-02T00:00:00+11:00</lastmod>
       <priority>0</priority>
     </url>
     
