@@ -11,6 +11,16 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Model selection and estimation for latent variable models</title>
+      <link>https://emitanaka.github.io/talk/2019-06-25-ecosta2019/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +1100</pubDate>
+      
+      <guid>https://emitanaka.github.io/talk/2019-06-25-ecosta2019/</guid>
+      <description>&lt;p&gt;Invited Session &amp;ldquo;Dimension Reduction&amp;rdquo; organised by Kei Hirose.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>What can social media do for academic and professional statisticians?</title>
       <link>https://emitanaka.github.io/talk/2019-08-18-isiwsc2019/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +1100</pubDate>
@@ -179,15 +189,6 @@ Making hexagon stickers have become popular for R-packages with the range of pac
       <pubDate>Wed, 06 Dec 2017 00:00:00 +1100</pubDate>
       
       <guid>https://emitanaka.github.io/publication/2017-09-08-genomic_prediction_agt/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Making a Shiny interactive web application using R</title>
-      <link>https://emitanaka.github.io/talk/rladies-shiny/</link>
-      <pubDate>Sat, 02 Dec 2017 00:00:00 +1100</pubDate>
-      
-      <guid>https://emitanaka.github.io/talk/rladies-shiny/</guid>
       <description></description>
     </item>
     
