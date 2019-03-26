@@ -12,24 +12,28 @@
     
     <item>
       <title>My Travel Schedule 2019: Building an interactive visualisation as twitter card</title>
-      <link>/post/travel2019/travel2019/</link>
+      <link>/post/travel2019/</link>
       <pubDate>Tue, 26 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/travel2019/travel2019/</guid>
+      <guid>/post/travel2019/</guid>
       <description>
 &lt;script src=&#34;/rmarkdown-libs/htmlwidgets/htmlwidgets.js&#34;&gt;&lt;/script&gt;
 &lt;script src=&#34;/rmarkdown-libs/pymjs/pym.v1.js&#34;&gt;&lt;/script&gt;
 &lt;script src=&#34;/rmarkdown-libs/widgetframe-binding/widgetframe.js&#34;&gt;&lt;/script&gt;
 
 
-&lt;meta name=&#34;twitter:card&#34; content=&#34;player&#34;&gt;
-&lt;meta name=&#34;twitter:site&#34; content=&#34;@statsgen&#34;&gt;
-&lt;meta name=&#34;twitter:title&#34; content=&#34;Interactive Data Tweet Tutorial&#34;&gt;
-&lt;meta name=&#34;twitter:description&#34; content=&#34;How to Turn Your ggplot2 Visualization into an Interactive Data Tweet&#34;&gt;
-&lt;meta name=&#34;twitter:player&#34; content=&#34;https://emitanaka.github.io/post/2019-03-26-my-travel-schedule-2019-building-an-interactive-visualisation-as-twitter-card_files/figure-html/widgets/travelschedule.html&#34;&gt;
-&lt;meta name=&#34;twitter:player:width&#34; content=&#34;517&#34;&gt;
-&lt;meta name=&#34;twitter:player:height&#34; content=&#34;408&#34;&gt;
-&lt;meta name=&#34;twitter:image&#34; content=&#34;https://emitanaka.github.io/post/travel2019/image.png&#34;&gt;
+&lt;p&gt;&lt;div id=&#34;htmlwidget-1&#34; style=&#34;width:100%;height:225px;&#34; class=&#34;widgetframe html-widget&#34;&gt;&lt;/div&gt;
+&lt;script type=&#34;application/json&#34; data-for=&#34;htmlwidget-1&#34;&gt;{&#34;x&#34;:{&#34;url&#34;:&#34;/post/travel2019/index_files/figure-html//widgets/widget_travelschedule.html&#34;,&#34;options&#34;:{&#34;xdomain&#34;:&#34;*&#34;,&#34;allowfullscreen&#34;:false,&#34;lazyload&#34;:false}},&#34;evals&#34;:[],&#34;jsHooks&#34;:[]}&lt;/script&gt;
+&lt;br&gt;
+Hovering over the above graph will show you more details. This year I have a fair bit of travel scheduled including:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Eco Sta 2019 at Taichung, Taiwan,&lt;/li&gt;
+&lt;li&gt;ISI WSC 2019 at Kuala Lumpur, Malaysia,&lt;/li&gt;
+&lt;li&gt;YSC 2019 at Canberra, Australia, and&lt;/li&gt;
+&lt;li&gt;Biometrics by the Botanic Garden 2019 at Adelaide, Australia.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you happen to be going to the same conference as myself, do get in touch and maybe you can pay for my taxi? :) (I forgot to put it in my budget …)&lt;/p&gt;
+&lt;p&gt;The code to make the above graph is shown below. This post benefit largely from this post &lt;a href=&#34;https://datatitian.com/how-to-turn-your-ggplot2-visualization-into-an-interactive-tweet/&#34;&gt;here&lt;/a&gt; to turn &lt;code&gt;plotly&lt;/code&gt; output into interactive twitter card.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tidyverse)
 library(tsibble)
 library(googlesheets)
@@ -56,23 +60,7 @@ travel_df &amp;lt;- gs_read(key, col_types=list()) %&amp;gt;%
   fill_gaps(Location=&amp;quot;Sydney, Australia&amp;quot;, Event=&amp;quot;&amp;quot;, What=&amp;quot;&amp;quot;, FullEvent=&amp;quot;&amp;quot;) %&amp;gt;%
   mutate(Day=substring(weekdays(Dates),1,3),
          Week=lubridate::isoweek(Dates)) %&amp;gt;%
-  filter(Week!=1) 
-
-glimpse(travel_df)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## 2019-06-03 ~ 2019-12-29
-## Observations: 210
-## Variables: 10
-## Key: Key [1]
-## $ Event     &amp;lt;chr&amp;gt; NA, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;…
-## $ FullEvent &amp;lt;chr&amp;gt; NA, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;…
-## $ URL       &amp;lt;chr&amp;gt; NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA…
-## $ Location  &amp;lt;chr&amp;gt; &amp;quot;Sydney, Australia&amp;quot;, &amp;quot;Sydney, Australia&amp;quot;, &amp;quot;Sydney, Aus…
-## $ What      &amp;lt;chr&amp;gt; NA, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;…
-## $ Time      &amp;lt;chr&amp;gt; NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA…
-## $ Dates     &amp;lt;date&amp;gt; 2019-06-03, 2019-06-04, 2019-06-05, 2019-06-06, 2019-…
-## $ Key       &amp;lt;chr&amp;gt; &amp;quot;All&amp;quot;, &amp;quot;All&amp;quot;, &amp;quot;All&amp;quot;, &amp;quot;All&amp;quot;, &amp;quot;All&amp;quot;, &amp;quot;All&amp;quot;, &amp;quot;All&amp;quot;, &amp;quot;All&amp;quot;…
-## $ Day       &amp;lt;chr&amp;gt; &amp;quot;Mon&amp;quot;, &amp;quot;Tue&amp;quot;, &amp;quot;Wed&amp;quot;, &amp;quot;Thu&amp;quot;, &amp;quot;Fri&amp;quot;, &amp;quot;Sat&amp;quot;, &amp;quot;Sun&amp;quot;, &amp;quot;Mon&amp;quot;…
-## $ Week      &amp;lt;dbl&amp;gt; 23, 23, 23, 23, 23, 23, 23, 24, 24, 24, 24, 24, 24, 24…&lt;/code&gt;&lt;/pre&gt;
+  filter(Week!=1) &lt;/code&gt;&lt;/pre&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;fntltp &amp;lt;- JS(&amp;quot;function(){
               return &amp;#39;&amp;lt;b style=\&amp;quot;color:#DC5084\&amp;quot;&amp;gt;&amp;#39; + this.point.event + &amp;#39;&amp;lt;/b&amp;gt;&amp;lt;br&amp;gt;&amp;lt;span style=\&amp;quot;font-size:0.7em\&amp;quot;&amp;gt;&amp;#39; +  this.series.yAxis.categories[this.point.y] + &amp;#39;, &amp;#39; +
              this.point.date + &amp;#39;&amp;lt;/span&amp;gt;&amp;lt;br&amp;gt;&amp;lt;span style=\&amp;quot;font-size:0.7em\&amp;quot;&amp;gt;&amp;#39; + this.point.name + &amp;#39;&amp;lt;/span&amp;gt;&amp;lt;br&amp;gt;&amp;lt;span style=\&amp;quot;font-size:0.7em;color:#FFFFCC\&amp;quot;&amp;gt;&amp;#39; + this.point.what + &amp;#39;&amp;lt;/span&amp;gt;&amp;lt;br&amp;gt;&amp;#39;+ this.point.loc;
@@ -101,8 +89,6 @@ hcout &amp;lt;- hchart(travel_df, &amp;quot;heatmap&amp;quot;, hcaes(x = factor(
   hc_plotOptions(heatmap=list(borderColor=&amp;quot;black&amp;quot;,borderWidth=1))
 
 frameWidget(hcout)&lt;/code&gt;&lt;/pre&gt;
-&lt;div id=&#34;htmlwidget-1&#34; style=&#34;width:100%;height:225px;&#34; class=&#34;widgetframe html-widget&#34;&gt;&lt;/div&gt;
-&lt;script type=&#34;application/json&#34; data-for=&#34;htmlwidget-1&#34;&gt;{&#34;x&#34;:{&#34;url&#34;:&#34;/post/travel2019/index_files/figure-html//widgets/widget_travelschedule.html&#34;,&#34;options&#34;:{&#34;xdomain&#34;:&#34;*&#34;,&#34;allowfullscreen&#34;:false,&#34;lazyload&#34;:false}},&#34;evals&#34;:[],&#34;jsHooks&#34;:[]}&lt;/script&gt;
 </description>
     </item>
     
