@@ -12,16 +12,24 @@
     
     <item>
       <title>My Travel Schedule 2019: Building an interactive visualisation as twitter card</title>
-      <link>/post/travel2019/</link>
+      <link>/post/travel2019/travel2019/</link>
       <pubDate>Tue, 26 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/travel2019/</guid>
+      <guid>/post/travel2019/travel2019/</guid>
       <description>
 &lt;script src=&#34;/rmarkdown-libs/htmlwidgets/htmlwidgets.js&#34;&gt;&lt;/script&gt;
 &lt;script src=&#34;/rmarkdown-libs/pymjs/pym.v1.js&#34;&gt;&lt;/script&gt;
 &lt;script src=&#34;/rmarkdown-libs/widgetframe-binding/widgetframe.js&#34;&gt;&lt;/script&gt;
 
 
+&lt;meta name=&#34;twitter:card&#34; content=&#34;player&#34;&gt;
+&lt;meta name=&#34;twitter:site&#34; content=&#34;@statsgen&#34;&gt;
+&lt;meta name=&#34;twitter:title&#34; content=&#34;Interactive Data Tweet Tutorial&#34;&gt;
+&lt;meta name=&#34;twitter:description&#34; content=&#34;How to Turn Your ggplot2 Visualization into an Interactive Data Tweet&#34;&gt;
+&lt;meta name=&#34;twitter:player&#34; content=&#34;https://emitanaka.github.io/post/2019-03-26-my-travel-schedule-2019-building-an-interactive-visualisation-as-twitter-card_files/figure-html/widgets/travelschedule.html&#34;&gt;
+&lt;meta name=&#34;twitter:player:width&#34; content=&#34;517&#34;&gt;
+&lt;meta name=&#34;twitter:player:height&#34; content=&#34;408&#34;&gt;
+&lt;meta name=&#34;twitter:image&#34; content=&#34;https://emitanaka.github.io/post/travel2019/image.png&#34;&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tidyverse)
 library(tsibble)
 library(googlesheets)
@@ -94,11 +102,7 @@ hcout &amp;lt;- hchart(travel_df, &amp;quot;heatmap&amp;quot;, hcaes(x = factor(
 
 frameWidget(hcout)&lt;/code&gt;&lt;/pre&gt;
 &lt;div id=&#34;htmlwidget-1&#34; style=&#34;width:100%;height:225px;&#34; class=&#34;widgetframe html-widget&#34;&gt;&lt;/div&gt;
-&lt;script type=&#34;application/json&#34; data-for=&#34;htmlwidget-1&#34;&gt;{&#34;x&#34;:{&#34;url&#34;:&#34;/post/2019-03-26-my-travel-schedule-2019-building-an-interactive-visualisation-as-twitter-card_files/figure-html//widgets/widget_unnamed-chunk-1.html&#34;,&#34;options&#34;:{&#34;xdomain&#34;:&#34;*&#34;,&#34;allowfullscreen&#34;:false,&#34;lazyload&#34;:false}},&#34;evals&#34;:[],&#34;jsHooks&#34;:[]}&lt;/script&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;#lst &amp;lt;- list()
-#lst[[1]] &amp;lt;- hcout
-
-#htmltools::tagList(hcout)&lt;/code&gt;&lt;/pre&gt;
+&lt;script type=&#34;application/json&#34; data-for=&#34;htmlwidget-1&#34;&gt;{&#34;x&#34;:{&#34;url&#34;:&#34;/post/travel2019/index_files/figure-html//widgets/widget_travelschedule.html&#34;,&#34;options&#34;:{&#34;xdomain&#34;:&#34;*&#34;,&#34;allowfullscreen&#34;:false,&#34;lazyload&#34;:false}},&#34;evals&#34;:[],&#34;jsHooks&#34;:[]}&lt;/script&gt;
 </description>
     </item>
     
