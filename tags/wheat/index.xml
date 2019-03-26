@@ -2,49 +2,49 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>wheat on Emi Tanaka</title>
-    <link>https://emitanaka.github.io/tags/wheat/</link>
+    <link>/tags/wheat/</link>
     <description>Recent content in wheat on Emi Tanaka</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018-2019</copyright>
     <lastBuildDate>Sat, 21 Jul 2018 00:00:00 +1000</lastBuildDate>
     
-	<atom:link href="https://emitanaka.github.io/tags/wheat/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/wheat/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Loss of accuracy in the genomic prediction for prevalent two-stage analysis with single site</title>
-      <link>https://emitanaka.github.io/publication/2018-07-21-two_stage/</link>
+      <link>/publication/2018-07-21-two_stage/</link>
       <pubDate>Sat, 21 Jul 2018 00:00:00 +1000</pubDate>
       
-      <guid>https://emitanaka.github.io/publication/2018-07-21-two_stage/</guid>
+      <guid>/publication/2018-07-21-two_stage/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Simple robust genomic prediction and outlier detection for a multi-environmental field trial</title>
-      <link>https://emitanaka.github.io/publication/2018-07-19-outlier_detection/</link>
+      <link>/publication/2018-07-19-outlier_detection/</link>
       <pubDate>Thu, 19 Jul 2018 00:00:00 +1000</pubDate>
       
-      <guid>https://emitanaka.github.io/publication/2018-07-19-outlier_detection/</guid>
+      <guid>/publication/2018-07-19-outlier_detection/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Increased accuracy of starch granule type quantification using mixture distributions</title>
-      <link>https://emitanaka.github.io/publication/2017-12-06-starch_mixture/</link>
+      <link>/publication/2017-12-06-starch_mixture/</link>
       <pubDate>Wed, 06 Dec 2017 00:00:00 +1100</pubDate>
       
-      <guid>https://emitanaka.github.io/publication/2017-12-06-starch_mixture/</guid>
+      <guid>/publication/2017-12-06-starch_mixture/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Increased genomic prediction accuracy in wheat breeding using a large Australian panel</title>
-      <link>https://emitanaka.github.io/publication/2017-09-08-genomic_prediction_agt/</link>
+      <link>/publication/2017-09-08-genomic_prediction_agt/</link>
       <pubDate>Wed, 06 Dec 2017 00:00:00 +1100</pubDate>
       
-      <guid>https://emitanaka.github.io/publication/2017-09-08-genomic_prediction_agt/</guid>
+      <guid>/publication/2017-09-08-genomic_prediction_agt/</guid>
       <description></description>
     </item>
     

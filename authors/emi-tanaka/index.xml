@@ -2,50 +2,50 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Emi Tanaka</title>
-    <link>https://emitanaka.github.io/authors/emi-tanaka/</link>
+    <link>/authors/emi-tanaka/</link>
     <description>Recent content on Emi Tanaka</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018-2019</copyright>
     <lastBuildDate>Tue, 01 Jan 2019 00:00:00 +1100</lastBuildDate>
     
-	<atom:link href="https://emitanaka.github.io/authors/emi-tanaka/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/authors/emi-tanaka/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Model selection and estimation for latent variable models</title>
-      <link>https://emitanaka.github.io/talk/2019-06-25-ecosta2019/</link>
+      <link>/talk/2019-06-25-ecosta2019/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +1100</pubDate>
       
-      <guid>https://emitanaka.github.io/talk/2019-06-25-ecosta2019/</guid>
+      <guid>/talk/2019-06-25-ecosta2019/</guid>
       <description>Invited Session &amp;ldquo;Dimension Reduction&amp;rdquo; organised by Kei Hirose.</description>
     </item>
     
     <item>
       <title>What can social media do for academic and professional statisticians?</title>
-      <link>https://emitanaka.github.io/talk/2019-08-18-isiwsc2019/</link>
+      <link>/talk/2019-08-18-isiwsc2019/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +1100</pubDate>
       
-      <guid>https://emitanaka.github.io/talk/2019-08-18-isiwsc2019/</guid>
+      <guid>/talk/2019-08-18-isiwsc2019/</guid>
       <description>Special Topic Session organised by Mst Howlader Tamanna with other speakers:
  Louise M Ryan John Bailer Anil Gore  </description>
     </item>
     
     <item>
       <title>Don&#39;t be so negative about negative estimates of variance components</title>
-      <link>https://emitanaka.github.io/talk/2018-12-06-aasc2018/</link>
+      <link>/talk/2018-12-06-aasc2018/</link>
       <pubDate>Thu, 06 Dec 2018 00:00:00 +1100</pubDate>
       
-      <guid>https://emitanaka.github.io/talk/2018-12-06-aasc2018/</guid>
+      <guid>/talk/2018-12-06-aasc2018/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Making a Hexagon Sticker</title>
-      <link>https://emitanaka.github.io/post/hexsticker/</link>
+      <link>/post/hexsticker/</link>
       <pubDate>Fri, 06 Apr 2018 00:00:00 +1000</pubDate>
       
-      <guid>https://emitanaka.github.io/post/hexsticker/</guid>
+      <guid>/post/hexsticker/</guid>
       <description>Making hexagon stickers have become popular for R-packages with the range of packages associated with RStudio, such as ggplot2, knitr, devtools and so on, having its own hex stickers.
 This trend even spanned a R-package hexSticker that can be found here.
 Powerpoint template for hex stickers For the sticker that I made for my R-package shinycustomloader, I found it easier, partly due to its long name, to use powerpoint to manipulate the image and create a semi-circular text.</description>
@@ -53,10 +53,19 @@ Powerpoint template for hex stickers For the sticker that I made for my R-packag
     
     <item>
       <title>Order selection of factor analytic models for genotype x environment interaction</title>
-      <link>https://emitanaka.github.io/talk/2018-07-09-ibc2018/</link>
+      <link>/talk/2017-11-29-biometrics2017/</link>
       <pubDate>Sat, 02 Dec 2017 00:00:00 +1100</pubDate>
       
-      <guid>https://emitanaka.github.io/talk/2018-07-09-ibc2018/</guid>
+      <guid>/talk/2017-11-29-biometrics2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Order selection of factor analytic models for genotype x environment interaction</title>
+      <link>/talk/2018-07-09-ibc2018/</link>
+      <pubDate>Sat, 02 Dec 2017 00:00:00 +1100</pubDate>
+      
+      <guid>/talk/2018-07-09-ibc2018/</guid>
       <description></description>
     </item>
     

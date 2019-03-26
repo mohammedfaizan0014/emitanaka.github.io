@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Overview on Emi Tanaka</title>
-    <link>https://emitanaka.github.io/workshop/</link>
+    <link>/workshop/</link>
     <description>Recent content in Overview on Emi Tanaka</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018-2019</copyright>
     <lastBuildDate>Sun, 09 Sep 2018 00:00:00 +1000</lastBuildDate>
     
-	<atom:link href="https://emitanaka.github.io/workshop/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/workshop/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Statistical Methods for Plant Breeding</title>
-      <link>https://emitanaka.github.io/workshop/plantbreeding/</link>
+      <link>/workshop/plantbreeding/</link>
       <pubDate>Sun, 09 Sep 2018 00:00:00 +1000</pubDate>
       
-      <guid>https://emitanaka.github.io/workshop/plantbreeding/</guid>
+      <guid>/workshop/plantbreeding/</guid>
       <description> 📊 Data Visualisation in R 💾 Introduction to asreml-R 📈 Factor analytic model for genotype by environment effects 🚜 Spatial analysis of crop field trials 💠 Experimental design  </description>
     </item>
     
     <item>
       <title>Statistical Computing</title>
-      <link>https://emitanaka.github.io/workshop/statscomputing/</link>
+      <link>/workshop/statscomputing/</link>
       <pubDate>Sun, 09 Sep 2018 00:00:00 +1000</pubDate>
       
-      <guid>https://emitanaka.github.io/workshop/statscomputing/</guid>
+      <guid>/workshop/statscomputing/</guid>
       <description> Shiny September: Making an interactive web app with R Getting down and up with blogging in R  </description>
     </item>
     

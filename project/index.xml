@@ -2,58 +2,58 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on Emi Tanaka</title>
-    <link>https://emitanaka.github.io/project/</link>
+    <link>/project/</link>
     <description>Recent content in Projects on Emi Tanaka</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018-2019</copyright>
     <lastBuildDate>Wed, 27 Apr 2016 00:00:00 +1000</lastBuildDate>
     
-	<atom:link href="https://emitanaka.github.io/project/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/project/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Statistical Bioinformatics</title>
-      <link>https://emitanaka.github.io/project/statistical-bioinformatics/</link>
+      <link>/project/statistical-bioinformatics/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +1000</pubDate>
       
-      <guid>https://emitanaka.github.io/project/statistical-bioinformatics/</guid>
+      <guid>/project/statistical-bioinformatics/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Statistical Computing</title>
-      <link>https://emitanaka.github.io/project/statistical-computing/</link>
+      <link>/project/statistical-computing/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +1000</pubDate>
       
-      <guid>https://emitanaka.github.io/project/statistical-computing/</guid>
+      <guid>/project/statistical-computing/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Statistical Literacy</title>
-      <link>https://emitanaka.github.io/project/statistical-literacy/</link>
+      <link>/project/statistical-literacy/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +1000</pubDate>
       
-      <guid>https://emitanaka.github.io/project/statistical-literacy/</guid>
+      <guid>/project/statistical-literacy/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Statistical Methods</title>
-      <link>https://emitanaka.github.io/project/statistical-methods/</link>
+      <link>/project/statistical-methods/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +1000</pubDate>
       
-      <guid>https://emitanaka.github.io/project/statistical-methods/</guid>
+      <guid>/project/statistical-methods/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Statistics for the Grains Industry</title>
-      <link>https://emitanaka.github.io/project/statistics-for-grains-industry/</link>
+      <link>/project/statistics-for-grains-industry/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +1000</pubDate>
       
-      <guid>https://emitanaka.github.io/project/statistics-for-grains-industry/</guid>
+      <guid>/project/statistics-for-grains-industry/</guid>
       <description></description>
     </item>
     

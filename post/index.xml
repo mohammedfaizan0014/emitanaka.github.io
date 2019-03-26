@@ -2,22 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Emi Tanaka</title>
-    <link>https://emitanaka.github.io/post/</link>
+    <link>/post/</link>
     <description>Recent content in Posts on Emi Tanaka</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018-2019</copyright>
     <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +1100</lastBuildDate>
     
-	<atom:link href="https://emitanaka.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>My Travel Schedule 2019: Building an interactive visualisation as twitter card</title>
+      <link>/post/travel2019/</link>
+      <pubDate>Tue, 26 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/travel2019/</guid>
+      <description>library(tidyverse) library(tsibble) library(googlesheets) library(highcharter) library(widgetframe) # get the data date_range &amp;lt;- tibble(Dates=as.Date(c(&amp;quot;06/03/2019&amp;quot;, &amp;quot;12/31/2019&amp;quot;), format=&amp;quot;%m/%d/%Y&amp;quot;), Location=&amp;quot;Sydney, Australia&amp;quot;) # the start to end for schedule show key &amp;lt;- gs_key(&amp;quot;1T7aH5PzQghU0htnqOjzzEyfe0qdWs_L-1Ybu9PX-rYY&amp;quot;) travel_df &amp;lt;- gs_read(key, col_types=list()) %&amp;gt;% mutate(Start=as.Date(Start, format=&amp;quot;%m/%d/%Y&amp;quot;), End=as.Date(End, format=&amp;quot;%m/%d/%Y&amp;quot;)) %&amp;gt;% pivot_longer(Start:End, names_to=&amp;quot;Time&amp;quot;, values_to=&amp;quot;Dates&amp;quot;) %&amp;gt;% as_tsibble(key = id(Event), index = Dates) %&amp;gt;% fill_gaps(Time=&amp;quot;Between&amp;quot;) %&amp;gt;% group_by(Event) %&amp;gt;% fill(FullEvent, URL, Location, What, .direction = &amp;quot;down&amp;quot;) %&amp;gt;% ungroup() %&amp;gt;% # this part feels clumsy.</description>
+    </item>
+    
+    <item>
       <title>Making a Hexagon Sticker</title>
-      <link>https://emitanaka.github.io/post/hexsticker/</link>
+      <link>/post/hexsticker/</link>
       <pubDate>Fri, 06 Apr 2018 00:00:00 +1000</pubDate>
       
-      <guid>https://emitanaka.github.io/post/hexsticker/</guid>
+      <guid>/post/hexsticker/</guid>
       <description>Making hexagon stickers have become popular for R-packages with the range of packages associated with RStudio, such as ggplot2, knitr, devtools and so on, having its own hex stickers.
 This trend even spanned a R-package hexSticker that can be found here.
 Powerpoint template for hex stickers For the sticker that I made for my R-package shinycustomloader, I found it easier, partly due to its long name, to use powerpoint to manipulate the image and create a semi-circular text.</description>

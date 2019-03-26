@@ -2,67 +2,67 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>2 on Emi Tanaka</title>
-    <link>https://emitanaka.github.io/publication_types/2/</link>
+    <link>/publication_types/2/</link>
     <description>Recent content in 2 on Emi Tanaka</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018-2019</copyright>
     <lastBuildDate>Thu, 01 Mar 2018 00:00:00 +1100</lastBuildDate>
     
-	<atom:link href="https://emitanaka.github.io/publication_types/2/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/publication_types/2/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Order Selection and Sparsity in Latent Variable Models via the Ordered Factor LASSO</title>
-      <link>https://emitanaka.github.io/publication/2018-03-15-ofal/</link>
+      <link>/publication/2018-03-15-ofal/</link>
       <pubDate>Thu, 01 Mar 2018 00:00:00 +1100</pubDate>
       
-      <guid>https://emitanaka.github.io/publication/2018-03-15-ofal/</guid>
+      <guid>/publication/2018-03-15-ofal/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Increased accuracy of starch granule type quantification using mixture distributions</title>
-      <link>https://emitanaka.github.io/publication/2017-12-06-starch_mixture/</link>
+      <link>/publication/2017-12-06-starch_mixture/</link>
       <pubDate>Wed, 06 Dec 2017 00:00:00 +1100</pubDate>
       
-      <guid>https://emitanaka.github.io/publication/2017-12-06-starch_mixture/</guid>
+      <guid>/publication/2017-12-06-starch_mixture/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Increased genomic prediction accuracy in wheat breeding using a large Australian panel</title>
-      <link>https://emitanaka.github.io/publication/2017-09-08-genomic_prediction_agt/</link>
+      <link>/publication/2017-09-08-genomic_prediction_agt/</link>
       <pubDate>Wed, 06 Dec 2017 00:00:00 +1100</pubDate>
       
-      <guid>https://emitanaka.github.io/publication/2017-09-08-genomic_prediction_agt/</guid>
+      <guid>/publication/2017-09-08-genomic_prediction_agt/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Improving MEME via a two-tiered significance analysis</title>
-      <link>https://emitanaka.github.io/publication/2014-03-24-motif_sig/</link>
+      <link>/publication/2014-03-24-motif_sig/</link>
       <pubDate>Mon, 24 Mar 2014 00:00:00 +1100</pubDate>
       
-      <guid>https://emitanaka.github.io/publication/2014-03-24-motif_sig/</guid>
+      <guid>/publication/2014-03-24-motif_sig/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Improved similarity scores for comparing motifs</title>
-      <link>https://emitanaka.github.io/publication/2011-05-04-motif_comparison/</link>
+      <link>/publication/2011-05-04-motif_comparison/</link>
       <pubDate>Wed, 04 May 2011 00:00:00 +1000</pubDate>
       
-      <guid>https://emitanaka.github.io/publication/2011-05-04-motif_comparison/</guid>
+      <guid>/publication/2011-05-04-motif_comparison/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Novel features of ARS selection in budding yeast Lachancea kluyveri</title>
-      <link>https://emitanaka.github.io/publication/2011-12-28-ars_selection/</link>
+      <link>/publication/2011-12-28-ars_selection/</link>
       <pubDate>Wed, 04 May 2011 00:00:00 +1000</pubDate>
       
-      <guid>https://emitanaka.github.io/publication/2011-12-28-ars_selection/</guid>
+      <guid>/publication/2011-12-28-ars_selection/</guid>
       <description></description>
     </item>
     

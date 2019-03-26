@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>David Warton on Emi Tanaka</title>
-    <link>https://emitanaka.github.io/authors/david-warton/</link>
+    <link>/authors/david-warton/</link>
     <description>Recent content in David Warton on Emi Tanaka</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018-2019</copyright>
     <lastBuildDate>Sat, 02 Dec 2017 00:00:00 +1100</lastBuildDate>
     
-	<atom:link href="https://emitanaka.github.io/authors/david-warton/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/authors/david-warton/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Order selection of factor analytic models for genotype x environment interaction</title>
-      <link>https://emitanaka.github.io/talk/2017-11-29-biometrics2017/</link>
+      <link>/talk/2017-11-29-biometrics2017/</link>
       <pubDate>Sat, 02 Dec 2017 00:00:00 +1100</pubDate>
       
-      <guid>https://emitanaka.github.io/talk/2017-11-29-biometrics2017/</guid>
+      <guid>/talk/2017-11-29-biometrics2017/</guid>
       <description></description>
     </item>
     

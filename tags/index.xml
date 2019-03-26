@@ -2,211 +2,211 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Emi Tanaka</title>
-    <link>https://emitanaka.github.io/tags/</link>
+    <link>/tags/</link>
     <description>Recent content in Tags on Emi Tanaka</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018-2019</copyright>
     <lastBuildDate>Sat, 02 Dec 2017 00:00:00 +1100</lastBuildDate>
     
-	<atom:link href="https://emitanaka.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>GxE</title>
-      <link>https://emitanaka.github.io/tags/gxe/</link>
+      <link>/tags/gxe/</link>
       <pubDate>Sat, 02 Dec 2017 00:00:00 +1100</pubDate>
       
-      <guid>https://emitanaka.github.io/tags/gxe/</guid>
+      <guid>/tags/gxe/</guid>
       <description></description>
     </item>
     
     <item>
       <title>R</title>
-      <link>https://emitanaka.github.io/tags/r/</link>
+      <link>/tags/r/</link>
       <pubDate>Tue, 28 Aug 2018 00:00:00 +1000</pubDate>
       
-      <guid>https://emitanaka.github.io/tags/r/</guid>
+      <guid>/tags/r/</guid>
       <description></description>
     </item>
     
     <item>
       <title>applied-statistics</title>
-      <link>https://emitanaka.github.io/tags/applied-statistics/</link>
+      <link>/tags/applied-statistics/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +1000</pubDate>
       
-      <guid>https://emitanaka.github.io/tags/applied-statistics/</guid>
+      <guid>/tags/applied-statistics/</guid>
       <description></description>
     </item>
     
     <item>
       <title>bioinformatics</title>
-      <link>https://emitanaka.github.io/tags/bioinformatics/</link>
+      <link>/tags/bioinformatics/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +1000</pubDate>
       
-      <guid>https://emitanaka.github.io/tags/bioinformatics/</guid>
+      <guid>/tags/bioinformatics/</guid>
       <description></description>
     </item>
     
     <item>
       <title>data-vis</title>
-      <link>https://emitanaka.github.io/tags/data-vis/</link>
+      <link>/tags/data-vis/</link>
       <pubDate>Thu, 18 Oct 2018 00:00:00 +1100</pubDate>
       
-      <guid>https://emitanaka.github.io/tags/data-vis/</guid>
+      <guid>/tags/data-vis/</guid>
       <description></description>
     </item>
     
     <item>
       <title>factor-analytic</title>
-      <link>https://emitanaka.github.io/tags/factor-analytic/</link>
+      <link>/tags/factor-analytic/</link>
       <pubDate>Thu, 01 Mar 2018 00:00:00 +1100</pubDate>
       
-      <guid>https://emitanaka.github.io/tags/factor-analytic/</guid>
+      <guid>/tags/factor-analytic/</guid>
       <description></description>
     </item>
     
     <item>
       <title>genomic-prediction</title>
-      <link>https://emitanaka.github.io/tags/genomic-prediction/</link>
+      <link>/tags/genomic-prediction/</link>
       <pubDate>Sat, 21 Jul 2018 00:00:00 +1000</pubDate>
       
-      <guid>https://emitanaka.github.io/tags/genomic-prediction/</guid>
+      <guid>/tags/genomic-prediction/</guid>
       <description></description>
     </item>
     
     <item>
       <title>lasso</title>
-      <link>https://emitanaka.github.io/tags/lasso/</link>
+      <link>/tags/lasso/</link>
       <pubDate>Thu, 01 Mar 2018 00:00:00 +1100</pubDate>
       
-      <guid>https://emitanaka.github.io/tags/lasso/</guid>
+      <guid>/tags/lasso/</guid>
       <description></description>
     </item>
     
     <item>
       <title>latent-variable-model</title>
-      <link>https://emitanaka.github.io/tags/latent-variable-model/</link>
+      <link>/tags/latent-variable-model/</link>
       <pubDate>Thu, 01 Mar 2018 00:00:00 +1100</pubDate>
       
-      <guid>https://emitanaka.github.io/tags/latent-variable-model/</guid>
+      <guid>/tags/latent-variable-model/</guid>
       <description></description>
     </item>
     
     <item>
       <title>mixed-model</title>
-      <link>https://emitanaka.github.io/tags/mixed-model/</link>
+      <link>/tags/mixed-model/</link>
       <pubDate>Tue, 10 Jan 2017 00:00:00 +1100</pubDate>
       
-      <guid>https://emitanaka.github.io/tags/mixed-model/</guid>
+      <guid>/tags/mixed-model/</guid>
       <description></description>
     </item>
     
     <item>
       <title>mixed-models</title>
-      <link>https://emitanaka.github.io/tags/mixed-models/</link>
+      <link>/tags/mixed-models/</link>
       <pubDate>Thu, 06 Dec 2018 00:00:00 +1100</pubDate>
       
-      <guid>https://emitanaka.github.io/tags/mixed-models/</guid>
+      <guid>/tags/mixed-models/</guid>
       <description></description>
     </item>
     
     <item>
       <title>mixture-distribution</title>
-      <link>https://emitanaka.github.io/tags/mixture-distribution/</link>
+      <link>/tags/mixture-distribution/</link>
       <pubDate>Wed, 06 Dec 2017 00:00:00 +1100</pubDate>
       
-      <guid>https://emitanaka.github.io/tags/mixture-distribution/</guid>
+      <guid>/tags/mixture-distribution/</guid>
       <description></description>
     </item>
     
     <item>
       <title>motif</title>
-      <link>https://emitanaka.github.io/tags/motif/</link>
+      <link>/tags/motif/</link>
       <pubDate>Mon, 24 Mar 2014 00:00:00 +1100</pubDate>
       
-      <guid>https://emitanaka.github.io/tags/motif/</guid>
+      <guid>/tags/motif/</guid>
       <description></description>
     </item>
     
     <item>
       <title>outlier-detection</title>
-      <link>https://emitanaka.github.io/tags/outlier-detection/</link>
+      <link>/tags/outlier-detection/</link>
       <pubDate>Thu, 19 Jul 2018 00:00:00 +1000</pubDate>
       
-      <guid>https://emitanaka.github.io/tags/outlier-detection/</guid>
+      <guid>/tags/outlier-detection/</guid>
       <description></description>
     </item>
     
     <item>
       <title>robust-methods</title>
-      <link>https://emitanaka.github.io/tags/robust-methods/</link>
+      <link>/tags/robust-methods/</link>
       <pubDate>Thu, 19 Jul 2018 00:00:00 +1000</pubDate>
       
-      <guid>https://emitanaka.github.io/tags/robust-methods/</guid>
+      <guid>/tags/robust-methods/</guid>
       <description></description>
     </item>
     
     <item>
       <title>social</title>
-      <link>https://emitanaka.github.io/tags/social/</link>
+      <link>/tags/social/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +1100</pubDate>
       
-      <guid>https://emitanaka.github.io/tags/social/</guid>
+      <guid>/tags/social/</guid>
       <description></description>
     </item>
     
     <item>
       <title>statistcal-computing</title>
-      <link>https://emitanaka.github.io/tags/statistcal-computing/</link>
+      <link>/tags/statistcal-computing/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +1000</pubDate>
       
-      <guid>https://emitanaka.github.io/tags/statistcal-computing/</guid>
+      <guid>/tags/statistcal-computing/</guid>
       <description></description>
     </item>
     
     <item>
       <title>statistical-literacy</title>
-      <link>https://emitanaka.github.io/tags/statistical-literacy/</link>
+      <link>/tags/statistical-literacy/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +1000</pubDate>
       
-      <guid>https://emitanaka.github.io/tags/statistical-literacy/</guid>
+      <guid>/tags/statistical-literacy/</guid>
       <description></description>
     </item>
     
     <item>
       <title>statistical-methods</title>
-      <link>https://emitanaka.github.io/tags/statistical-methods/</link>
+      <link>/tags/statistical-methods/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +1000</pubDate>
       
-      <guid>https://emitanaka.github.io/tags/statistical-methods/</guid>
+      <guid>/tags/statistical-methods/</guid>
       <description></description>
     </item>
     
     <item>
       <title>statistics-for-grains-industry</title>
-      <link>https://emitanaka.github.io/tags/statistics-for-grains-industry/</link>
+      <link>/tags/statistics-for-grains-industry/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +1000</pubDate>
       
-      <guid>https://emitanaka.github.io/tags/statistics-for-grains-industry/</guid>
+      <guid>/tags/statistics-for-grains-industry/</guid>
       <description></description>
     </item>
     
     <item>
       <title>wheat</title>
-      <link>https://emitanaka.github.io/tags/wheat/</link>
+      <link>/tags/wheat/</link>
       <pubDate>Sat, 21 Jul 2018 00:00:00 +1000</pubDate>
       
-      <guid>https://emitanaka.github.io/tags/wheat/</guid>
+      <guid>/tags/wheat/</guid>
       <description></description>
     </item>
     
     <item>
       <title>yeast</title>
-      <link>https://emitanaka.github.io/tags/yeast/</link>
+      <link>/tags/yeast/</link>
       <pubDate>Wed, 04 May 2011 00:00:00 +1000</pubDate>
       
-      <guid>https://emitanaka.github.io/tags/yeast/</guid>
+      <guid>/tags/yeast/</guid>
       <description></description>
     </item>
     

@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Emi Tanaka on Emi Tanaka</title>
-    <link>https://emitanaka.github.io/</link>
+    <link>/</link>
     <description>Recent content in Emi Tanaka on Emi Tanaka</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -11,21 +11,113 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>My Travel Schedule 2019: Building an interactive visualisation as twitter card</title>
+      <link>/post/travel2019/</link>
+      <pubDate>Tue, 26 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/travel2019/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/htmlwidgets/htmlwidgets.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;/rmarkdown-libs/pymjs/pym.v1.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;/rmarkdown-libs/widgetframe-binding/widgetframe.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tidyverse)
+library(tsibble)
+library(googlesheets)
+library(highcharter)
+library(widgetframe)
+
+# get the data 
+date_range &amp;lt;- tibble(Dates=as.Date(c(&amp;quot;06/03/2019&amp;quot;, &amp;quot;12/31/2019&amp;quot;), format=&amp;quot;%m/%d/%Y&amp;quot;),
+                     Location=&amp;quot;Sydney, Australia&amp;quot;) # the start to end for schedule show
+key &amp;lt;- gs_key(&amp;quot;1T7aH5PzQghU0htnqOjzzEyfe0qdWs_L-1Ybu9PX-rYY&amp;quot;)
+travel_df &amp;lt;- gs_read(key, col_types=list()) %&amp;gt;% 
+  mutate(Start=as.Date(Start, format=&amp;quot;%m/%d/%Y&amp;quot;),
+         End=as.Date(End, format=&amp;quot;%m/%d/%Y&amp;quot;)) %&amp;gt;%
+  pivot_longer(Start:End, names_to=&amp;quot;Time&amp;quot;, values_to=&amp;quot;Dates&amp;quot;) %&amp;gt;%
+  as_tsibble(key = id(Event), index = Dates) %&amp;gt;%
+  fill_gaps(Time=&amp;quot;Between&amp;quot;) %&amp;gt;% 
+  group_by(Event) %&amp;gt;% 
+  fill(FullEvent, URL, Location, What, .direction = &amp;quot;down&amp;quot;) %&amp;gt;% 
+  ungroup() %&amp;gt;% # this part feels clumsy.. probably better way to do this
+  bind_rows(date_range) %&amp;gt;%
+  as_tibble() %&amp;gt;% 
+  mutate(Key=&amp;quot;All&amp;quot;) %&amp;gt;%
+  as_tsibble(key=id(Key), index=Dates) %&amp;gt;% 
+  fill_gaps(Location=&amp;quot;Sydney, Australia&amp;quot;, Event=&amp;quot;&amp;quot;, What=&amp;quot;&amp;quot;, FullEvent=&amp;quot;&amp;quot;) %&amp;gt;%
+  mutate(Day=substring(weekdays(Dates),1,3),
+         Week=lubridate::isoweek(Dates)) %&amp;gt;%
+  filter(Week!=1) 
+
+glimpse(travel_df)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## 2019-06-03 ~ 2019-12-29
+## Observations: 210
+## Variables: 10
+## Key: Key [1]
+## $ Event     &amp;lt;chr&amp;gt; NA, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;…
+## $ FullEvent &amp;lt;chr&amp;gt; NA, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;…
+## $ URL       &amp;lt;chr&amp;gt; NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA…
+## $ Location  &amp;lt;chr&amp;gt; &amp;quot;Sydney, Australia&amp;quot;, &amp;quot;Sydney, Australia&amp;quot;, &amp;quot;Sydney, Aus…
+## $ What      &amp;lt;chr&amp;gt; NA, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;…
+## $ Time      &amp;lt;chr&amp;gt; NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA…
+## $ Dates     &amp;lt;date&amp;gt; 2019-06-03, 2019-06-04, 2019-06-05, 2019-06-06, 2019-…
+## $ Key       &amp;lt;chr&amp;gt; &amp;quot;All&amp;quot;, &amp;quot;All&amp;quot;, &amp;quot;All&amp;quot;, &amp;quot;All&amp;quot;, &amp;quot;All&amp;quot;, &amp;quot;All&amp;quot;, &amp;quot;All&amp;quot;, &amp;quot;All&amp;quot;…
+## $ Day       &amp;lt;chr&amp;gt; &amp;quot;Mon&amp;quot;, &amp;quot;Tue&amp;quot;, &amp;quot;Wed&amp;quot;, &amp;quot;Thu&amp;quot;, &amp;quot;Fri&amp;quot;, &amp;quot;Sat&amp;quot;, &amp;quot;Sun&amp;quot;, &amp;quot;Mon&amp;quot;…
+## $ Week      &amp;lt;dbl&amp;gt; 23, 23, 23, 23, 23, 23, 23, 24, 24, 24, 24, 24, 24, 24…&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;fntltp &amp;lt;- JS(&amp;quot;function(){
+              return &amp;#39;&amp;lt;b style=\&amp;quot;color:#DC5084\&amp;quot;&amp;gt;&amp;#39; + this.point.event + &amp;#39;&amp;lt;/b&amp;gt;&amp;lt;br&amp;gt;&amp;lt;span style=\&amp;quot;font-size:0.7em\&amp;quot;&amp;gt;&amp;#39; +  this.series.yAxis.categories[this.point.y] + &amp;#39;, &amp;#39; +
+             this.point.date + &amp;#39;&amp;lt;/span&amp;gt;&amp;lt;br&amp;gt;&amp;lt;span style=\&amp;quot;font-size:0.7em\&amp;quot;&amp;gt;&amp;#39; + this.point.name + &amp;#39;&amp;lt;/span&amp;gt;&amp;lt;br&amp;gt;&amp;lt;span style=\&amp;quot;font-size:0.7em;color:#FFFFCC\&amp;quot;&amp;gt;&amp;#39; + this.point.what + &amp;#39;&amp;lt;/span&amp;gt;&amp;lt;br&amp;gt;&amp;#39;+ this.point.loc;
+             }&amp;quot;)
+
+hcout &amp;lt;- hchart(travel_df, &amp;quot;heatmap&amp;quot;, hcaes(x = factor(Week), 
+                                   y = factor(Day, levels=c(&amp;quot;Sun&amp;quot;,&amp;quot;Sat&amp;quot;, &amp;quot;Fri&amp;quot;, &amp;quot;Thu&amp;quot;, &amp;quot;Wed&amp;quot;, &amp;quot;Tue&amp;quot;,&amp;quot;Mon&amp;quot;)), 
+                                   group = Location,
+                                   loc=Location,
+                                   event=Event,
+                                   what=What,
+                                   name=FullEvent,
+                                   date=Dates),
+       
+       style=list(fontSize = &amp;quot;2em&amp;quot;,fontFamily = &amp;quot;Helvetica&amp;quot;) ) %&amp;gt;% 
+  hc_tooltip(formatter=fntltp) %&amp;gt;% 
+  #hc_tooltip(crosshairs=TRUE, pointFormat = &amp;quot;y: {point.y}&amp;lt;br&amp;gt;x: {point.x}&amp;quot;) %&amp;gt;%
+  hc_title(text = &amp;quot;My 2019 Travel Schedule&amp;quot;, style=list( fontWeight= &amp;quot;bold&amp;quot;)) %&amp;gt;% 
+  hc_subtitle(text = &amp;quot;Hover over the tile to see more information&amp;quot;) %&amp;gt;% 
+  hc_size(height = 225) %&amp;gt;%
+  hc_legend(enabled=FALSE) %&amp;gt;% 
+  hc_yAxis(title=&amp;quot;&amp;quot;) %&amp;gt;%
+  hc_xAxis(title=&amp;quot;&amp;quot;, categories=c(&amp;quot;Jun&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;Jul&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;,&amp;quot;Aug&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;Sep&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;Oct&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;,&amp;quot;Nov&amp;quot;,&amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;,&amp;quot;Dec&amp;quot;,&amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;),
+           endOnTick=FALSE) %&amp;gt;%
+  hc_add_theme(hc_theme_538()) %&amp;gt;%
+  hc_plotOptions(heatmap=list(borderColor=&amp;quot;black&amp;quot;,borderWidth=1))
+
+frameWidget(hcout)&lt;/code&gt;&lt;/pre&gt;
+&lt;div id=&#34;htmlwidget-1&#34; style=&#34;width:100%;height:225px;&#34; class=&#34;widgetframe html-widget&#34;&gt;&lt;/div&gt;
+&lt;script type=&#34;application/json&#34; data-for=&#34;htmlwidget-1&#34;&gt;{&#34;x&#34;:{&#34;url&#34;:&#34;/post/2019-03-26-my-travel-schedule-2019-building-an-interactive-visualisation-as-twitter-card_files/figure-html//widgets/widget_unnamed-chunk-1.html&#34;,&#34;options&#34;:{&#34;xdomain&#34;:&#34;*&#34;,&#34;allowfullscreen&#34;:false,&#34;lazyload&#34;:false}},&#34;evals&#34;:[],&#34;jsHooks&#34;:[]}&lt;/script&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;#lst &amp;lt;- list()
+#lst[[1]] &amp;lt;- hcout
+
+#htmltools::tagList(hcout)&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Model selection and estimation for latent variable models</title>
-      <link>https://emitanaka.github.io/talk/2019-06-25-ecosta2019/</link>
+      <link>/talk/2019-06-25-ecosta2019/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +1100</pubDate>
       
-      <guid>https://emitanaka.github.io/talk/2019-06-25-ecosta2019/</guid>
+      <guid>/talk/2019-06-25-ecosta2019/</guid>
       <description>&lt;p&gt;Invited Session &amp;ldquo;Dimension Reduction&amp;rdquo; organised by Kei Hirose.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>What can social media do for academic and professional statisticians?</title>
-      <link>https://emitanaka.github.io/talk/2019-08-18-isiwsc2019/</link>
+      <link>/talk/2019-08-18-isiwsc2019/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +1100</pubDate>
       
-      <guid>https://emitanaka.github.io/talk/2019-08-18-isiwsc2019/</guid>
+      <guid>/talk/2019-08-18-isiwsc2019/</guid>
       <description>&lt;p&gt;Special Topic Session organised by Mst Howlader Tamanna with other speakers:&lt;/p&gt;
 
 &lt;ul&gt;
@@ -38,37 +130,37 @@
     
     <item>
       <title>Don&#39;t be so negative about negative estimates of variance components</title>
-      <link>https://emitanaka.github.io/talk/2018-12-06-aasc2018/</link>
+      <link>/talk/2018-12-06-aasc2018/</link>
       <pubDate>Thu, 06 Dec 2018 00:00:00 +1100</pubDate>
       
-      <guid>https://emitanaka.github.io/talk/2018-12-06-aasc2018/</guid>
+      <guid>/talk/2018-12-06-aasc2018/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Statisitcal fallacy and storytelling via data visualisation</title>
-      <link>https://emitanaka.github.io/talk/2018-10-18-sums2018/</link>
+      <link>/talk/2018-10-18-sums2018/</link>
       <pubDate>Thu, 18 Oct 2018 00:00:00 +1100</pubDate>
       
-      <guid>https://emitanaka.github.io/talk/2018-10-18-sums2018/</guid>
+      <guid>/talk/2018-10-18-sums2018/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Shiny September: Making an interactive web app with R</title>
-      <link>https://emitanaka.github.io/talk/2018-10-18-radies-sydney-shiny/</link>
+      <link>/talk/2018-10-18-radies-sydney-shiny/</link>
       <pubDate>Wed, 19 Sep 2018 00:00:00 +1000</pubDate>
       
-      <guid>https://emitanaka.github.io/talk/2018-10-18-radies-sydney-shiny/</guid>
+      <guid>/talk/2018-10-18-radies-sydney-shiny/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Statistical Methods for Plant Breeding</title>
-      <link>https://emitanaka.github.io/workshop/plantbreeding/</link>
+      <link>/workshop/plantbreeding/</link>
       <pubDate>Sun, 09 Sep 2018 00:00:00 +1000</pubDate>
       
-      <guid>https://emitanaka.github.io/workshop/plantbreeding/</guid>
+      <guid>/workshop/plantbreeding/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;📊 &lt;a href=&#34;http://bit.ly/UT-WS-DataVis&#34; target=&#34;_blank&#34;&gt;Data Visualisation in R&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;💾 &lt;a href=&#34;http://bit.ly/UT-WS-asreml-R&#34; target=&#34;_blank&#34;&gt;Introduction to asreml-R&lt;/a&gt;&lt;/li&gt;
@@ -81,10 +173,10 @@
     
     <item>
       <title>Statistical Computing</title>
-      <link>https://emitanaka.github.io/workshop/statscomputing/</link>
+      <link>/workshop/statscomputing/</link>
       <pubDate>Sun, 09 Sep 2018 00:00:00 +1000</pubDate>
       
-      <guid>https://emitanaka.github.io/workshop/statscomputing/</guid>
+      <guid>/workshop/statscomputing/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://bit.ly/rladies-sydney-shiny&#34; target=&#34;_blank&#34;&gt;Shiny September: Making an interactive web app with R&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://bit.ly/rladies-melb-blogdown&#34; target=&#34;_blank&#34;&gt;Getting down and up with blogging in R&lt;/a&gt;&lt;/li&gt;
@@ -94,46 +186,56 @@
     
     <item>
       <title>Effective storytelling via data visualisation</title>
-      <link>https://emitanaka.github.io/talk/2018-08-30-asc2018/</link>
+      <link>/talk/2018-08-30-asc2018/</link>
       <pubDate>Thu, 30 Aug 2018 00:00:00 +1000</pubDate>
       
-      <guid>https://emitanaka.github.io/talk/2018-08-30-asc2018/</guid>
+      <guid>/talk/2018-08-30-asc2018/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Getting down and up with blogging in R</title>
-      <link>https://emitanaka.github.io/talk/2018-08-28-rladies_melbourne_blogdown/</link>
+      <link>/talk/2018-08-28-rladies_melbourne_blogdown/</link>
       <pubDate>Tue, 28 Aug 2018 00:00:00 +1000</pubDate>
       
-      <guid>https://emitanaka.github.io/talk/2018-08-28-rladies_melbourne_blogdown/</guid>
+      <guid>/talk/2018-08-28-rladies_melbourne_blogdown/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Loss of accuracy in the genomic prediction for prevalent two-stage analysis with single site</title>
-      <link>https://emitanaka.github.io/publication/2018-07-21-two_stage/</link>
+      <link>/publication/2018-07-21-two_stage/</link>
       <pubDate>Sat, 21 Jul 2018 00:00:00 +1000</pubDate>
       
-      <guid>https://emitanaka.github.io/publication/2018-07-21-two_stage/</guid>
+      <guid>/publication/2018-07-21-two_stage/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Simple robust genomic prediction and outlier detection for a multi-environmental field trial</title>
-      <link>https://emitanaka.github.io/publication/2018-07-19-outlier_detection/</link>
+      <link>/publication/2018-07-19-outlier_detection/</link>
       <pubDate>Thu, 19 Jul 2018 00:00:00 +1000</pubDate>
       
-      <guid>https://emitanaka.github.io/publication/2018-07-19-outlier_detection/</guid>
+      <guid>/publication/2018-07-19-outlier_detection/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>Privacy Policy</title>
+      <link>/privacy/</link>
+      <pubDate>Thu, 28 Jun 2018 00:00:00 +1000</pubDate>
+      
+      <guid>/privacy/</guid>
+      <description>&lt;p&gt;&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Making a Hexagon Sticker</title>
-      <link>https://emitanaka.github.io/post/hexsticker/</link>
+      <link>/post/hexsticker/</link>
       <pubDate>Fri, 06 Apr 2018 00:00:00 +1000</pubDate>
       
-      <guid>https://emitanaka.github.io/post/hexsticker/</guid>
+      <guid>/post/hexsticker/</guid>
       <description>
 
 &lt;p&gt;&lt;img src=&#34;https://user-images.githubusercontent.com/7620319/38168572-71e4543e-3593-11e8-9487-9c6c484b896a.png&#34; height=&#34;120&#34; width=&#34;120&#34; align=&#34;right&#34; /&gt;
@@ -167,28 +269,10 @@ Making hexagon stickers have become popular for R-packages with the range of pac
     
     <item>
       <title>Order Selection and Sparsity in Latent Variable Models via the Ordered Factor LASSO</title>
-      <link>https://emitanaka.github.io/publication/2018-03-15-ofal/</link>
+      <link>/publication/2018-03-15-ofal/</link>
       <pubDate>Thu, 01 Mar 2018 00:00:00 +1100</pubDate>
       
-      <guid>https://emitanaka.github.io/publication/2018-03-15-ofal/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Increased accuracy of starch granule type quantification using mixture distributions</title>
-      <link>https://emitanaka.github.io/publication/2017-12-06-starch_mixture/</link>
-      <pubDate>Wed, 06 Dec 2017 00:00:00 +1100</pubDate>
-      
-      <guid>https://emitanaka.github.io/publication/2017-12-06-starch_mixture/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Increased genomic prediction accuracy in wheat breeding using a large Australian panel</title>
-      <link>https://emitanaka.github.io/publication/2017-09-08-genomic_prediction_agt/</link>
-      <pubDate>Wed, 06 Dec 2017 00:00:00 +1100</pubDate>
-      
-      <guid>https://emitanaka.github.io/publication/2017-09-08-genomic_prediction_agt/</guid>
+      <guid>/publication/2018-03-15-ofal/</guid>
       <description></description>
     </item>
     

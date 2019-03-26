@@ -4,7 +4,15 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/talk/2019-06-25-ecosta2019/</loc>
+      <loc>/post/travel2019/</loc>
+      <lastmod>2019-03-26T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/talk/2019-06-25-ecosta2019/</loc>
       <lastmod>2019-01-01T00:00:00+11:00</lastmod>
     </url>
     
@@ -12,7 +20,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/talk/2019-08-18-isiwsc2019/</loc>
+      <loc>/talk/2019-08-18-isiwsc2019/</loc>
       <lastmod>2019-01-01T00:00:00+11:00</lastmod>
     </url>
     
@@ -20,7 +28,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/talk/2018-12-06-aasc2018/</loc>
+      <loc>/talk/2018-12-06-aasc2018/</loc>
       <lastmod>2018-12-06T00:00:00+11:00</lastmod>
     </url>
     
@@ -28,7 +36,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/talk/2018-10-18-sums2018/</loc>
+      <loc>/talk/2018-10-18-sums2018/</loc>
       <lastmod>2018-10-18T00:00:00+11:00</lastmod>
     </url>
     
@@ -36,7 +44,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/talk/2018-10-18-radies-sydney-shiny/</loc>
+      <loc>/talk/2018-10-18-radies-sydney-shiny/</loc>
       <lastmod>2018-09-19T00:00:00+10:00</lastmod>
     </url>
     
@@ -44,7 +52,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/workshop/</loc>
+      <loc>/workshop/</loc>
       <lastmod>2018-09-09T00:00:00+10:00</lastmod>
     </url>
     
@@ -52,7 +60,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/workshop/plantbreeding/</loc>
+      <loc>/workshop/plantbreeding/</loc>
       <lastmod>2018-09-09T00:00:00+10:00</lastmod>
     </url>
     
@@ -60,7 +68,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/workshop/statscomputing/</loc>
+      <loc>/workshop/statscomputing/</loc>
       <lastmod>2018-09-09T00:00:00+10:00</lastmod>
     </url>
     
@@ -68,7 +76,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/talk/2018-08-30-asc2018/</loc>
+      <loc>/talk/2018-08-30-asc2018/</loc>
       <lastmod>2018-08-30T00:00:00+10:00</lastmod>
     </url>
     
@@ -76,7 +84,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/talk/2018-08-28-rladies_melbourne_blogdown/</loc>
+      <loc>/talk/2018-08-28-rladies_melbourne_blogdown/</loc>
       <lastmod>2018-08-28T00:00:00+10:00</lastmod>
     </url>
     
@@ -84,7 +92,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/publication/2018-07-21-two_stage/</loc>
+      <loc>/publication/2018-07-21-two_stage/</loc>
       <lastmod>2018-07-21T00:00:00+10:00</lastmod>
     </url>
     
@@ -92,7 +100,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/publication/2018-07-19-outlier_detection/</loc>
+      <loc>/publication/2018-07-19-outlier_detection/</loc>
       <lastmod>2018-07-19T00:00:00+10:00</lastmod>
     </url>
     
@@ -100,7 +108,15 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/post/hexsticker/</loc>
+      <loc>/privacy/</loc>
+      <lastmod>2018-06-28T00:00:00+10:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/post/hexsticker/</loc>
       <lastmod>2018-04-06T00:00:00+10:00</lastmod>
     </url>
     
@@ -108,7 +124,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/publication/2018-03-15-ofal/</loc>
+      <loc>/publication/2018-03-15-ofal/</loc>
       <lastmod>2018-03-01T00:00:00+11:00</lastmod>
     </url>
     
@@ -116,7 +132,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/publication/2017-12-06-starch_mixture/</loc>
+      <loc>/publication/2017-12-06-starch_mixture/</loc>
       <lastmod>2017-12-06T00:00:00+11:00</lastmod>
     </url>
     
@@ -124,7 +140,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/publication/2017-09-08-genomic_prediction_agt/</loc>
+      <loc>/publication/2017-09-08-genomic_prediction_agt/</loc>
       <lastmod>2017-12-06T00:00:00+11:00</lastmod>
     </url>
     
@@ -132,7 +148,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/talk/rladies-shiny/</loc>
+      <loc>/talk/rladies-shiny/</loc>
       <lastmod>2017-12-02T00:00:00+11:00</lastmod>
     </url>
     
@@ -140,7 +156,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/talk/2018-07-09-ibc2018/</loc>
+      <loc>/talk/2017-11-29-biometrics2017/</loc>
       <lastmod>2017-12-02T00:00:00+11:00</lastmod>
     </url>
     
@@ -148,7 +164,15 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/talk/2018-08-28-asc2018/</loc>
+      <loc>/talk/2018-07-09-ibc2018/</loc>
+      <lastmod>2017-12-02T00:00:00+11:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/talk/2018-08-28-asc2018/</loc>
       <lastmod>2017-01-10T00:00:00+11:00</lastmod>
     </url>
     
@@ -156,7 +180,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/post/</loc>
+      <loc>/post/</loc>
       <lastmod>2017-01-01T00:00:00+11:00</lastmod>
     </url>
     
@@ -164,7 +188,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/publication/</loc>
+      <loc>/publication/</loc>
       <lastmod>2017-01-01T00:00:00+11:00</lastmod>
     </url>
     
@@ -172,7 +196,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/talk/</loc>
+      <loc>/talk/</loc>
       <lastmod>2017-01-01T00:00:00+11:00</lastmod>
     </url>
     
@@ -180,7 +204,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/project/statistical-bioinformatics/</loc>
+      <loc>/project/statistical-bioinformatics/</loc>
       <lastmod>2016-04-27T00:00:00+10:00</lastmod>
     </url>
     
@@ -188,7 +212,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/project/statistical-computing/</loc>
+      <loc>/project/statistical-computing/</loc>
       <lastmod>2016-04-27T00:00:00+10:00</lastmod>
     </url>
     
@@ -196,7 +220,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/project/statistical-literacy/</loc>
+      <loc>/project/statistical-literacy/</loc>
       <lastmod>2016-04-27T00:00:00+10:00</lastmod>
     </url>
     
@@ -204,7 +228,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/project/statistical-methods/</loc>
+      <loc>/project/statistical-methods/</loc>
       <lastmod>2016-04-27T00:00:00+10:00</lastmod>
     </url>
     
@@ -212,7 +236,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/project/statistics-for-grains-industry/</loc>
+      <loc>/project/statistics-for-grains-industry/</loc>
       <lastmod>2016-04-27T00:00:00+10:00</lastmod>
     </url>
     
@@ -220,7 +244,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/publication/2014-03-24-motif_sig/</loc>
+      <loc>/publication/2014-03-24-motif_sig/</loc>
       <lastmod>2014-03-24T00:00:00+11:00</lastmod>
     </url>
     
@@ -228,7 +252,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/publication/2011-05-04-motif_comparison/</loc>
+      <loc>/publication/2011-05-04-motif_comparison/</loc>
       <lastmod>2011-05-04T00:00:00+10:00</lastmod>
     </url>
     
@@ -236,7 +260,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/publication/2011-12-28-ars_selection/</loc>
+      <loc>/publication/2011-12-28-ars_selection/</loc>
       <lastmod>2011-05-04T00:00:00+10:00</lastmod>
     </url>
     
@@ -244,14 +268,14 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/author/admin/</loc>
+      <loc>/author/admin/</loc>
     </url>
     
   
     
     <url>
     
-      <loc>https://emitanaka.github.io/publication_types/2/</loc>
+      <loc>/publication_types/2/</loc>
       <lastmod>2018-03-01T00:00:00+11:00</lastmod>
       <priority>0</priority>
     </url>
@@ -260,7 +284,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/publication_types/3/</loc>
+      <loc>/publication_types/3/</loc>
       <lastmod>2018-07-21T00:00:00+10:00</lastmod>
       <priority>0</priority>
     </url>
@@ -269,7 +293,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/authors/a-b-smith/</loc>
+      <loc>/authors/a-b-smith/</loc>
       <lastmod>2018-07-21T00:00:00+10:00</lastmod>
       <priority>0</priority>
     </url>
@@ -278,7 +302,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/authors/a-norman/</loc>
+      <loc>/authors/a-norman/</loc>
       <lastmod>2017-12-06T00:00:00+11:00</lastmod>
       <priority>0</priority>
     </url>
@@ -287,7 +311,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/authors/a-seher/</loc>
+      <loc>/authors/a-seher/</loc>
       <lastmod>2011-05-04T00:00:00+10:00</lastmod>
       <priority>0</priority>
     </url>
@@ -296,7 +320,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/authors/a-whan/</loc>
+      <loc>/authors/a-whan/</loc>
       <lastmod>2017-12-06T00:00:00+11:00</lastmod>
       <priority>0</priority>
     </url>
@@ -305,7 +329,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/author/</loc>
+      <loc>/author/</loc>
       <priority>0</priority>
     </url>
     
@@ -313,7 +337,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/authors/</loc>
+      <loc>/authors/</loc>
       <lastmod>2018-07-21T00:00:00+10:00</lastmod>
       <priority>0</priority>
     </url>
@@ -322,7 +346,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/authors/b-r-cullis/</loc>
+      <loc>/authors/b-r-cullis/</loc>
       <lastmod>2018-07-21T00:00:00+10:00</lastmod>
       <priority>0</priority>
     </url>
@@ -331,7 +355,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/authors/b-tye/</loc>
+      <loc>/authors/b-tye/</loc>
       <lastmod>2011-05-04T00:00:00+10:00</lastmod>
       <priority>0</priority>
     </url>
@@ -340,7 +364,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/authors/br-cullis/</loc>
+      <loc>/authors/br-cullis/</loc>
       <lastmod>2017-12-06T00:00:00+11:00</lastmod>
       <priority>0</priority>
     </url>
@@ -349,7 +373,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/authors/c-e-grant/</loc>
+      <loc>/authors/c-e-grant/</loc>
       <lastmod>2011-05-04T00:00:00+10:00</lastmod>
       <priority>0</priority>
     </url>
@@ -358,7 +382,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/authors/cr-cavanagh/</loc>
+      <loc>/authors/cr-cavanagh/</loc>
       <lastmod>2017-12-06T00:00:00+11:00</lastmod>
       <priority>0</priority>
     </url>
@@ -367,7 +391,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/categories/</loc>
+      <loc>/categories/</loc>
       <priority>0</priority>
     </url>
     
@@ -375,7 +399,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/authors/chong-you/</loc>
+      <loc>/authors/chong-you/</loc>
       <lastmod>2018-12-06T00:00:00+11:00</lastmod>
       <priority>0</priority>
     </url>
@@ -384,7 +408,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/authors/chris-brien/</loc>
+      <loc>/authors/chris-brien/</loc>
       <lastmod>2018-12-06T00:00:00+11:00</lastmod>
       <priority>0</priority>
     </url>
@@ -393,7 +417,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/authors/d-warton/</loc>
+      <loc>/authors/d-warton/</loc>
       <lastmod>2018-03-01T00:00:00+11:00</lastmod>
       <priority>0</priority>
     </url>
@@ -402,7 +426,16 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/authors/e-cha/</loc>
+      <loc>/authors/david-warton/</loc>
+      <lastmod>2017-12-02T00:00:00+11:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/authors/e-cha/</loc>
       <lastmod>2011-05-04T00:00:00+10:00</lastmod>
       <priority>0</priority>
     </url>
@@ -411,7 +444,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/authors/e-tanaka/</loc>
+      <loc>/authors/e-tanaka/</loc>
       <lastmod>2018-07-21T00:00:00+10:00</lastmod>
       <priority>0</priority>
     </url>
@@ -420,7 +453,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/</loc>
+      <loc>/</loc>
       <lastmod>2017-10-15T00:00:00+11:00</lastmod>
       <priority>0</priority>
     </url>
@@ -429,7 +462,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/authors/emi-tanaka/</loc>
+      <loc>/authors/emi-tanaka/</loc>
       <lastmod>2019-01-01T00:00:00+11:00</lastmod>
       <priority>0</priority>
     </url>
@@ -438,7 +471,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/authors/fkc-hui/</loc>
+      <loc>/authors/fkc-hui/</loc>
       <lastmod>2018-03-01T00:00:00+11:00</lastmod>
       <priority>0</priority>
     </url>
@@ -447,7 +480,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/authors/francis-k.-c.-hui/</loc>
+      <loc>/authors/francis-k.-c.-hui/</loc>
       <lastmod>2019-01-01T00:00:00+11:00</lastmod>
       <priority>0</priority>
     </url>
@@ -456,7 +489,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/authors/g-kang/</loc>
+      <loc>/authors/g-kang/</loc>
       <lastmod>2011-05-04T00:00:00+10:00</lastmod>
       <priority>0</priority>
     </url>
@@ -465,7 +498,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/tags/gxe/</loc>
+      <loc>/tags/gxe/</loc>
       <lastmod>2017-12-02T00:00:00+11:00</lastmod>
       <priority>0</priority>
     </url>
@@ -474,7 +507,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/authors/h-kuchel/</loc>
+      <loc>/authors/h-kuchel/</loc>
       <lastmod>2017-12-06T00:00:00+11:00</lastmod>
       <priority>0</priority>
     </url>
@@ -483,7 +516,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/authors/h-pace/</loc>
+      <loc>/authors/h-pace/</loc>
       <lastmod>2011-05-04T00:00:00+10:00</lastmod>
       <priority>0</priority>
     </url>
@@ -492,7 +525,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/authors/i-liachko/</loc>
+      <loc>/authors/i-liachko/</loc>
       <lastmod>2011-05-04T00:00:00+10:00</lastmod>
       <priority>0</priority>
     </url>
@@ -501,7 +534,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/authors/j-barrow/</loc>
+      <loc>/authors/j-barrow/</loc>
       <lastmod>2011-05-04T00:00:00+10:00</lastmod>
       <priority>0</priority>
     </url>
@@ -510,7 +543,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/authors/j-edwards/</loc>
+      <loc>/authors/j-edwards/</loc>
       <lastmod>2017-12-06T00:00:00+11:00</lastmod>
       <priority>0</priority>
     </url>
@@ -519,7 +552,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/authors/j-taylor/</loc>
+      <loc>/authors/j-taylor/</loc>
       <lastmod>2017-12-06T00:00:00+11:00</lastmod>
       <priority>0</priority>
     </url>
@@ -528,7 +561,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/authors/jp-martinant/</loc>
+      <loc>/authors/jp-martinant/</loc>
       <lastmod>2017-12-06T00:00:00+11:00</lastmod>
       <priority>0</priority>
     </url>
@@ -537,7 +570,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/authors/jpf-ral/</loc>
+      <loc>/authors/jpf-ral/</loc>
       <lastmod>2017-12-06T00:00:00+11:00</lastmod>
       <priority>0</priority>
     </url>
@@ -546,7 +579,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/authors/k-cox/</loc>
+      <loc>/authors/k-cox/</loc>
       <lastmod>2011-05-04T00:00:00+10:00</lastmod>
       <priority>0</priority>
     </url>
@@ -555,7 +588,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/authors/k-mathews/</loc>
+      <loc>/authors/k-mathews/</loc>
       <lastmod>2018-07-21T00:00:00+10:00</lastmod>
       <priority>0</priority>
     </url>
@@ -564,7 +597,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/authors/l-hallas/</loc>
+      <loc>/authors/l-hallas/</loc>
       <lastmod>2011-05-04T00:00:00+10:00</lastmod>
       <priority>0</priority>
     </url>
@@ -573,7 +606,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/authors/l-yang/</loc>
+      <loc>/authors/l-yang/</loc>
       <lastmod>2011-05-04T00:00:00+10:00</lastmod>
       <priority>0</priority>
     </url>
@@ -582,7 +615,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/authors/m-inada/</loc>
+      <loc>/authors/m-inada/</loc>
       <lastmod>2011-05-04T00:00:00+10:00</lastmod>
       <priority>0</priority>
     </url>
@@ -591,7 +624,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/authors/p-telfer/</loc>
+      <loc>/authors/p-telfer/</loc>
       <lastmod>2017-12-06T00:00:00+11:00</lastmod>
       <priority>0</priority>
     </url>
@@ -600,7 +633,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/authors/pauline-oshaughnessy/</loc>
+      <loc>/authors/pauline-oshaughnessy/</loc>
       <lastmod>2018-12-06T00:00:00+11:00</lastmod>
       <priority>0</priority>
     </url>
@@ -609,7 +642,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/project/</loc>
+      <loc>/project/</loc>
       <lastmod>2016-04-27T00:00:00+10:00</lastmod>
       <priority>0</priority>
     </url>
@@ -618,7 +651,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/publication_types/</loc>
+      <loc>/publication_types/</loc>
       <lastmod>2018-03-01T00:00:00+11:00</lastmod>
       <priority>0</priority>
     </url>
@@ -627,7 +660,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/tags/r/</loc>
+      <loc>/tags/r/</loc>
       <lastmod>2018-08-28T00:00:00+10:00</lastmod>
       <priority>0</priority>
     </url>
@@ -636,7 +669,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/authors/r-gaire/</loc>
+      <loc>/authors/r-gaire/</loc>
       <lastmod>2017-12-06T00:00:00+11:00</lastmod>
       <priority>0</priority>
     </url>
@@ -645,7 +678,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/authors/s-c-c-chung/</loc>
+      <loc>/authors/s-c-c-chung/</loc>
       <lastmod>2011-05-04T00:00:00+10:00</lastmod>
       <priority>0</priority>
     </url>
@@ -654,7 +687,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/authors/s-li/</loc>
+      <loc>/authors/s-li/</loc>
       <lastmod>2017-12-06T00:00:00+11:00</lastmod>
       <priority>0</priority>
     </url>
@@ -663,7 +696,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/authors/t-bailey/</loc>
+      <loc>/authors/t-bailey/</loc>
       <lastmod>2014-03-24T00:00:00+11:00</lastmod>
       <priority>0</priority>
     </url>
@@ -672,7 +705,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/tags/</loc>
+      <loc>/tags/</loc>
       <lastmod>2017-12-02T00:00:00+11:00</lastmod>
       <priority>0</priority>
     </url>
@@ -681,7 +714,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/authors/u-keich/</loc>
+      <loc>/authors/u-keich/</loc>
       <lastmod>2014-03-24T00:00:00+11:00</lastmod>
       <priority>0</priority>
     </url>
@@ -690,7 +723,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/authors/w-s-noble/</loc>
+      <loc>/authors/w-s-noble/</loc>
       <lastmod>2011-05-04T00:00:00+10:00</lastmod>
       <priority>0</priority>
     </url>
@@ -699,7 +732,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/tags/applied-statistics/</loc>
+      <loc>/tags/applied-statistics/</loc>
       <lastmod>2016-04-27T00:00:00+10:00</lastmod>
       <priority>0</priority>
     </url>
@@ -708,7 +741,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/tags/bioinformatics/</loc>
+      <loc>/tags/bioinformatics/</loc>
       <lastmod>2016-04-27T00:00:00+10:00</lastmod>
       <priority>0</priority>
     </url>
@@ -717,7 +750,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/tags/data-vis/</loc>
+      <loc>/tags/data-vis/</loc>
       <lastmod>2018-10-18T00:00:00+11:00</lastmod>
       <priority>0</priority>
     </url>
@@ -726,7 +759,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/tags/factor-analytic/</loc>
+      <loc>/tags/factor-analytic/</loc>
       <lastmod>2018-03-01T00:00:00+11:00</lastmod>
       <priority>0</priority>
     </url>
@@ -735,7 +768,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/tags/genomic-prediction/</loc>
+      <loc>/tags/genomic-prediction/</loc>
       <lastmod>2018-07-21T00:00:00+10:00</lastmod>
       <priority>0</priority>
     </url>
@@ -744,7 +777,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/tags/lasso/</loc>
+      <loc>/tags/lasso/</loc>
       <lastmod>2018-03-01T00:00:00+11:00</lastmod>
       <priority>0</priority>
     </url>
@@ -753,7 +786,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/tags/latent-variable-model/</loc>
+      <loc>/tags/latent-variable-model/</loc>
       <lastmod>2018-03-01T00:00:00+11:00</lastmod>
       <priority>0</priority>
     </url>
@@ -762,7 +795,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/tags/mixed-model/</loc>
+      <loc>/tags/mixed-model/</loc>
       <lastmod>2017-01-10T00:00:00+11:00</lastmod>
       <priority>0</priority>
     </url>
@@ -771,7 +804,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/tags/mixed-models/</loc>
+      <loc>/tags/mixed-models/</loc>
       <lastmod>2018-12-06T00:00:00+11:00</lastmod>
       <priority>0</priority>
     </url>
@@ -780,7 +813,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/tags/mixture-distribution/</loc>
+      <loc>/tags/mixture-distribution/</loc>
       <lastmod>2017-12-06T00:00:00+11:00</lastmod>
       <priority>0</priority>
     </url>
@@ -789,7 +822,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/tags/motif/</loc>
+      <loc>/tags/motif/</loc>
       <lastmod>2014-03-24T00:00:00+11:00</lastmod>
       <priority>0</priority>
     </url>
@@ -798,7 +831,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/tags/outlier-detection/</loc>
+      <loc>/tags/outlier-detection/</loc>
       <lastmod>2018-07-19T00:00:00+10:00</lastmod>
       <priority>0</priority>
     </url>
@@ -807,7 +840,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/tags/robust-methods/</loc>
+      <loc>/tags/robust-methods/</loc>
       <lastmod>2018-07-19T00:00:00+10:00</lastmod>
       <priority>0</priority>
     </url>
@@ -816,7 +849,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/tags/social/</loc>
+      <loc>/tags/social/</loc>
       <lastmod>2019-01-01T00:00:00+11:00</lastmod>
       <priority>0</priority>
     </url>
@@ -825,7 +858,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/tags/statistcal-computing/</loc>
+      <loc>/tags/statistcal-computing/</loc>
       <lastmod>2016-04-27T00:00:00+10:00</lastmod>
       <priority>0</priority>
     </url>
@@ -834,7 +867,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/tags/statistical-literacy/</loc>
+      <loc>/tags/statistical-literacy/</loc>
       <lastmod>2016-04-27T00:00:00+10:00</lastmod>
       <priority>0</priority>
     </url>
@@ -843,7 +876,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/tags/statistical-methods/</loc>
+      <loc>/tags/statistical-methods/</loc>
       <lastmod>2016-04-27T00:00:00+10:00</lastmod>
       <priority>0</priority>
     </url>
@@ -852,7 +885,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/tags/statistics-for-grains-industry/</loc>
+      <loc>/tags/statistics-for-grains-industry/</loc>
       <lastmod>2016-04-27T00:00:00+10:00</lastmod>
       <priority>0</priority>
     </url>
@@ -861,7 +894,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/tags/wheat/</loc>
+      <loc>/tags/wheat/</loc>
       <lastmod>2018-07-21T00:00:00+10:00</lastmod>
       <priority>0</priority>
     </url>
@@ -870,7 +903,7 @@
     
     <url>
     
-      <loc>https://emitanaka.github.io/tags/yeast/</loc>
+      <loc>/tags/yeast/</loc>
       <lastmod>2011-05-04T00:00:00+10:00</lastmod>
       <priority>0</priority>
     </url>

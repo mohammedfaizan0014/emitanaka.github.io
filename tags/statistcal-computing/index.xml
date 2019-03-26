@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>statistcal-computing on Emi Tanaka</title>
-    <link>https://emitanaka.github.io/tags/statistcal-computing/</link>
+    <link>/tags/statistcal-computing/</link>
     <description>Recent content in statistcal-computing on Emi Tanaka</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018-2019</copyright>
     <lastBuildDate>Wed, 27 Apr 2016 00:00:00 +1000</lastBuildDate>
     
-	<atom:link href="https://emitanaka.github.io/tags/statistcal-computing/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/statistcal-computing/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Statistical Computing</title>
-      <link>https://emitanaka.github.io/project/statistical-computing/</link>
+      <link>/project/statistical-computing/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +1000</pubDate>
       
-      <guid>https://emitanaka.github.io/project/statistical-computing/</guid>
+      <guid>/project/statistical-computing/</guid>
       <description></description>
     </item>
     

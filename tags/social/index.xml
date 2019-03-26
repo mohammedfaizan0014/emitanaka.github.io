@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>social on Emi Tanaka</title>
-    <link>https://emitanaka.github.io/tags/social/</link>
+    <link>/tags/social/</link>
     <description>Recent content in social on Emi Tanaka</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018-2019</copyright>
     <lastBuildDate>Tue, 01 Jan 2019 00:00:00 +1100</lastBuildDate>
     
-	<atom:link href="https://emitanaka.github.io/tags/social/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/social/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Model selection and estimation for latent variable models</title>
-      <link>https://emitanaka.github.io/talk/2019-06-25-ecosta2019/</link>
+      <link>/talk/2019-06-25-ecosta2019/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +1100</pubDate>
       
-      <guid>https://emitanaka.github.io/talk/2019-06-25-ecosta2019/</guid>
+      <guid>/talk/2019-06-25-ecosta2019/</guid>
       <description>Invited Session &amp;ldquo;Dimension Reduction&amp;rdquo; organised by Kei Hirose.</description>
     </item>
     
     <item>
       <title>What can social media do for academic and professional statisticians?</title>
-      <link>https://emitanaka.github.io/talk/2019-08-18-isiwsc2019/</link>
+      <link>/talk/2019-08-18-isiwsc2019/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +1100</pubDate>
       
-      <guid>https://emitanaka.github.io/talk/2019-08-18-isiwsc2019/</guid>
+      <guid>/talk/2019-08-18-isiwsc2019/</guid>
       <description>Special Topic Session organised by Mst Howlader Tamanna with other speakers:
  Louise M Ryan John Bailer Anil Gore  </description>
     </item>

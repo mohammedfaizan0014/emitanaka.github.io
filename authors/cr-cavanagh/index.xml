@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>CR Cavanagh on Emi Tanaka</title>
-    <link>https://emitanaka.github.io/authors/cr-cavanagh/</link>
+    <link>/authors/cr-cavanagh/</link>
     <description>Recent content in CR Cavanagh on Emi Tanaka</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018-2019</copyright>
     <lastBuildDate>Wed, 06 Dec 2017 00:00:00 +1100</lastBuildDate>
     
-	<atom:link href="https://emitanaka.github.io/authors/cr-cavanagh/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/authors/cr-cavanagh/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Increased accuracy of starch granule type quantification using mixture distributions</title>
-      <link>https://emitanaka.github.io/publication/2017-12-06-starch_mixture/</link>
+      <link>/publication/2017-12-06-starch_mixture/</link>
       <pubDate>Wed, 06 Dec 2017 00:00:00 +1100</pubDate>
       
-      <guid>https://emitanaka.github.io/publication/2017-12-06-starch_mixture/</guid>
+      <guid>/publication/2017-12-06-starch_mixture/</guid>
       <description></description>
     </item>
     
