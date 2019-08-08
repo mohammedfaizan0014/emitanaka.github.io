@@ -155,35 +155,6 @@ frameWidget(hcout)&lt;/code&gt;&lt;/pre&gt;
     </item>
     
     <item>
-      <title>Statistical Methods for Plant Breeding</title>
-      <link>/workshop/plantbreeding/</link>
-      <pubDate>Sun, 09 Sep 2018 00:00:00 +1000</pubDate>
-      
-      <guid>/workshop/plantbreeding/</guid>
-      <description>&lt;ul&gt;
-&lt;li&gt;📊 &lt;a href=&#34;http://bit.ly/UT-WS-DataVis&#34; target=&#34;_blank&#34;&gt;Data Visualisation in R&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;💾 &lt;a href=&#34;http://bit.ly/UT-WS-asreml-R&#34; target=&#34;_blank&#34;&gt;Introduction to asreml-R&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;📈 &lt;a href=&#34;http://bit.ly/UT-WS-FAmodel&#34; target=&#34;_blank&#34;&gt;Factor analytic model for genotype by environment effects&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;🚜 &lt;a href=&#34;http://bit.ly/UT-WS-spatial&#34; target=&#34;_blank&#34;&gt;Spatial analysis of crop field trials&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;💠 &lt;a href=&#34;http://bit.ly/UT-WS-expdesign&#34; target=&#34;_blank&#34;&gt;Experimental design&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Statistical Computing</title>
-      <link>/workshop/statscomputing/</link>
-      <pubDate>Sun, 09 Sep 2018 00:00:00 +1000</pubDate>
-      
-      <guid>/workshop/statscomputing/</guid>
-      <description>&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://bit.ly/rladies-sydney-shiny&#34; target=&#34;_blank&#34;&gt;Shiny September: Making an interactive web app with R&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://bit.ly/rladies-melb-blogdown&#34; target=&#34;_blank&#34;&gt;Getting down and up with blogging in R&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Effective storytelling via data visualisation</title>
       <link>/talk/2018-08-30-asc2018/</link>
       <pubDate>Thu, 30 Aug 2018 00:00:00 +1000</pubDate>
@@ -264,6 +235,24 @@ Making hexagon stickers have become popular for R-packages with the range of pac
 
 &lt;p&gt;&lt;a href=&#34;https://www.stickermule.com/au/unlock?ref_id=9651301701&amp;utm_content=728x90&amp;utm_medium=embed&amp;utm_source=invite&#34; target=&#34;_blank&#34;&gt;&lt;img alt=&#34;Custom Stickers, Die Cut Stickers, Bumper Stickers - Sticker Mule&#34; border=&#34;0&#34; height=&#34;90&#34; src=&#34;https://res.cloudinary.com/print-bear/image/upload/v1531752798/banners/stickermule-invite-friends-large.jpg&#34; width=&#34;728&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>Order Selection and Sparsity in Latent Variable Models via the Ordered Factor LASSO</title>
+      <link>/publication/2018-03-15-ofal/</link>
+      <pubDate>Thu, 01 Mar 2018 00:00:00 +1100</pubDate>
+      
+      <guid>/publication/2018-03-15-ofal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Increased accuracy of starch granule type quantification using mixture distributions</title>
+      <link>/publication/2017-12-06-starch_mixture/</link>
+      <pubDate>Wed, 06 Dec 2017 00:00:00 +1100</pubDate>
+      
+      <guid>/publication/2017-12-06-starch_mixture/</guid>
+      <description></description>
     </item>
     
   </channel>
