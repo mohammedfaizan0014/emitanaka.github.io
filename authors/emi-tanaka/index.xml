@@ -6,7 +6,7 @@
     <description>Recent content on Emi Tanaka</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2018-2019</copyright>
+    <copyright>&amp;copy; 2018-2020</copyright>
     <lastBuildDate>Tue, 01 Jan 2019 00:00:00 +1100</lastBuildDate>
     
 	<atom:link href="/authors/emi-tanaka/index.xml" rel="self" type="application/rss+xml" />
@@ -64,9 +64,7 @@
       <pubDate>Fri, 06 Apr 2018 00:00:00 +1000</pubDate>
       
       <guid>/post/hexsticker/</guid>
-      <description>Making hexagon stickers have become popular for R-packages with the range of packages associated with RStudio, such as ggplot2, knitr, devtools and so on, having its own hex stickers.
-This trend even spanned a R-package hexSticker that can be found here.
-Powerpoint template for hex stickers For the sticker that I made for my R-package shinycustomloader, I found it easier, partly due to its long name, to use powerpoint to manipulate the image and create a semi-circular text.</description>
+      <description>Making hexagon stickers have become popular for R-packages with the range of packages associated with RStudio, such as &lt;code&gt;ggplot2&lt;/code&gt;, &lt;code&gt;knitr&lt;/code&gt;, &lt;code&gt;devtools&lt;/code&gt; and so on, having its own hex stickers. For the sticker that I made for my R-package &lt;a href=&#34;https://github.com/emitanaka/shinycustomloader&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;shinycustomloader&lt;/code&gt;&lt;/a&gt;, I found it easier, partly due to its long name, to use powerpoint to manipulate the image and create a semi-circular text. It took longer than what I had hoped to get the hexagon shape right. You may like to save your own time by &lt;strong&gt;downloading my powerpoint template&lt;/strong&gt; &lt;a href=&#34;hexsticker.pptx&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt; as a base to make your own.</description>
     </item>
     
     <item>

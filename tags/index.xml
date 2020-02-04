@@ -6,45 +6,72 @@
     <description>Recent content in Tags on Emi Tanaka</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2018-2019</copyright>
-    <lastBuildDate>Sat, 02 Dec 2017 00:00:00 +1100</lastBuildDate>
+    <copyright>&amp;copy; 2018-2020</copyright>
+    <lastBuildDate>Wed, 01 Jan 2020 00:00:00 +1100</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>GxE</title>
-      <link>/tags/gxe/</link>
-      <pubDate>Sat, 02 Dec 2017 00:00:00 +1100</pubDate>
+      <title>genomic-prediction</title>
+      <link>/tags/genomic-prediction/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +1100</pubDate>
       
-      <guid>/tags/gxe/</guid>
+      <guid>/tags/genomic-prediction/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>R</title>
-      <link>/tags/r/</link>
-      <pubDate>Tue, 28 Aug 2018 00:00:00 +1000</pubDate>
+      <title>outlier-detection</title>
+      <link>/tags/outlier-detection/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +1100</pubDate>
       
-      <guid>/tags/r/</guid>
+      <guid>/tags/outlier-detection/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>applied-statistics</title>
-      <link>/tags/applied-statistics/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +1000</pubDate>
+      <title>wheat</title>
+      <link>/tags/wheat/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +1100</pubDate>
       
-      <guid>/tags/applied-statistics/</guid>
+      <guid>/tags/wheat/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>bioinformatics</title>
-      <link>/tags/bioinformatics/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +1000</pubDate>
+      <title>modelling</title>
+      <link>/tags/modelling/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +1100</pubDate>
       
-      <guid>/tags/bioinformatics/</guid>
+      <guid>/tags/modelling/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>plant breeding</title>
+      <link>/tags/plant-breeding/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +1100</pubDate>
+      
+      <guid>/tags/plant-breeding/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>social</title>
+      <link>/tags/social/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +1100</pubDate>
+      
+      <guid>/tags/social/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mixed-models</title>
+      <link>/tags/mixed-models/</link>
+      <pubDate>Thu, 06 Dec 2018 00:00:00 +1100</pubDate>
+      
+      <guid>/tags/mixed-models/</guid>
       <description></description>
     </item>
     
@@ -58,20 +85,20 @@
     </item>
     
     <item>
+      <title>R</title>
+      <link>/tags/r/</link>
+      <pubDate>Tue, 28 Aug 2018 00:00:00 +1000</pubDate>
+      
+      <guid>/tags/r/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>factor-analytic</title>
       <link>/tags/factor-analytic/</link>
       <pubDate>Thu, 01 Mar 2018 00:00:00 +1100</pubDate>
       
       <guid>/tags/factor-analytic/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>genomic-prediction</title>
-      <link>/tags/genomic-prediction/</link>
-      <pubDate>Sat, 21 Jul 2018 00:00:00 +1000</pubDate>
-      
-      <guid>/tags/genomic-prediction/</guid>
       <description></description>
     </item>
     
@@ -94,24 +121,6 @@
     </item>
     
     <item>
-      <title>mixed-model</title>
-      <link>/tags/mixed-model/</link>
-      <pubDate>Tue, 10 Jan 2017 00:00:00 +1100</pubDate>
-      
-      <guid>/tags/mixed-model/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>mixed-models</title>
-      <link>/tags/mixed-models/</link>
-      <pubDate>Thu, 06 Dec 2018 00:00:00 +1100</pubDate>
-      
-      <guid>/tags/mixed-models/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>mixture-distribution</title>
       <link>/tags/mixture-distribution/</link>
       <pubDate>Wed, 06 Dec 2017 00:00:00 +1100</pubDate>
@@ -121,56 +130,38 @@
     </item>
     
     <item>
-      <title>modelling</title>
-      <link>/tags/modelling/</link>
-      <pubDate>Tue, 01 Jan 2019 00:00:00 +1100</pubDate>
+      <title>GxE</title>
+      <link>/tags/gxe/</link>
+      <pubDate>Sat, 02 Dec 2017 00:00:00 +1100</pubDate>
       
-      <guid>/tags/modelling/</guid>
+      <guid>/tags/gxe/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>motif</title>
-      <link>/tags/motif/</link>
-      <pubDate>Mon, 24 Mar 2014 00:00:00 +1100</pubDate>
+      <title>mixed-model</title>
+      <link>/tags/mixed-model/</link>
+      <pubDate>Tue, 10 Jan 2017 00:00:00 +1100</pubDate>
       
-      <guid>/tags/motif/</guid>
+      <guid>/tags/mixed-model/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>outlier-detection</title>
-      <link>/tags/outlier-detection/</link>
-      <pubDate>Thu, 19 Jul 2018 00:00:00 +1000</pubDate>
+      <title>applied-statistics</title>
+      <link>/tags/applied-statistics/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +1000</pubDate>
       
-      <guid>/tags/outlier-detection/</guid>
+      <guid>/tags/applied-statistics/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>plant breeding</title>
-      <link>/tags/plant-breeding/</link>
-      <pubDate>Tue, 01 Jan 2019 00:00:00 +1100</pubDate>
+      <title>bioinformatics</title>
+      <link>/tags/bioinformatics/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +1000</pubDate>
       
-      <guid>/tags/plant-breeding/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>robust-methods</title>
-      <link>/tags/robust-methods/</link>
-      <pubDate>Thu, 19 Jul 2018 00:00:00 +1000</pubDate>
-      
-      <guid>/tags/robust-methods/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>social</title>
-      <link>/tags/social/</link>
-      <pubDate>Tue, 01 Jan 2019 00:00:00 +1100</pubDate>
-      
-      <guid>/tags/social/</guid>
+      <guid>/tags/bioinformatics/</guid>
       <description></description>
     </item>
     
@@ -211,11 +202,11 @@
     </item>
     
     <item>
-      <title>wheat</title>
-      <link>/tags/wheat/</link>
-      <pubDate>Sat, 21 Jul 2018 00:00:00 +1000</pubDate>
+      <title>motif</title>
+      <link>/tags/motif/</link>
+      <pubDate>Mon, 24 Mar 2014 00:00:00 +1100</pubDate>
       
-      <guid>/tags/wheat/</guid>
+      <guid>/tags/motif/</guid>
       <description></description>
     </item>
     

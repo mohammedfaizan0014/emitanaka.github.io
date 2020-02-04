@@ -1,11 +1,143 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+    
+    <url>
+    
+      <loc>/publication_types/1/</loc>
+      <lastmod>2020-01-03T00:00:00+11:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/authors/</loc>
+      <lastmod>2020-01-03T00:00:00+11:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/authors/e-tanaka/</loc>
+      <lastmod>2020-01-03T00:00:00+11:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/</loc>
+      <lastmod>2020-01-03T00:00:00+11:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/authors/fkc-hui/</loc>
+      <lastmod>2020-01-03T00:00:00+11:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/publication_types/</loc>
+      <lastmod>2020-01-03T00:00:00+11:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/publication/2019-12-31-symbolic-lmm/</loc>
+      <lastmod>2020-01-03T00:00:00+11:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/publication_types/2/</loc>
+      <lastmod>2020-01-01T00:00:00+11:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/publication/2020-01-01-outlier_detection/</loc>
+      <lastmod>2020-01-01T00:00:00+11:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/</loc>
+      <lastmod>2020-01-01T00:00:00+11:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/genomic-prediction/</loc>
+      <lastmod>2020-01-01T00:00:00+11:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/outlier-detection/</loc>
+      <lastmod>2020-01-01T00:00:00+11:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/wheat/</loc>
+      <lastmod>2020-01-01T00:00:00+11:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
   
     
     <url>
     
       <loc>/post/travel2019/</loc>
       <lastmod>2019-03-26T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/authors/emi-tanaka/</loc>
+      <lastmod>2019-01-01T00:00:00+11:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/authors/francis-k.-c.-hui/</loc>
+      <lastmod>2019-01-01T00:00:00+11:00</lastmod>
+      <priority>0</priority>
     </url>
     
   
@@ -44,6 +176,51 @@
     
     <url>
     
+      <loc>/tags/modelling/</loc>
+      <lastmod>2019-01-01T00:00:00+11:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/plant-breeding/</loc>
+      <lastmod>2019-01-01T00:00:00+11:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/social/</loc>
+      <lastmod>2019-01-01T00:00:00+11:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/authors/chong-you/</loc>
+      <lastmod>2018-12-06T00:00:00+11:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/authors/chris-brien/</loc>
+      <lastmod>2018-12-06T00:00:00+11:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/talk/2018-12-06-aasc2018/</loc>
       <lastmod>2018-12-06T00:00:00+11:00</lastmod>
     </url>
@@ -52,8 +229,35 @@
     
     <url>
     
+      <loc>/authors/pauline-oshaughnessy/</loc>
+      <lastmod>2018-12-06T00:00:00+11:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/mixed-models/</loc>
+      <lastmod>2018-12-06T00:00:00+11:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/talk/2018-10-18-sums2018/</loc>
       <lastmod>2018-10-18T00:00:00+11:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/data-vis/</loc>
+      <lastmod>2018-10-18T00:00:00+11:00</lastmod>
+      <priority>0</priority>
     </url>
     
   
@@ -92,16 +296,53 @@
     
     <url>
     
-      <loc>/publication/2018-07-21-two_stage/</loc>
-      <lastmod>2018-07-21T00:00:00+10:00</lastmod>
+      <loc>/tags/r/</loc>
+      <lastmod>2018-08-28T00:00:00+10:00</lastmod>
+      <priority>0</priority>
     </url>
     
   
     
     <url>
     
-      <loc>/publication/2018-07-19-outlier_detection/</loc>
-      <lastmod>2018-07-19T00:00:00+10:00</lastmod>
+      <loc>/publication_types/3/</loc>
+      <lastmod>2018-07-21T00:00:00+10:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/authors/a-b-smith/</loc>
+      <lastmod>2018-07-21T00:00:00+10:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/authors/b-r-cullis/</loc>
+      <lastmod>2018-07-21T00:00:00+10:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/authors/k-mathews/</loc>
+      <lastmod>2018-07-21T00:00:00+10:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/publication/2018-07-21-two_stage/</loc>
+      <lastmod>2018-07-21T00:00:00+10:00</lastmod>
     </url>
     
   
@@ -124,8 +365,89 @@
     
     <url>
     
+      <loc>/authors/d-warton/</loc>
+      <lastmod>2018-03-01T00:00:00+11:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/publication/2018-03-15-ofal/</loc>
       <lastmod>2018-03-01T00:00:00+11:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/factor-analytic/</loc>
+      <lastmod>2018-03-01T00:00:00+11:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/lasso/</loc>
+      <lastmod>2018-03-01T00:00:00+11:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/latent-variable-model/</loc>
+      <lastmod>2018-03-01T00:00:00+11:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/authors/a-norman/</loc>
+      <lastmod>2017-12-06T00:00:00+11:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/authors/a-whan/</loc>
+      <lastmod>2017-12-06T00:00:00+11:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/authors/br-cullis/</loc>
+      <lastmod>2017-12-06T00:00:00+11:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/authors/cr-cavanagh/</loc>
+      <lastmod>2017-12-06T00:00:00+11:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/authors/h-kuchel/</loc>
+      <lastmod>2017-12-06T00:00:00+11:00</lastmod>
+      <priority>0</priority>
     </url>
     
   
@@ -142,6 +464,96 @@
     
       <loc>/publication/2017-09-08-genomic_prediction_agt/</loc>
       <lastmod>2017-12-06T00:00:00+11:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/authors/j-edwards/</loc>
+      <lastmod>2017-12-06T00:00:00+11:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/authors/j-taylor/</loc>
+      <lastmod>2017-12-06T00:00:00+11:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/authors/jp-martinant/</loc>
+      <lastmod>2017-12-06T00:00:00+11:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/authors/jpf-ral/</loc>
+      <lastmod>2017-12-06T00:00:00+11:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/authors/p-telfer/</loc>
+      <lastmod>2017-12-06T00:00:00+11:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/authors/r-gaire/</loc>
+      <lastmod>2017-12-06T00:00:00+11:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/authors/s-li/</loc>
+      <lastmod>2017-12-06T00:00:00+11:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/mixture-distribution/</loc>
+      <lastmod>2017-12-06T00:00:00+11:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/authors/david-warton/</loc>
+      <lastmod>2017-12-02T00:00:00+11:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/gxe/</loc>
+      <lastmod>2017-12-02T00:00:00+11:00</lastmod>
+      <priority>0</priority>
     </url>
     
   
@@ -180,6 +592,15 @@
     
     <url>
     
+      <loc>/tags/mixed-model/</loc>
+      <lastmod>2017-01-10T00:00:00+11:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/post/</loc>
       <lastmod>2017-01-01T00:00:00+11:00</lastmod>
     </url>
@@ -198,6 +619,15 @@
     
       <loc>/talk/</loc>
       <lastmod>2017-01-01T00:00:00+11:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/project/</loc>
+      <lastmod>2016-04-27T00:00:00+10:00</lastmod>
+      <priority>0</priority>
     </url>
     
   
@@ -244,494 +674,6 @@
     
     <url>
     
-      <loc>/publication/2014-03-24-motif_sig/</loc>
-      <lastmod>2014-03-24T00:00:00+11:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/publication/2011-05-04-motif_comparison/</loc>
-      <lastmod>2011-05-04T00:00:00+10:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/publication/2011-12-28-ars_selection/</loc>
-      <lastmod>2011-05-04T00:00:00+10:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/author/admin/</loc>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/publication_types/2/</loc>
-      <lastmod>2018-03-01T00:00:00+11:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/publication_types/3/</loc>
-      <lastmod>2018-07-21T00:00:00+10:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/authors/a-b-smith/</loc>
-      <lastmod>2018-07-21T00:00:00+10:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/authors/a-norman/</loc>
-      <lastmod>2017-12-06T00:00:00+11:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/authors/a-seher/</loc>
-      <lastmod>2011-05-04T00:00:00+10:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/authors/a-whan/</loc>
-      <lastmod>2017-12-06T00:00:00+11:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/author/</loc>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/authors/</loc>
-      <lastmod>2018-07-21T00:00:00+10:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/authors/b-r-cullis/</loc>
-      <lastmod>2018-07-21T00:00:00+10:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/authors/b-tye/</loc>
-      <lastmod>2011-05-04T00:00:00+10:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/authors/br-cullis/</loc>
-      <lastmod>2017-12-06T00:00:00+11:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/authors/c-e-grant/</loc>
-      <lastmod>2011-05-04T00:00:00+10:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/authors/cr-cavanagh/</loc>
-      <lastmod>2017-12-06T00:00:00+11:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/categories/</loc>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/authors/chong-you/</loc>
-      <lastmod>2018-12-06T00:00:00+11:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/authors/chris-brien/</loc>
-      <lastmod>2018-12-06T00:00:00+11:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/authors/d-warton/</loc>
-      <lastmod>2018-03-01T00:00:00+11:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/authors/david-warton/</loc>
-      <lastmod>2017-12-02T00:00:00+11:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/authors/e-cha/</loc>
-      <lastmod>2011-05-04T00:00:00+10:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/authors/e-tanaka/</loc>
-      <lastmod>2018-07-21T00:00:00+10:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/</loc>
-      <lastmod>2017-10-15T00:00:00+11:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/authors/emi-tanaka/</loc>
-      <lastmod>2019-01-01T00:00:00+11:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/authors/fkc-hui/</loc>
-      <lastmod>2018-03-01T00:00:00+11:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/authors/francis-k.-c.-hui/</loc>
-      <lastmod>2019-01-01T00:00:00+11:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/authors/g-kang/</loc>
-      <lastmod>2011-05-04T00:00:00+10:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/gxe/</loc>
-      <lastmod>2017-12-02T00:00:00+11:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/authors/h-kuchel/</loc>
-      <lastmod>2017-12-06T00:00:00+11:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/authors/h-pace/</loc>
-      <lastmod>2011-05-04T00:00:00+10:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/authors/i-liachko/</loc>
-      <lastmod>2011-05-04T00:00:00+10:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/authors/j-barrow/</loc>
-      <lastmod>2011-05-04T00:00:00+10:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/authors/j-edwards/</loc>
-      <lastmod>2017-12-06T00:00:00+11:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/authors/j-taylor/</loc>
-      <lastmod>2017-12-06T00:00:00+11:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/authors/jp-martinant/</loc>
-      <lastmod>2017-12-06T00:00:00+11:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/authors/jpf-ral/</loc>
-      <lastmod>2017-12-06T00:00:00+11:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/authors/k-cox/</loc>
-      <lastmod>2011-05-04T00:00:00+10:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/authors/k-mathews/</loc>
-      <lastmod>2018-07-21T00:00:00+10:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/authors/l-hallas/</loc>
-      <lastmod>2011-05-04T00:00:00+10:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/authors/l-yang/</loc>
-      <lastmod>2011-05-04T00:00:00+10:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/authors/m-inada/</loc>
-      <lastmod>2011-05-04T00:00:00+10:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/authors/p-telfer/</loc>
-      <lastmod>2017-12-06T00:00:00+11:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/authors/pauline-oshaughnessy/</loc>
-      <lastmod>2018-12-06T00:00:00+11:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/project/</loc>
-      <lastmod>2016-04-27T00:00:00+10:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/publication_types/</loc>
-      <lastmod>2018-03-01T00:00:00+11:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/r/</loc>
-      <lastmod>2018-08-28T00:00:00+10:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/authors/r-gaire/</loc>
-      <lastmod>2017-12-06T00:00:00+11:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/authors/s-c-c-chung/</loc>
-      <lastmod>2011-05-04T00:00:00+10:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/authors/s-li/</loc>
-      <lastmod>2017-12-06T00:00:00+11:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/authors/t-bailey/</loc>
-      <lastmod>2014-03-24T00:00:00+11:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/</loc>
-      <lastmod>2017-12-02T00:00:00+11:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/authors/u-keich/</loc>
-      <lastmod>2014-03-24T00:00:00+11:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/authors/w-s-noble/</loc>
-      <lastmod>2011-05-04T00:00:00+10:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
       <loc>/tags/applied-statistics/</loc>
       <lastmod>2016-04-27T00:00:00+10:00</lastmod>
       <priority>0</priority>
@@ -743,132 +685,6 @@
     
       <loc>/tags/bioinformatics/</loc>
       <lastmod>2016-04-27T00:00:00+10:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/data-vis/</loc>
-      <lastmod>2018-10-18T00:00:00+11:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/factor-analytic/</loc>
-      <lastmod>2018-03-01T00:00:00+11:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/genomic-prediction/</loc>
-      <lastmod>2018-07-21T00:00:00+10:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/lasso/</loc>
-      <lastmod>2018-03-01T00:00:00+11:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/latent-variable-model/</loc>
-      <lastmod>2018-03-01T00:00:00+11:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/mixed-model/</loc>
-      <lastmod>2017-01-10T00:00:00+11:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/mixed-models/</loc>
-      <lastmod>2018-12-06T00:00:00+11:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/mixture-distribution/</loc>
-      <lastmod>2017-12-06T00:00:00+11:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/modelling/</loc>
-      <lastmod>2019-01-01T00:00:00+11:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/motif/</loc>
-      <lastmod>2014-03-24T00:00:00+11:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/outlier-detection/</loc>
-      <lastmod>2018-07-19T00:00:00+10:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/plant-breeding/</loc>
-      <lastmod>2019-01-01T00:00:00+11:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/robust-methods/</loc>
-      <lastmod>2018-07-19T00:00:00+10:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/social/</loc>
-      <lastmod>2019-01-01T00:00:00+11:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -912,8 +728,176 @@
     
     <url>
     
-      <loc>/tags/wheat/</loc>
-      <lastmod>2018-07-21T00:00:00+10:00</lastmod>
+      <loc>/publication/2014-03-24-motif_sig/</loc>
+      <lastmod>2014-03-24T00:00:00+11:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/authors/t-bailey/</loc>
+      <lastmod>2014-03-24T00:00:00+11:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/authors/u-keich/</loc>
+      <lastmod>2014-03-24T00:00:00+11:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/motif/</loc>
+      <lastmod>2014-03-24T00:00:00+11:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/authors/a-seher/</loc>
+      <lastmod>2011-05-04T00:00:00+10:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/authors/b-tye/</loc>
+      <lastmod>2011-05-04T00:00:00+10:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/authors/c-e-grant/</loc>
+      <lastmod>2011-05-04T00:00:00+10:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/authors/e-cha/</loc>
+      <lastmod>2011-05-04T00:00:00+10:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/authors/g-kang/</loc>
+      <lastmod>2011-05-04T00:00:00+10:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/authors/h-pace/</loc>
+      <lastmod>2011-05-04T00:00:00+10:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/authors/i-liachko/</loc>
+      <lastmod>2011-05-04T00:00:00+10:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/publication/2011-05-04-motif_comparison/</loc>
+      <lastmod>2011-05-04T00:00:00+10:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/authors/j-barrow/</loc>
+      <lastmod>2011-05-04T00:00:00+10:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/authors/k-cox/</loc>
+      <lastmod>2011-05-04T00:00:00+10:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/authors/l-hallas/</loc>
+      <lastmod>2011-05-04T00:00:00+10:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/authors/l-yang/</loc>
+      <lastmod>2011-05-04T00:00:00+10:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/authors/m-inada/</loc>
+      <lastmod>2011-05-04T00:00:00+10:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/publication/2011-12-28-ars_selection/</loc>
+      <lastmod>2011-05-04T00:00:00+10:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/authors/s-c-c-chung/</loc>
+      <lastmod>2011-05-04T00:00:00+10:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/authors/w-s-noble/</loc>
+      <lastmod>2011-05-04T00:00:00+10:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -923,6 +907,29 @@
     
       <loc>/tags/yeast/</loc>
       <lastmod>2011-05-04T00:00:00+10:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/author/admin/</loc>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/author/</loc>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/categories/</loc>
       <priority>0</priority>
     </url>
     
