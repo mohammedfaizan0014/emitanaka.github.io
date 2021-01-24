@@ -17,16 +17,16 @@ statistics, data science, R and academia.
     <item>
       <title>My Travel Schedule 2019: Building an interactive visualisation as twitter card</title>
       <dc:creator>Emi Tanaka</dc:creator>
-      <link>https://emitanaka.org/posts/2019-03-26-travel2019</link>
+      <link>https://emitanaka.org/posts/travel2019</link>
       <description>Making an interactive schedule heat map with
 interactive twitter card display.</description>
-      <guid>https://emitanaka.org/posts/2019-03-26-travel2019</guid>
+      <guid>https://emitanaka.org/posts/travel2019</guid>
       <pubDate>Tue, 26 Mar 2019 00:00:00 +0000</pubDate>
     </item>
     <item>
       <title>Making a Hexagon Sticker</title>
       <dc:creator>Emi Tanaka</dc:creator>
-      <link>https://emitanaka.org/posts/2018-04-06-hexsticker</link>
+      <link>https://emitanaka.org/posts/hexsticker</link>
       <description>Making hexagon stickers have become popular for
 R-packages with the range of packages associated with
 RStudio, such as `ggplot2`, `knitr`, `devtools` and so
@@ -34,9 +34,9 @@ on, having its own hex stickers. For the sticker that I
 made for my R-package I found it easier, partly due to
 its long name, to use powerpoint to manipulate the
 image and create a semi-circular text.</description>
-      <guid>https://emitanaka.org/posts/2018-04-06-hexsticker</guid>
+      <guid>https://emitanaka.org/posts/hexsticker</guid>
       <pubDate>Fri, 06 Apr 2018 00:00:00 +0000</pubDate>
-      <media:content url="https://emitanaka.org/posts/2018-04-06-hexsticker/hexsticker.gif" medium="image" type="image/gif"/>
+      <media:content url="https://emitanaka.org/posts/hexsticker/hexsticker.gif" medium="image" type="image/gif"/>
     </item>
   </channel>
 </rss>
