@@ -43,6 +43,9 @@ knitr::kable(df, col.names = c("", ""))
 ```
 
 
+You can also find me at various conferences and events. I'm a regular at the [International Biometrics Australiasia Region Conferences](http://biometrics.org.au/conferences.html), involved a lot with [Statistical Society of Australia](https://www.statsoc.org.au/Events-listing) (mostly Victorian Branch) and attend [R-Ladies Melbourne](https://www.meetup.com/en-AU/rladies-melbourne/) (or other chapter sometimes). 
+
+
 ## Website construction 👷🏻‍♀
 
 I decided to redo my website using the [distill](https://rstudio.github.io/distill/) R-package and so some parts of my website is in construction. If you are interested in the source code of this website, you can find it [here](https://github.com/emitanaka/emitanaka.github.io).
