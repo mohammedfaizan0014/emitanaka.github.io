@@ -17,11 +17,11 @@
     },
     {
       "path": "presentations.html",
-      "title": "Talk + Poster listing",
+      "title": "Selected Talk + Poster listing",
       "description": "This section contains the list of my talks and posters where made available. Some talks and posters are missing. \n",
       "author": [],
-      "contents": "\n\n\n\n",
-      "last_modified": "2021-01-24T20:40:02+11:00"
+      "contents": "\n\n\n.thumbnail {\n  border: 1px solid black;\n}\n\n\n\n\n",
+      "last_modified": "2021-01-25T09:32:37+11:00"
     }
   ],
   "collections": ["posts/posts.json", "presentations/presentations.json"]
