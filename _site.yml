@@ -21,6 +21,13 @@ collections:
     share: [twitter, linkedin]
     subscribe: _subscribe.html
     custom: _custom.html
+  presentations:
+    categories: true
+    categories_metadata: true
+    authors_metadata: true
+    feed_iems_max: 20 # default
+    disqus: statistical-genetics
+    share: [twitter, linkedin]
 output_dir: "docs"
 #cookie_consent:
 #  style: simple
@@ -35,6 +42,8 @@ navbar:
   left:
     - text: "Home"
       href: index.html
+    - text: "Presentations"
+      href: presentations.html
     - text: "Blog"
       href: blog.html
   right:
