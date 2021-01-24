@@ -28,6 +28,21 @@ Loading my github calendar data.
 GitHubCalendar(".calendar", "emitanaka");
 </script>
 
-## 👷🏻‍♀
+## You can find me at ...
+
+```{r, echo = FALSE}
+df <- data.frame(what = c('<i class="fab fa-twitter"></i>',
+                           '<i class="fab fa-github"></i>',
+                           '<i class="fas fa-envelope"></i>',
+                           '<i class="fas fa-map-marker-alt"></i>'),
+                 where = c("[statsgen](https://twitter.com/statsgen)",
+                           "[emitanaka](https://github.com/emitanaka)",
+                           "[emitanaka@monash.edu](mailto:emitanaka@monash.edu)",
+                           "Monash University<br>Monash Business School<br>Menzies Building E776<br>Clayton campus, VIC 3800<br>Australia"))
+knitr::kable(df, col.names = c("", ""))
+```
+
+
+## Website construction 👷🏻‍♀
 
 I decided to redo my website using the [distill](https://rstudio.github.io/distill/) R-package and so some parts of my website is in construction. If you are interested in the source code of this website, you can find it [here](https://github.com/emitanaka/emitanaka.github.io).

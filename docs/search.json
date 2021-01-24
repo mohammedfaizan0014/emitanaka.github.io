@@ -3,17 +3,17 @@
     {
       "path": "blog.html",
       "title": "Blog listing",
-      "description": "Some additional details about the blog\n",
+      "description": "This blog contains a mixture of posts on statistics, data science, R and academia.\n",
       "author": [],
       "contents": "\n\n\n\n",
-      "last_modified": "2021-01-24T19:38:18+11:00"
+      "last_modified": "2021-01-24T20:23:27+11:00"
     },
     {
       "path": "index.html",
       "title": "Emi Tanaka",
       "author": [],
-      "contents": "\nHi! Welcome to my website!\n I’m a lecturer (equivalent to assistant professor) in statistics at Monash University, Melbourne, Australia. Research-wise, I’m interested in developing useful statistical tools and methods. My experience in application is in bioinformatics and agriculture (particularly crop breeding). My current active research area is experimental design, mixed models and statistical graphics.\nI speak English, Japanese (conversational) and R (base + tidyverse) fluently. I’ve lived in Australia almost all of my life (+-10 years standard deviation) and my university major was mathematics and statistics. My PhD, obtained at the School of Mathematics and Statistics, University of Sydney in 2015, is in statistical bioinformatics with most of my code written in Python + Bash (both of which I am rusty now). I also like to dabble on front-end web development (HTML/CSS/JS).\n\n\n\nLoading my github calendar data.\n\n\n\nGitHubCalendar(\".calendar\", \"emitanaka\");\n👷🏻‍♀\nI decided to redo my website using the distill R-package and so some parts of my website is in construction. If you are interested in the source code of this website, you can find it here.\n\n\n\n",
-      "last_modified": "2021-01-24T20:03:17+11:00"
+      "contents": "\nHi! Welcome to my website!\n I’m a lecturer (equivalent to assistant professor) in statistics at Monash University, Melbourne, Australia. Research-wise, I’m interested in developing useful statistical tools and methods. My experience in application is in bioinformatics and agriculture (particularly crop breeding). My current active research area is experimental design, mixed models and statistical graphics.\nI speak English, Japanese (conversational) and R (base + tidyverse) fluently. I’ve lived in Australia almost all of my life (+-10 years standard deviation) and my university major was mathematics and statistics. My PhD, obtained at the School of Mathematics and Statistics, University of Sydney in 2015, is in statistical bioinformatics with most of my code written in Python + Bash (both of which I am rusty now). I also like to dabble on front-end web development (HTML/CSS/JS).\n\n\n\nLoading my github calendar data.\n\n\n\nGitHubCalendar(\".calendar\", \"emitanaka\");\nYou can find me at …\n\n\nstatsgen\n\nemitanaka\n\nemitanaka@monash.edu\n\nMonash UniversityMonash Business SchoolMenzies Building E776Clayton campus, VIC 3800Australia\n\nWebsite construction 👷🏻‍♀\nI decided to redo my website using the distill R-package and so some parts of my website is in construction. If you are interested in the source code of this website, you can find it here.\n\n\n\n",
+      "last_modified": "2021-01-24T20:18:50+11:00"
     }
   ],
   "collections": ["posts/posts.json"]

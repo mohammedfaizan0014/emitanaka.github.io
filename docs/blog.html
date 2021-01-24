@@ -88,7 +88,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_meta_tags-->
   <title>Emi Tanaka: Blog listing</title>
 
-  <meta property="description" itemprop="description" content="Some additional details about the blog"/>
+  <meta property="description" itemprop="description" content="This blog contains a mixture of posts on statistics, data science, R and academia."/>
 
   <link rel="license" href="https://creativecommons.org/licenses/by/4.0/"/>
   <link rel="icon" type="image/png" href="images/avatar.png"/>
@@ -97,21 +97,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
   <meta property="og:title" content="Emi Tanaka: Blog listing"/>
   <meta property="og:type" content="article"/>
-  <meta property="og:description" content="Some additional details about the blog"/>
+  <meta property="og:description" content="This blog contains a mixture of posts on statistics, data science, R and academia."/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="Emi Tanaka"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
   <meta property="twitter:title" content="Emi Tanaka: Blog listing"/>
-  <meta property="twitter:description" content="Some additional details about the blog"/>
+  <meta property="twitter:description" content="This blog contains a mixture of posts on statistics, data science, R and academia."/>
   <meta property="twitter:site" content="@statsgen"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","listing"]}},"value":[{"type":"character","attributes":{},"value":["Blog listing"]},{"type":"character","attributes":{},"value":["Some additional details about the blog\n"]},{"type":"character","attributes":{},"value":["posts"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","listing"]}},"value":[{"type":"character","attributes":{},"value":["Blog listing"]},{"type":"character","attributes":{},"value":["This blog contains a mixture of posts on statistics, data science, R and academia.\n"]},{"type":"character","attributes":{},"value":["posts"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2203,15 +2203,15 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     --title-size:       18px;
     --text-color:       rgba(255, 51, 119, 1);
     --text-size:        15px;
-    --hover-color:      white;
+    --hover-color:      black;
     --bkgd-color:       white;
   }
 
   .distill-site-footer {
-    --text-color:       rgba(255, 255, 255, 0.8);
+    --text-color:       rgba(0, 0, 0, 0.8);
     --text-size:        15px;
-    --hover-color:      white;
-    --bkgd-color:       #0F2E3D;
+    --hover-color:      rgba(255, 51, 119, 1);
+    --bkgd-color:       white;
   }
 
   /*-- Additional custom styles --*/
@@ -2224,6 +2224,180 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   .distill-site-header .title {
     min-width: 0px;
+  }
+
+  /* --- github calender --- */
+
+  :root {
+    --color-calendar-graph-day-bg: #dddbdb;
+    --color-calendar-graph-day-L1-bg: #39dd34;
+    --color-calendar-graph-day-L2-bg: #45a045;
+    --color-calendar-graph-day-L3-bg: #047526;
+    --color-calendar-graph-day-L4-bg: #0a4208;
+  }
+
+  .calendar {
+      width: 100%;
+      font-family: Helvetica, arial;
+      border: 1px solid #DDDDDD;
+      border-radius: 3px;
+      min-height: 243px;
+      text-align: center;
+      margin: 0 auto;
+      padding: 20px;
+  }
+
+  .js-calendar-graph-svg {
+    width: 100%;
+  }
+
+  .calendar-graph text.wday,
+  .calendar-graph text.month {
+      font-size: 10px;
+      fill: #aaa;
+  }
+
+  .contrib-legend {
+      text-align: right;
+      padding: 0 14px 10px 0;
+      display: inline-block;
+      float: right;
+  }
+
+  .contrib-legend .legend {
+      display: inline-block;
+      list-style: none;
+      margin: 0 5px;
+      position: relative;
+      bottom: -1px;
+      padding: 0;
+  }
+
+  .contrib-legend .legend li {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+  }
+
+  .text-small {
+      font-size: 12px;
+      color: #767676;
+  }
+
+  .calendar-graph {
+      padding: 5px 0 0;
+      text-align: center;
+  }
+
+  .contrib-column {
+      padding: 15px 0;
+      text-align: center;
+      border-left: 1px solid #ddd;
+      border-top: 1px solid #ddd;
+      font-size: 11px;
+  }
+
+  .contrib-column-first {
+      border-left: 0;
+  }
+
+  .table-column {
+      display: table-cell;
+      width: 1%;
+      padding-right: 10px;
+      padding-left: 10px;
+      vertical-align: top;
+  }
+
+  .contrib-number {
+      font-weight: 300;
+      line-height: 1.3em;
+      font-size: 24px;
+      display: block;
+      color: #333;
+  }
+
+  .calendar img.spinner {
+      width: 70px;
+      margin-top: 50px;
+      min-height: 70px;
+  }
+
+  .monospace {
+      text-align: center;
+      color: #000;
+      font-family: monospace;
+  }
+
+  .monospace a {
+      color: #1D75AB;
+      text-decoration: none;
+  }
+
+  .contrib-footer {
+      font-size: 11px;
+      padding: 0 10px 12px;
+      text-align: left;
+      width: 100%;
+      box-sizing: border-box;
+      height: 26px;
+  }
+
+  .left.text-muted {
+      float: left;
+      margin-left: 9px;
+      color: #767676;
+  }
+  .left.text-muted a {
+      color: #4078c0;
+      text-decoration: none;
+  }
+  .left.text-muted a:hover,
+  .monospace a:hover {
+      text-decoration: underline;
+  }
+
+  h2.f4.text-normal.mb-3 {
+      display: none;
+  }
+
+  .float-left.text-gray {
+      float: left;
+  }
+  #user-activity-overview{
+      display:none;
+  }
+
+  .day-tooltip {
+      white-space: nowrap;
+      position: absolute;
+      z-index: 99999;
+      padding: 10px;
+      font-size: 12px;
+      color: #959da5;
+      text-align: center;
+      background: rgba(0,0,0,.85);
+      border-radius: 3px;
+      display: none;
+      pointer-events: none;
+  }
+  .day-tooltip strong {
+      color: #dfe2e5;
+  }
+  .day-tooltip.is-visible {
+      display: block;
+  }
+  .day-tooltip:after {
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      width: 5px;
+      height: 5px;
+      box-sizing: border-box;
+      margin: 0 0 0 -5px;
+      content: " ";
+      border: 5px solid transparent;
+      border-top-color: rgba(0,0,0,.85)
   }</style>
   <style type="text/css">
   /* base style */
@@ -2390,20 +2564,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <script src="site_libs/webcomponents-2.0.0/webcomponents.js"></script>
   <script src="site_libs/distill-2.2.21/template.v2.js"></script>
   <!--radix_placeholder_site_in_header-->
-  <script type="text/javascript" src="https://www.cookieconsent.com/releases/3.1.0/cookie-consent.js"></script>
-  <script type="text/javascript">
-  document.addEventListener('DOMContentLoaded', function () {
-  cookieconsent.run({
-  'notice_banner_type':'simple',
-  'consent_type': 'express',
-  'palette': 'light',
-  'language': 'en',
-  'website_name': 'emitanaka.org',
-  'cookies_policy_url': 'url',
-  'change_preferences_selector':'#CookiePreferences'
-  });});</script>
-  <script type="text/plain" cookie-consent="tracking" async src="https://www.googletagmanager.com/gtag/js?id=UA-77195073-2"></script>
-  <script type="text/plain" cookie-consent="tracking">
+  <script type="text/javascript" cookie-consent="tracking" async src="https://www.googletagmanager.com/gtag/js?id=UA-77195073-2"></script>
+  <script type="text/javascript" cookie-consent="tracking">
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
@@ -2419,7 +2581,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Blog listing","description":"Some additional details about the blog","authors":[]}
+{"title":"Blog listing","description":"This blog contains a mixture of posts on statistics, data science, R and academia.","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2658,7 +2820,7 @@ image and create a semi-circular text.</p>
 <h1>Blog listing</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-<p><p>Some additional details about the blog</p></p>
+<p><p>This blog contains a mixture of posts on statistics, data science, R and academia.</p></p>
 </div>
 
 

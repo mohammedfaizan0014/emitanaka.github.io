@@ -1,6 +1,6 @@
 ---
 title: "Blog listing"
 description: |
-  Some additional details about the blog
+  This blog contains a mixture of posts on statistics, data science, R and academia.
 listing: posts
 ---
