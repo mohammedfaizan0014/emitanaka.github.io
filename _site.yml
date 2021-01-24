@@ -1,0 +1,35 @@
+name: "emitanaka.org"
+title: "Emi Tanaka"
+theme: theme.css
+description: |
+  Emi Tanaka's website and blog that mainly features about
+  statistics, data science, R and academia. 
+base_url: https://emitanaka.org
+collections:
+  posts:
+    categories: true
+    categories_metadata: true
+    authors_metadata: true
+    feed_iems_max: 20 # default
+    disqus: statistical-genetics
+    share: [twitter, linkedin]
+    subscribe: _subscribe.html
+    custom: _custom.html
+output_dir: "docs"
+navbar:
+  logo: 
+    image: images/avatar.png
+    href: https://emitanaka.org/
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "Blog"
+      href: blog.html
+  right:
+    - icon: fab fa-github
+      href: https://github.com/emitanaka
+    - icon: fab fa-twitter
+      href: https://twitter.com/statsgen
+    - icon: fa fa-rss
+      href: blog.xml
+output: distill::distill_article

@@ -1,0 +1,36 @@
+[
+  {
+    "path": "posts/2019-03-26-travel2019/",
+    "title": "My Travel Schedule 2019: Building an interactive visualisation as twitter card",
+    "description": "Making an interactive schedule heat map with\ninteractive twitter card display.",
+    "author": [
+      {
+        "name": "Emi Tanaka",
+        "url": "https://emitanaka.org"
+      }
+    ],
+    "date": "2019-03-26",
+    "categories": [],
+    "contents": "\n\n\n\n\n\n{\"x\":{\"url\":\"travel2019_files/figure-html5//widgets/widget_travelschedule.html\",\"options\":{\"xdomain\":\"*\",\"allowfullscreen\":false,\"lazyload\":false}},\"evals\":[],\"jsHooks\":[]}\n Hovering over the above graph will show you more details. This year I have a fair bit of travel scheduled including:\nEco Sta 2019 at Taichung, Taiwan,\nISI WSC 2019 at Kuala Lumpur, Malaysia,\nYSC 2019 at Canberra, Australia, and\nBiometrics by the Botanic Garden 2019 at Adelaide, Australia.\nIf you happen to be going to the same conference as myself, do get in touch and maybe you can pay for my taxi? :) (I forgot to put it in my budget …)\nThe code to make the above graph is shown below. This post benefit largely from this post here to turn plotly output into interactive twitter card.\n\n\nlibrary(tidyverse)\nlibrary(tsibble)\nlibrary(googlesheets)\nlibrary(highcharter)\nlibrary(widgetframe)\n\n# get the data\ndate_range <- tibble(\n  Dates = as.Date(c(\"06/03/2019\", \"12/31/2019\"), format = \"%m/%d/%Y\"),\n  Location = \"Sydney, Australia\"\n) # the start to end for schedule show\nkey <- gs_key(\"1T7aH5PzQghU0htnqOjzzEyfe0qdWs_L-1Ybu9PX-rYY\")\ntravel_df <- gs_read(key, col_types = list()) %>%\n  mutate(\n    Start = as.Date(Start, format = \"%m/%d/%Y\"),\n    End = as.Date(End, format = \"%m/%d/%Y\")\n  ) %>%\n  pivot_longer(Start:End, names_to = \"Time\", values_to = \"Dates\") %>%\n  as_tsibble(key = Event, index = Dates) %>%\n  fill_gaps(Time = \"Between\") %>%\n  group_by(Event) %>%\n  fill(FullEvent, URL, Location, What, .direction = \"down\") %>%\n  ungroup() %>% # this part feels clumsy.. probably better way to do this\n  bind_rows(date_range) %>%\n  as_tibble() %>%\n  mutate(Key = \"All\") %>%\n  as_tsibble(key = Key, index = Dates) %>%\n  fill_gaps(Location = \"Sydney, Australia\", Event = \"\", What = \"\", FullEvent = \"\") %>%\n  mutate(\n    Day = substring(weekdays(Dates), 1, 3),\n    Week = lubridate::isoweek(Dates)\n  ) %>%\n  filter(Week != 1)\n\n\n\n\n\nfntltp <- JS(\"function(){\n              return '<b style=\\\"color:#DC5084\\\">' + this.point.event + '<\/b><br><span style=\\\"font-size:0.7em\\\">' +  this.series.yAxis.categories[this.point.y] + ', ' +\n             this.point.date + '<\/span><br><span style=\\\"font-size:0.7em\\\">' + this.point.name + '<\/span><br><span style=\\\"font-size:0.7em;color:#FFFFCC\\\">' + this.point.what + '<\/span><br>'+ this.point.loc;\n             }\")\n\nhcout <- hchart(travel_df, \"heatmap\", hcaes(\n  x = factor(Week),\n  y = factor(Day, levels = c(\"Sun\", \"Sat\", \"Fri\", \"Thu\", \"Wed\", \"Tue\", \"Mon\")),\n  group = Location,\n  loc = Location,\n  event = Event,\n  what = What,\n  name = FullEvent,\n  date = Dates\n),\nstyle = list(fontSize = \"2em\", fontFamily = \"Helvetica\")\n) %>%\n  hc_tooltip(formatter = fntltp) %>%\n  # hc_tooltip(crosshairs=TRUE, pointFormat = \"y: {point.y}<br>x: {point.x}\") %>%\n  hc_title(text = \"My 2019 Travel Schedule\", style = list(fontWeight = \"bold\")) %>%\n  hc_subtitle(text = \"Hover over the tile to see more information\") %>%\n  hc_size(height = 225) %>%\n  hc_legend(enabled = FALSE) %>%\n  hc_yAxis(title = \"\") %>%\n  hc_xAxis(\n    title = \"\", categories = c(\"Jun\", \"\", \"\", \"\", \"Jul\", \"\", \"\", \"\", \"Aug\", \"\", \"\", \"\", \"Sep\", \"\", \"\", \"\", \"\", \"Oct\", \"\", \"\", \"\", \"Nov\", \"\", \"\", \"\", \"Dec\", \"\", \"\", \"\"),\n    endOnTick = FALSE\n  ) %>%\n  hc_add_theme(hc_theme_538()) %>%\n  hc_plotOptions(heatmap = list(borderColor = \"black\", borderWidth = 1))\n\nframeWidget(hcout)\n\n\n\n\n\n\n",
+    "preview": {},
+    "last_modified": "2021-01-24T17:57:36+11:00",
+    "input_file": {}
+  },
+  {
+    "path": "posts/2018-04-06-hexsticker/",
+    "title": "Making a Hexagon Sticker",
+    "description": "Making hexagon stickers have become popular for\nR-packages with the range of packages associated with\nRStudio, such as `ggplot2`, `knitr`, `devtools` and so\non, having its own hex stickers. For the sticker that I\nmade for my R-package I found it easier, partly due to\nits long name, to use powerpoint to manipulate the\nimage and create a semi-circular text.",
+    "author": [
+      {
+        "name": "Emi Tanaka",
+        "url": "https://emitanaka.org"
+      }
+    ],
+    "date": "2018-04-06",
+    "categories": [],
+    "contents": "\n Making hexagon stickers have become popular for R-packages with the range of packages associated with RStudio, such as ggplot2, knitr, devtools and so on, having its own hex stickers.\nThis trend even spanned a R-package hexSticker that can be found here.\nPowerpoint template for hex stickers\nFor the sticker that I made for my R-package shinycustomloader, I found it easier, partly due to its long name, to use powerpoint to manipulate the image and create a semi-circular text. It took longer than what I had hoped to get the hexagon shape right. You may like to save your own time by downloading my powerpoint template here as a base to make your own.\nThe dimensions were set, as it is in hexSticker, so that you can print it according to http://hexb.in/sticker.html.\nUsing copyright images in hex stickers\nIt’s worth noting about copyright of images since you may like to use images in your hex sticker. If you created the image on your own then the copyright in general will rest with you and there is no problem. If you borrow images from others, you may need to provide attribution depending on their license permission.\nIn hex stickers, you don’t really have a room to add citations so you may like to use those that require no attribution. For free ones, you can find these using sites such as flickr under Public Domain works (CC0).\nIt is a bit painful to consider copyright issues but it is important to give due credit, acknowledgement, attribution etc to the creator of the work. I’ve gone to great lengths at times to search for CC0 images or have paid for work. Afterall, creative work is valuable and should be properly rewarded.\nUPDATE 22/06 My sticker arrived! They are pretty good quality! I also got 16 which is more than the 10 sample they said on the website \n\nThese are from sticker mule. If you sign up with referral code here, both you and I will get some credit. You are, of course, welcomed to just go directly to the site to make the purchase.\n\n\n\n\n",
+    "preview": "posts/2018-04-06-hexsticker/hexsticker.gif",
+    "last_modified": "2021-01-24T17:56:58+11:00",
+    "input_file": {}
+  }
+]
