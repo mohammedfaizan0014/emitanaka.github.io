@@ -5,6 +5,7 @@ description: |
   Emi Tanaka's website and blog that mainly features about
   statistics, data science, R and academia. 
 base_url: https://emitanaka.org
+google_analytics: "UA-77195073-2"
 collections:
   posts:
     categories: true
