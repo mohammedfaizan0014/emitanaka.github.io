@@ -12,6 +12,20 @@ University, Melbourne, Australia. Research-wise, I'm interested in developing us
 I speak English, Japanese (conversational) and R (base + tidyverse) fluently. I've lived in Australia almost all of my life (+-10 years standard deviation) and my university major was mathematics and statistics. My PhD, obtained at the School of Mathematics and Statistics, University of Sydney in 2015, is in statistical bioinformatics with most of my code written in Python + Bash (both of which I am rusty now). I also like to dabble on front-end web development (HTML/CSS/JS).
 
 
+<script
+  src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+</script>
+
+<div class="l-body-outset">
+<div class="calendar">
+Loading my github calendar data.
+</div>
+</div>
+
+<script>
+GitHubCalendar(".calendar", "emitanaka");
+</script>
+
 ## 👷🏻‍♀
 
 I decided to redo my website using the [distill](https://rstudio.github.io/distill/) R-package and so some parts of my website is in construction. If you are interested in the source code of this website, you can find it [here](https://github.com/emitanaka/emitanaka.github.io).
