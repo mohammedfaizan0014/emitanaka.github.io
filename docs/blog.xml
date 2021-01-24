@@ -7,6 +7,11 @@
     <description>Emi Tanaka's website and blog that mainly features about
 statistics, data science, R and academia. 
 </description>
+    <image>
+      <title>Emi Tanaka</title>
+      <url>https://emitanaka.org/images/avatar.png</url>
+      <link>https://emitanaka.org</link>
+    </image>
     <generator>Distill</generator>
     <lastBuildDate>Tue, 26 Mar 2019 00:00:00 +0000</lastBuildDate>
     <item>

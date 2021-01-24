@@ -6,14 +6,14 @@
       "description": "Some additional details about the blog\n",
       "author": [],
       "contents": "\n\n\n\n",
-      "last_modified": "2021-01-24T18:55:10+11:00"
+      "last_modified": "2021-01-24T19:29:04+11:00"
     },
     {
       "path": "index.html",
       "title": "Emi Tanaka",
       "author": [],
       "contents": "\nHi! Welcome to my website!\nI’m a lecturer (equivalent to assistant professor) in statistics at Monash University, Melbourne, Australia. Research-wise, I’m interested in developing useful statistical tools and methods. My experience in application is in bioinformatics and agriculture (particularly crop breeding). My current active research area is experimental design, mixed models and statistical graphics.\nI speak English, Japanese (conversational) and R (base + tidyverse) fluently. I’ve lived in Australia almost all of my life (+-10 years standard deviation) and my university major was mathematics and statistics. My PhD, obtained at the School of Mathematics and Statistics, University of Sydney in 2015, is in statistical bioinformatics with most of my code written in Python + Bash (both of which I am rusty now). I also like to dabble on front-end web development (HTML/CSS/JS).\n👷🏻‍♀\nI decided to redo my website using the distill R-package and so some parts of my website is in construction. If you are interested in the source code of this website, you can find it here.\n\n\n\n",
-      "last_modified": "2021-01-24T18:54:00+11:00"
+      "last_modified": "2021-01-24T19:28:46+11:00"
     }
   ],
   "collections": ["posts/posts.json"]

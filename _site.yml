@@ -6,6 +6,11 @@ description: |
   statistics, data science, R and academia. 
 base_url: https://emitanaka.org
 google_analytics: "UA-77195073-2"
+favicon: images/avatar.png
+twitter: 
+  site: "@statsgen"
+repository_url: https://github.com/emitanaka/emitanaka.github.io
+creative_commons: CC BY
 collections:
   posts:
     categories: true
@@ -17,6 +22,12 @@ collections:
     subscribe: _subscribe.html
     custom: _custom.html
 output_dir: "docs"
+cookie_consent:
+  style: simple
+  type: express
+  palette: light
+  lang: en
+  cookies_policy: url
 navbar:
   logo: 
     image: images/avatar.png
