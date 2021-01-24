@@ -6,8 +6,10 @@ site: distill::distill_website
 
 ## Hi! Welcome to my website!
 
+<img src="images/avatar.jpg" style="float:right;width:150px;">
 I'm a lecturer (equivalent to assistant professor) in statistics at Monash
 University, Melbourne, Australia. Research-wise, I'm interested in developing useful statistical tools and methods. My experience in application is in bioinformatics and agriculture (particularly crop breeding). My current active research area is experimental design, mixed models and statistical graphics. 
+
 
 I speak English, Japanese (conversational) and R (base + tidyverse) fluently. I've lived in Australia almost all of my life (+-10 years standard deviation) and my university major was mathematics and statistics. My PhD, obtained at the School of Mathematics and Statistics, University of Sydney in 2015, is in statistical bioinformatics with most of my code written in Python + Bash (both of which I am rusty now). I also like to dabble on front-end web development (HTML/CSS/JS).
 
