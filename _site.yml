@@ -22,12 +22,12 @@ collections:
     subscribe: _subscribe.html
     custom: _custom.html
 output_dir: "docs"
-cookie_consent:
-  style: simple
-  type: express
-  palette: light
-  lang: en
-  cookies_policy: url
+#cookie_consent:
+#  style: simple
+#  type: express
+#  palette: light
+#  lang: en
+#  cookies_policy: url
 navbar:
   logo: 
     image: images/avatar.png
