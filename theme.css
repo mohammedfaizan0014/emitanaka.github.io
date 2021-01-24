@@ -88,15 +88,15 @@ d-appendix {
   --title-size:       18px;
   --text-color:       rgba(255, 51, 119, 1);
   --text-size:        15px;
-  --hover-color:      white;
+  --hover-color:      black;
   --bkgd-color:       white;
 }
 
 .distill-site-footer {
-  --text-color:       rgba(255, 255, 255, 0.8);
+  --text-color:       rgba(0, 0, 0, 0.8);
   --text-size:        15px;
-  --hover-color:      white;
-  --bkgd-color:       #0F2E3D;
+  --hover-color:      rgba(255, 51, 119, 1);
+  --bkgd-color:       white;
 }
 
 /*-- Additional custom styles --*/
