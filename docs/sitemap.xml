@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" version="1.0">
   <url>
-    <loc>https://emitanaka.org/about.html</loc>
-    <lastmod>2021-01-25T10:46:17+11:00</lastmod>
-  </url>
-  <url>
     <loc>https://emitanaka.org/blog.html</loc>
     <lastmod>2021-01-24T20:23:24+11:00</lastmod>
   </url>
   <url>
     <loc>https://emitanaka.org/</loc>
-    <lastmod>2021-01-24T20:54:24+11:00</lastmod>
+    <lastmod>2021-01-25T17:17:26+11:00</lastmod>
   </url>
   <url>
     <loc>https://emitanaka.org/presentations.html</loc>
@@ -18,15 +14,15 @@
   </url>
   <url>
     <loc>https://emitanaka.org/posts/travel2019/</loc>
-    <lastmod>2021-01-24T19:37:49+11:00</lastmod>
+    <lastmod>2021-01-25T17:20:26+11:00</lastmod>
   </url>
   <url>
     <loc>https://emitanaka.org/posts/hexsticker/</loc>
-    <lastmod>2021-01-24T19:38:07+11:00</lastmod>
+    <lastmod>2021-01-25T17:20:04+11:00</lastmod>
   </url>
   <url>
     <loc>https://emitanaka.org/presentations/2021-01-23-tokyor2021/</loc>
-    <lastmod>2021-01-25T09:32:28+11:00</lastmod>
+    <lastmod>2021-01-25T17:34:49+11:00</lastmod>
   </url>
   <url>
     <loc>https://emitanaka.org/presentations/2020-11-27-SSAWebinar2020/</loc>

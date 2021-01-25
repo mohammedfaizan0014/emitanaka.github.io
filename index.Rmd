@@ -48,7 +48,7 @@ d-article {
   width: 12rem!important;
   padding-left: 3rem!important;
   padding-bottom: 1.5rem!important;
-  box-sizing: borer-box;
+  box-sizing: border-box;
 }
 /* --- github calender --- */
 
@@ -69,7 +69,7 @@ d-article {
     min-height: 243px;
     text-align: center;
     margin: 0 auto;
-    padding: 20px;
+    padding: 10px;
     color: black;
 }
 
@@ -85,7 +85,7 @@ d-article {
 
 .contrib-legend {
     text-align: right;
-    padding: 0 14px 10px 0;
+    padding: 0 10px 10px 0;
     display: inline-block;
     float: right;
 }
@@ -129,7 +129,7 @@ d-article {
 
 .table-column {
     display: table-cell;
-    width: 1%;
+    width: 5%;
     padding-right: 10px;
     padding-left: 10px;
     vertical-align: top;
