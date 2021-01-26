@@ -1,7 +1,8 @@
 ---
 title: "Curriculum vitae"
 description: |
-  This page is still under construction.
+  This page is still under construction.  
+  You can download the pdf version [here](cv.pdf).
 ---
 
 
@@ -11,6 +12,7 @@ description: |
 ```{r setup, include = FALSE}
 library(tidyverse)
 library(bibtex)
+library(lubridate)
 library(knitr)
 library(kableExtra)
 opts_chunk$set(
@@ -25,11 +27,50 @@ knit_pdf <- TRUE
 Needs to be knitted twice for pdf to be updated to the latest.
 -->
 
-You can download the pdf version [here](cv.pdf).
 
 <main class="cv-canvas">
 
 # [E]{.bigger}MI [T]{.bigger}ANAKA
+
+<i class="fas fa-envelope"></i> emi.tanaka@monash.edu
+<i class="fab fa-twitter"></i> @statsgen
+<i class="fab fa-github"></i> emitanaka
+<i class="fas fa-globe"></i> emitanaka.org
+
+
+### skill stack
+
+::: half
+
+R, HTML/CSS, LaTeX, Git/GitHub
+
+:::
+
+### research interests
+
+::: half
+
+experimental design, mixed models, statistical graphics, bioinformatics, statistical genetics
+
+:::
+
+## employment
+
+```{r}
+small <- function(x) paste0("<div style='font-size:0.75rem;line-height:0.9rem;'>", x, "</div>")
+dat <- read_csv("__cvdata/employment.csv") %>% 
+  mutate(start = dmy(start),
+         end = dmy(end))
+dat %>% 
+  mutate(start = sprintf("%d/%.2d", year(start), month(start)),
+         end = sprintf("%d/%.2d", year(end), month(end)),
+         end = ifelse(end=="NA/NA", "current", end),
+         date = small(paste0(start, "-", end)),
+         org = small(paste0(org, ", ", suborg))) %>% 
+  select(date, position, org) %>% 
+  kable(col.names = c("", "", ""), escape = FALSE,
+        align = "llr")
+```
 
 ## education
 
@@ -62,7 +103,6 @@ res[names(res)!="Tanaka2015-od"] # remove thesis
 
 ```{r}
 dat <- read_csv("__cvdata/awards.csv")
-small <- function(x) paste0("<div style='font-size:0.75rem;line-height:0.9rem;'>", x, "</div>")
 dat %>% 
   mutate(main = paste(name, small(significance)),
          money = scales::dollar(money),
