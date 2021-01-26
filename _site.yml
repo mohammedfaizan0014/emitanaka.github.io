@@ -1,6 +1,6 @@
 name: "emitanaka.org"
 title: "Emi Tanaka"
-theme: theme.css
+theme: assets/theme.css
 description: |
   Emi Tanaka's website and blog that mainly features about
   statistics, data science, R and academia. 
@@ -42,6 +42,8 @@ navbar:
   left:
     - text: "Home"
       href: index.html
+    - text: "CV"
+      href: cv.html
     - text: "Presentations"
       href: presentations.html
     - text: "Blog"

@@ -2114,26 +2114,26 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     font-family: 'Atma';
     font-style: normal;
     font-weight: 400;
-    src: url('fonts/atma-v6-latin-regular.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/atma-v6-latin-regular.eot'); /* IE9 Compat Modes */
     src: local(''),
-         url('fonts/atma-v6-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('fonts/atma-v6-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-         url('fonts/atma-v6-latin-regular.woff') format('woff'), /* Modern Browsers */
-         url('fonts/atma-v6-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('fonts/atma-v6-latin-regular.svg#Atma') format('svg'); /* Legacy iOS */
+         url('../fonts/atma-v6-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/atma-v6-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/atma-v6-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/atma-v6-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/atma-v6-latin-regular.svg#Atma') format('svg'); /* Legacy iOS */
   }
   /* atma-600 - latin */
   @font-face {
     font-family: 'Atma';
     font-style: normal;
     font-weight: 600;
-    src: url('fonts/atma-v6-latin-600.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/atma-v6-latin-600.eot'); /* IE9 Compat Modes */
     src: local(''),
-         url('fonts/atma-v6-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('fonts/atma-v6-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
-         url('fonts/atma-v6-latin-600.woff') format('woff'), /* Modern Browsers */
-         url('fonts/atma-v6-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('fonts/atma-v6-latin-600.svg#Atma') format('svg'); /* Legacy iOS */
+         url('../fonts/atma-v6-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/atma-v6-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/atma-v6-latin-600.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/atma-v6-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/atma-v6-latin-600.svg#Atma') format('svg'); /* Legacy iOS */
   }
 
   /* base variables */
@@ -2378,7 +2378,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     color: var(--hover-color, white);
   }</style>
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.6/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.6.6/header-attrs.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2418,6 +2418,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </a>
 <a href="index.html" class="title">Emi Tanaka</a>
 <a href="index.html">Home</a>
+<a href="cv.html">CV</a>
 <a href="presentations.html">Presentations</a>
 <a href="blog.html">Blog</a>
 <input id="distill-search" class="nav-search hidden" type="text" placeholder="Search..."/>
@@ -2455,6 +2456,7 @@ body {
   background: linear-gradient(130deg, #AD0059 25%, #79003e 75%);
 }
 
+
 html {
   /*-- Main font colors --*/
   --title-color:     #ffffff;
@@ -2488,14 +2490,18 @@ d-article {
 
 
 .profile-photo {
-  border-radius: 50%!important;
   vertical-align: middle;
-  border-style: none;
-  width: 12rem!important;
-  padding-left: 3rem!important;
-  padding-bottom: 1.5rem!important;
+  padding: 1.5rem!important;
   box-sizing: border-box;
 }
+
+.profile-photo img {
+  // border: 1px solid black;
+  border-radius: 50%!important;
+  width: 12rem!important;
+}
+
+
 /* --- github calender --- */
 
 :root {
@@ -2673,8 +2679,10 @@ h2.f4.text-normal.mb-3 {
 }
 </style>
 </div>
+<div class="profile-photo">
+<p><img  src="images/avatar.jpg" alt="Profile photo"></p>
+</div>
 <h2 id="hi-welcome-to-my-website">Hi! Welcome to my website!</h2>
-<p><img class="profile-photo" src="images/avatar.jpg"></p>
 <p>I’m a lecturer (equivalent to assistant professor) in statistics at Monash University, Melbourne, Australia. Research-wise, I’m interested in developing useful statistical tools and methods. My experience in application is in bioinformatics and agriculture (particularly crop breeding). My active research areas are <strong>experimental design</strong>, <strong>mixed models</strong> and <strong>statistical graphics</strong>.</p>
 <p>I speak English, Japanese (conversational) and R (base + tidyverse) fluently. I’ve lived in Australia almost all of my life (+-10 years standard deviation) and my university major was mathematics and statistics. My PhD, obtained at the School of Mathematics and Statistics, University of Sydney in 2015, is in statistical bioinformatics with most of my code written in Python + Bash (both of which I am rusty now). I also like to dabble on front-end web development (HTML/CSS/JS).</p>
 <script

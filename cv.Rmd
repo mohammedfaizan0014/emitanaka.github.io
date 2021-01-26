@@ -1,0 +1,83 @@
+---
+title: "Curriculum vitae"
+description: |
+  This page is still under construction.
+---
+
+
+
+<link rel="stylesheet" href="assets/cv-styles.css">
+
+```{r setup, include = FALSE}
+library(tidyverse)
+library(bibtex)
+library(knitr)
+library(kableExtra)
+opts_chunk$set(
+  echo = FALSE,
+  warning = FALSE,
+  message = FALSE
+)
+knit_pdf <- TRUE
+```
+
+<!--
+Needs to be knitted twice for pdf to be updated to the latest.
+-->
+
+You can download the pdf version [here](cv.pdf).
+
+<main class="cv-canvas">
+
+# [E]{.bigger}MI [T]{.bigger}ANAKA
+
+## education
+
+**PhD, Statistics**  
+Statistical Methods for Improving Motif Evaluation  
+Supervisor: Dr. Uri Keich  
+School of Mathematics and Statistics  
+The University of Sydney  
+2015 | Sydney, Australia  
+
+**BSci (Adv Maths), Honour I**  
+Major in Mathematics and Statistics  
+The University of Sydney  
+2010 | Sydney, Australia  
+
+## publications
+
+```{r, results="asis"}
+res <- read.bib("__cvdata/pubs.bib")
+res[names(res)!="Tanaka2015-od"] # remove thesis
+```
+
+
+## presentations
+
+
+## workshops
+
+## awards & distinctions
+
+```{r}
+dat <- read_csv("__cvdata/awards.csv")
+small <- function(x) paste0("<div style='font-size:0.75rem;line-height:0.9rem;'>", x, "</div>")
+dat %>% 
+  mutate(main = paste(name, small(significance)),
+         money = scales::dollar(money),
+         money = ifelse(is.na(money), "", money)) %>% 
+  select(award_year, main, money) %>% 
+  kable(col.names = c("", "", ""), escape = FALSE) %>% 
+  column_spec(2, width = "30em") %>% 
+  column_spec(c(1, 3), extra_css = "vertical-align: top;")
+```
+
+
+</main>
+
+```{r, eval=knit_pdf}
+pagedown::chrome_print(input = "docs/cv.html",
+                       output = "cv.pdf")
+```
+
