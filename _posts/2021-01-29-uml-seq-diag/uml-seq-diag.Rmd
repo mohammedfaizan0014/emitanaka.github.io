@@ -22,7 +22,7 @@ knitr::opts_chunk$set(echo = FALSE,
 
 A **sequence diagram**, as described in [wikipedia](https://en.wikipedia.org/wiki/Sequence_diagram), shows objects interactions arranged in time sequence.  One of the standards for drawing this is using the **Unified Modelling Language** (UML) managed by the Object Management Group (OMG). 
 
-UML was developed in the field of software engineering to provide a standard way to visualise the design of a system. It's a standard that describes standards for all sorts of diagrams, not just the sequence diagram, e.g. communication diagram, interaction overview diagram and so on. 
+UML was developed in the field of software engineering to provide a standard way to visualise the design of a system. It's a language that describes standards for all sorts of diagrams, not just the sequence diagram, e.g. communication diagram, interaction overview diagram and so on. 
 
 The interaction of _actors_ with the system depicted as _objects_ with passage of time depicted as a vertical dotted line (a.k.a. lifeline) seemed like a good fit to use for illustrating the concept of [edibble](https://edibble.emitanaka.org/).
 

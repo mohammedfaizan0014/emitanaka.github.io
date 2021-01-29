@@ -1491,7 +1491,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 <div class="d-article">
 <p>A <strong>sequence diagram</strong>, as described in <a href="https://en.wikipedia.org/wiki/Sequence_diagram">wikipedia</a>, shows objects interactions arranged in time sequence. One of the standards for drawing this is using the <strong>Unified Modelling Language</strong> (UML) managed by the Object Management Group (OMG).</p>
-<p>UML was developed in the field of software engineering to provide a standard way to visualise the design of a system. It’s a standard that describes standards for all sorts of diagrams, not just the sequence diagram, e.g. communication diagram, interaction overview diagram and so on.</p>
+<p>UML was developed in the field of software engineering to provide a standard way to visualise the design of a system. It’s a language that describes standards for all sorts of diagrams, not just the sequence diagram, e.g. communication diagram, interaction overview diagram and so on.</p>
 <p>The interaction of <em>actors</em> with the system depicted as <em>objects</em> with passage of time depicted as a vertical dotted line (a.k.a. lifeline) seemed like a good fit to use for illustrating the concept of <a href="https://edibble.emitanaka.org/">edibble</a>.</p>
 <h2 id="omnigraffle">Omnigraffle</h2>
 <p>I always find drawing complicated diagrams to be tricky via programming so I initially drew the diagram using OmniGraffle. There were some UML stencils and I thought it was going well (result in Figure <a href="#fig:omni">1</a>). Aligning the objects as a sequence diagram, even with OmniGraffle’s precise object placement, was a bit difficult but it got the job done in the end.</p>
@@ -1532,8 +1532,8 @@ sequenceDiagram
 </code></pre>
 </div>
 <div class="figure" style="text-align: center"><span id="fig:mermaid"></span>
-<div id="htmlwidget-e500de4d18eb2a7bebe9" style="width:624px;height:384px;" class="DiagrammeR html-widget"></div>
-<script type="application/json" data-for="htmlwidget-e500de4d18eb2a7bebe9">{"x":{"diagram":"\nsequenceDiagram\n    domain expert->>statistician: consult\n    statistician-->>domain expert: query\n    statistician->>Design: start_design()\n    statistician->>Design: set_units()"},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-d0963fffbca244b51c50" style="width:624px;height:384px;" class="DiagrammeR html-widget"></div>
+<script type="application/json" data-for="htmlwidget-d0963fffbca244b51c50">{"x":{"diagram":"\nsequenceDiagram\n    domain expert->>statistician: consult\n    statistician-->>domain expert: query\n    statistician->>Design: start_design()\n    statistician->>Design: set_units()"},"evals":[],"jsHooks":[]}</script>
 <p class="caption">
 Figure 3: Drawn using mermaid via DiagrammeR
 </p>
@@ -1556,8 +1556,8 @@ Figure 4: Drawn using nomnoml.com
 [design] -- [&lt;end&gt; end]
 [&lt;database&gt; data] -- [&lt;hidden&gt; hid]
 [&lt;actor&gt;technician] -- [&lt;hidden&gt; fin3]</code></pre>
-<div id="htmlwidget-c568b2a367d1a88ed4c6" style="width:624px;height:384px;" class="nomnoml html-widget"></div>
-<script type="application/json" data-for="htmlwidget-c568b2a367d1a88ed4c6">{"x":{"code":"\n#fill: #FEFEFF\n#lineWidth: 1\n#zoom: 4\n#direction: right\n\n[<actor>domain expert] -- [<hidden> fin1]\n[<actor>statistician] -- [<hidden> fin2]\n[design] -- [<end> end]\n[<database> data] -- [<hidden> hid]\n[<actor>technician] -- [<hidden> fin3]","svg":false},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-d7b44a3c1a610921104d" style="width:624px;height:384px;" class="nomnoml html-widget"></div>
+<script type="application/json" data-for="htmlwidget-d7b44a3c1a610921104d">{"x":{"code":"\n#fill: #FEFEFF\n#lineWidth: 1\n#zoom: 4\n#direction: right\n\n[<actor>domain expert] -- [<hidden> fin1]\n[<actor>statistician] -- [<hidden> fin2]\n[design] -- [<end> end]\n[<database> data] -- [<hidden> hid]\n[<actor>technician] -- [<hidden> fin3]","svg":false},"evals":[],"jsHooks":[]}</script>
 </div>
 <p>It turns out thought that the nomnoml <a href="https://github.com/skanaar/nomnoml/issues/1">doesn’t support sequence diagrams</a> and it doesn’t look like it will support it any time either.</p>
 <h3 id="plantuml">plantuml</h3>
