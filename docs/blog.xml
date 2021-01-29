@@ -13,7 +13,16 @@ statistics, data science, R and academia.
       <link>https://emitanaka.org</link>
     </image>
     <generator>Distill</generator>
-    <lastBuildDate>Tue, 26 Mar 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Drawing a UML Sequence Diagram</title>
+      <dc:creator>Emi Tanaka</dc:creator>
+      <link>https://emitanaka.org/posts/2021-01-29-uml-seq-diag</link>
+      <description>Search for the way to draw a UML sequence diagram.</description>
+      <guid>https://emitanaka.org/posts/2021-01-29-uml-seq-diag</guid>
+      <pubDate>Fri, 29 Jan 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://emitanaka.org/posts/2021-01-29-uml-seq-diag/seq-diag-omnigraffle.png" medium="image" type="image/png" width="863" height="708"/>
+    </item>
     <item>
       <title>My Travel Schedule 2019: Building an interactive visualisation as twitter card</title>
       <dc:creator>Emi Tanaka</dc:creator>
