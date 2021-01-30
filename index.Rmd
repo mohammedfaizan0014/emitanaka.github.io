@@ -26,14 +26,7 @@ html {
 }
 
 d-appendix {
-  --heading-size:    15px;
-  --heading-color:   rgba(255, 255, 255, 0.65);
-  --text-size:       0.8em;
-  --text-color:      rgba(255, 255, 255, 0.5);
-}
-
-d-appendix a {
-  color: rgba(255, 255, 255, 0.5);
+  display: none!important;
 }
 
 d-article {
