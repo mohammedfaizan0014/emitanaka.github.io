@@ -264,7 +264,7 @@ df <- data.frame(what = c('<i class="fab fa-twitter"></i>',
                            "[emitanaka](https://github.com/emitanaka)",
                            "[emitanaka@monash.edu](mailto:emitanaka@monash.edu)",
                            "Monash University<br>Monash Business School<br>Menzies Building E776<br>Clayton campus, VIC 3800<br>Australia"))
-knitr::kable(df, col.names = c("", ""))
+knitr::kable(df, col.names = c("", ""), escape = FALSE)
 ```
 
 
