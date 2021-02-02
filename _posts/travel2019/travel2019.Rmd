@@ -8,10 +8,13 @@ author:
     affiliation_url: https://numbat.space/
 date: '2019-03-26'
 slug: travel2019
-categories: []
+categories: [visualisation, interactive]
 description: |
   Making an interactive schedule heat map with
   interactive twitter card display.
+base_url: http://emitanaka.org/
+twitter:
+  creator: "@statsgen"
 output:
   distill::distill_article:
     self_contained: false

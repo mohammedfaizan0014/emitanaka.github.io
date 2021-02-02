@@ -99,18 +99,25 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <meta property="og:title" content="Drawing a UML Sequence Diagram"/>
   <meta property="og:type" content="article"/>
   <meta property="og:description" content="Search for the way to draw a UML sequence diagram."/>
+  <meta property="og:image" content="http://emitanaka.org/seq-diag-omnigraffle.png"/>
+  <meta property="og:image:width" content="863"/>
+  <meta property="og:image:height" content="708"/>
   <meta property="og:locale" content="en_US"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
-  <meta property="twitter:card" content="summary"/>
+  <meta property="twitter:card" content="summary_large_image"/>
   <meta property="twitter:title" content="Drawing a UML Sequence Diagram"/>
   <meta property="twitter:description" content="Search for the way to draw a UML sequence diagram."/>
+  <meta property="twitter:image" content="http://emitanaka.org/seq-diag-omnigraffle.png"/>
+  <meta property="twitter:image:width" content="863"/>
+  <meta property="twitter:image:height" content="708"/>
+  <meta property="twitter:creator" content="@statsgen"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Drawing a UML Sequence Diagram"]},{"type":"character","attributes":{},"value":["Search for the way to draw a UML sequence diagram.\n"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url","affiliation","affiliation_url"]}},"value":[{"type":"character","attributes":{},"value":["Emi Tanaka"]},{"type":"character","attributes":{},"value":["https://emitanaka.org"]},{"type":"character","attributes":{},"value":["Monash University"]},{"type":"character","attributes":{},"value":["https://numbat.space/"]}]}]},{"type":"character","attributes":{},"value":["01-29-2021"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained","toc","toc_depth","toc_float"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[true]},{"type":"integer","attributes":{},"value":[3]},{"type":"logical","attributes":{},"value":[true]}]}]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","base_url","twitter","categories","output"]}},"value":[{"type":"character","attributes":{},"value":["Drawing a UML Sequence Diagram"]},{"type":"character","attributes":{},"value":["Search for the way to draw a UML sequence diagram.\n"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url","affiliation","affiliation_url"]}},"value":[{"type":"character","attributes":{},"value":["Emi Tanaka"]},{"type":"character","attributes":{},"value":["https://emitanaka.org"]},{"type":"character","attributes":{},"value":["Monash University"]},{"type":"character","attributes":{},"value":["https://numbat.space/"]}]}]},{"type":"character","attributes":{},"value":["01-29-2021"]},{"type":"character","attributes":{},"value":["http://emitanaka.org/"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["creator"]}},"value":[{"type":"character","attributes":{},"value":["@statsgen"]}]},{"type":"character","attributes":{},"value":["visualisation","diagram"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained","toc","toc_depth","toc_float"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[true]},{"type":"integer","attributes":{},"value":[3]},{"type":"logical","attributes":{},"value":[true]}]}]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   
@@ -1479,6 +1486,10 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <div class="d-title">
 <h1>Drawing a UML Sequence Diagram</h1>
 <!--radix_placeholder_categories-->
+<div class="dt-tags">
+<div class="dt=tag">visualisation</div>
+<div class="dt=tag">diagram</div>
+</div>
 <!--/radix_placeholder_categories-->
 <p><p>Search for the way to draw a UML sequence diagram.</p></p>
 </div>
@@ -1547,8 +1558,8 @@ sequenceDiagram
 </code></pre>
 </div>
 <div class="figure" style="text-align: center"><span id="fig:mermaid"></span>
-<div id="htmlwidget-067932596fe5f07a78d1" style="width:624px;height:384px;" class="DiagrammeR html-widget"></div>
-<script type="application/json" data-for="htmlwidget-067932596fe5f07a78d1">{"x":{"diagram":"\nsequenceDiagram\n    domain expert->>statistician: consult\n    statistician-->>domain expert: query\n    statistician->>Design: start_design()\n    statistician->>Design: set_units()"},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-68cbffbaa130c63350d1" style="width:624px;height:384px;" class="DiagrammeR html-widget"></div>
+<script type="application/json" data-for="htmlwidget-68cbffbaa130c63350d1">{"x":{"diagram":"\nsequenceDiagram\n    domain expert->>statistician: consult\n    statistician-->>domain expert: query\n    statistician->>Design: start_design()\n    statistician->>Design: set_units()"},"evals":[],"jsHooks":[]}</script>
 <p class="caption">
 Figure 3: Drawn using mermaid via DiagrammeR
 </p>
@@ -1571,8 +1582,8 @@ Figure 4: Drawn using nomnoml.com
 [design] -- [&lt;end&gt; end]
 [&lt;database&gt; data] -- [&lt;hidden&gt; hid]
 [&lt;actor&gt;technician] -- [&lt;hidden&gt; fin3]</code></pre>
-<div id="htmlwidget-e6c227fa6736ceaf5910" style="width:624px;height:384px;" class="nomnoml html-widget"></div>
-<script type="application/json" data-for="htmlwidget-e6c227fa6736ceaf5910">{"x":{"code":"\n#fill: #FEFEFF\n#lineWidth: 1\n#zoom: 4\n#direction: right\n\n[<actor>domain expert] -- [<hidden> fin1]\n[<actor>statistician] -- [<hidden> fin2]\n[design] -- [<end> end]\n[<database> data] -- [<hidden> hid]\n[<actor>technician] -- [<hidden> fin3]","svg":false},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-af20da75720733724724" style="width:624px;height:384px;" class="nomnoml html-widget"></div>
+<script type="application/json" data-for="htmlwidget-af20da75720733724724">{"x":{"code":"\n#fill: #FEFEFF\n#lineWidth: 1\n#zoom: 4\n#direction: right\n\n[<actor>domain expert] -- [<hidden> fin1]\n[<actor>statistician] -- [<hidden> fin2]\n[design] -- [<end> end]\n[<database> data] -- [<hidden> hid]\n[<actor>technician] -- [<hidden> fin3]","svg":false},"evals":[],"jsHooks":[]}</script>
 </div>
 <p>It turns out thought that the nomnoml <a href="https://github.com/skanaar/nomnoml/issues/1">doesn’t support sequence diagrams</a> and it doesn’t look like it will support it any time either.</p>
 <h3 id="plantuml">plantuml</h3>

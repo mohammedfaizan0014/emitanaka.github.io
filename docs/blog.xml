@@ -19,6 +19,8 @@ statistics, data science, R and academia.
       <dc:creator>Emi Tanaka</dc:creator>
       <link>https://emitanaka.org/posts/2021-01-29-uml-seq-diag</link>
       <description>Search for the way to draw a UML sequence diagram.</description>
+      <category>visualisation</category>
+      <category>diagram</category>
       <guid>https://emitanaka.org/posts/2021-01-29-uml-seq-diag</guid>
       <pubDate>Fri, 29 Jan 2021 00:00:00 +0000</pubDate>
       <media:content url="https://emitanaka.org/posts/2021-01-29-uml-seq-diag/seq-diag-omnigraffle.png" medium="image" type="image/png" width="863" height="708"/>
@@ -29,6 +31,8 @@ statistics, data science, R and academia.
       <link>https://emitanaka.org/posts/travel2019</link>
       <description>Making an interactive schedule heat map with
 interactive twitter card display.</description>
+      <category>visualisation</category>
+      <category>interactive</category>
       <guid>https://emitanaka.org/posts/travel2019</guid>
       <pubDate>Tue, 26 Mar 2019 00:00:00 +0000</pubDate>
     </item>
@@ -43,6 +47,7 @@ on, having its own hex stickers. For the sticker that I
 made for my R-package I found it easier, partly due to
 its long name, to use powerpoint to manipulate the
 image and create a semi-circular text.</description>
+      <category>fun</category>
       <guid>https://emitanaka.org/posts/hexsticker</guid>
       <pubDate>Fri, 06 Apr 2018 00:00:00 +0000</pubDate>
       <media:content url="https://emitanaka.org/posts/hexsticker/hexsticker.gif" medium="image" type="image/gif"/>

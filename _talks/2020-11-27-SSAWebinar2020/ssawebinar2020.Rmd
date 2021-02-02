@@ -10,6 +10,10 @@ author:
 date: 11-27-2020
 url: https://emitanaka.org/slides/SSA2020
 preview: preview.png
+base_url: http://emitanaka.org/
+twitter:
+  creator: "@statsgen"
+categories: [Experimental Design]
 output:
   distill::distill_article:
     self_contained: false

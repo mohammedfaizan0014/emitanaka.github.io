@@ -1,8 +1,0 @@
----
-title: "Publications listing"
-description: |
-  This section is under construction.
-listing: publications
----
-
-Under construction.
