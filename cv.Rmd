@@ -59,7 +59,7 @@ experimental design, mixed models, statistical graphics, bioinformatics, statist
 ## employment
 
 ```{r}
-dat <- read_csv("__cvdata/employment.csv") %>% 
+dat <- read_csv("../cv/data/employment.csv") %>% 
   mutate(start = dmy(start),
          end = dmy(end))
 dat %>% 
@@ -90,7 +90,7 @@ The University of Sydney
 ## publications
 
 ```{r, results="asis"}
-res <- read.bib("__cvdata/pubs.bib")
+res <- read.bib("../cv/data/pubs.bib")
 res[names(res)!="Tanaka2015-od"] # remove thesis
 ```
 
@@ -103,7 +103,7 @@ res[names(res)!="Tanaka2015-od"] # remove thesis
 ## service
 
 ```{r}
-dat <- read_csv("__cvdata/service.csv")
+dat <- read_csv("../cv/data/service.csv")
 dat %>% 
   mutate(end = ifelse(is.na(end), "ongoing", end),
          date = small(paste0(start, "-", end)),
@@ -116,7 +116,7 @@ dat %>%
 ## awards & distinctions
 
 ```{r}
-dat <- read_csv("__cvdata/awards.csv")
+dat <- read_csv("../cv/data/awards.csv")
 dat %>% 
   mutate(main = paste(name, small(significance)),
          money = scales::dollar(money),
