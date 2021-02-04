@@ -20,7 +20,9 @@ opts_chunk$set(
   warning = FALSE,
   message = FALSE
 )
-knit_pdf <- FALSE
+knit_pdf <- TRUE
+
+small <- function(x) paste0("<div style='font-size:0.75rem;line-height:0.9rem;'>", x, "</div>")
 ```
 
 <!--
@@ -57,7 +59,6 @@ experimental design, mixed models, statistical graphics, bioinformatics, statist
 ## employment
 
 ```{r}
-small <- function(x) paste0("<div style='font-size:0.75rem;line-height:0.9rem;'>", x, "</div>")
 dat <- read_csv("__cvdata/employment.csv") %>% 
   mutate(start = dmy(start),
          end = dmy(end))
@@ -98,6 +99,19 @@ res[names(res)!="Tanaka2015-od"] # remove thesis
 
 
 ## workshops
+
+## service
+
+```{r}
+dat <- read_csv("__cvdata/service.csv")
+dat %>% 
+  mutate(end = ifelse(is.na(end), "ongoing", end),
+         date = small(paste0(start, "-", end)),
+         org = paste0(org, ", ", suborg)) %>% 
+  select(date, org, position) %>% 
+  kable(col.names = c("", "", ""), escape = FALSE) %>% 
+  column_spec(c(1, 2, 3), extra_css = "vertical-align: top;")
+```
 
 ## awards & distinctions
 
