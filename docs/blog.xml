@@ -13,7 +13,18 @@ statistics, data science, R and academia.
       <link>https://emitanaka.org</link>
     </image>
     <generator>Distill</generator>
-    <lastBuildDate>Fri, 29 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 03 Feb 2021 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Current state of R packages for the design of experiments</title>
+      <dc:creator>Emi Tanaka</dc:creator>
+      <link>https://emitanaka.org/posts/2021-02-03-current-state-of-experimental-design-r-packages</link>
+      <description>Your analytical toolkit matters very little if the data are no good. Ideally you want to know to how the data were collected before delving into the analysis of the data; better yet, get involved _before_ the collection of data and design its collection. In this post I explore some of the top downloaded R packages for the design of experiments and analysis of experimental data.</description>
+      <category>experimental design</category>
+      <category>R</category>
+      <guid>https://emitanaka.org/posts/2021-02-03-current-state-of-experimental-design-r-packages</guid>
+      <pubDate>Wed, 03 Feb 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://emitanaka.org/posts/2021-02-03-current-state-of-experimental-design-r-packages/figures/download-timeplot-1.png" medium="image" type="image/png" width="1248" height="1344"/>
+    </item>
     <item>
       <title>Drawing a UML Sequence Diagram</title>
       <dc:creator>Emi Tanaka</dc:creator>
