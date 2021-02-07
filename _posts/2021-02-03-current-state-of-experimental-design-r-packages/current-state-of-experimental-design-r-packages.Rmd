@@ -157,13 +157,6 @@ There are all together `r length(doe_pkgs)` R-packages in the [CRAN Task View of
 
 The DoE packages don't include survey design. These instead belong to the [CRAN Task View of Official Statistics & Survey Methodology](https://cran.r-project.org/web/views/OfficialStatistics.html) which contains  `r length(survey_pkgs)` packages. While some surveys are part of an experimental study, most often they generate observational data. 
 
-  
-```{r cran-data, cache = TRUE}
-end <- Sys.Date() - 2 # usually 1-2 days are not available yet
-start <- end - years(5) + days(2)
-dldat <- cran_downloads(doe_pkgs, from = start, to = end)
-```
-
 
 Below I have a number of different analysis for these DoE packages. If you push the button on the top right corner of this article, you can toggle the display for the code or alternatively you can have a look at the source Rmd document.
 
@@ -278,6 +271,11 @@ graph_from_data_frame(doe_imports) %>%
 
 ## CRAN download logs
 
+```{r cran-data, cache = TRUE}
+end <- Sys.Date() - 2 # usually 1-2 days are not available yet
+start <- end - years(5) + days(2)
+dldat <- cran_downloads(doe_pkgs, from = start, to = end)
+```
 
 ```{r download-hist, eval = FALSE}
 dldat %>% 
@@ -300,7 +298,7 @@ Figure \@ref(fig:download-hist) shows the distribution of the total download cou
 ```{r download-hist, echo = FALSE, fig.cap = "(ref:hist)", toggle = FALSE}
 ```
 
-
+## Top 5 DoE packages
 
 ```{r top5}
 ntop <- 5
@@ -319,7 +317,6 @@ top5_df <- dldat %>%
   mutate(package = fct_reorder(package, count, function(x) -sum(x))) 
 ```
 
-## Top 5 DoE packages
 
 The top 5 downloaded DoE packages at the time of this writing are `r knitr::combine_words(paste0("<code>", top5, "</code>"))`. You can see the download counts in Figure \@ref(fig:download-barplot).
 

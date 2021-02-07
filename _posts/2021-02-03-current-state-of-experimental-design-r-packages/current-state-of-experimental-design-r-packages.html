@@ -1647,16 +1647,6 @@ to see all code in this article. You can also find the link to the source Rmd fi
 </div>
 <p>There are all together 113 R-packages in the <a href="https://cran.r-project.org/web/views/ExperimentalDesign.html">CRAN Task View of Design of Experiments &amp; Analysis of Experimental Data</a> as of 2021-02-07.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> I’m going to refer these packages as <strong><em>DoE packages</em></strong>, although there are some packages in the mix that are more about the analysis of experimental data rather than the design of experiments and there are some packages that are missing in the list (e.g. <code>DeclareDesign</code>). The DoE packages make up about 0.7% of the 17,036 packages available in CRAN.</p>
 <p>The DoE packages don’t include survey design. These instead belong to the <a href="https://cran.r-project.org/web/views/OfficialStatistics.html">CRAN Task View of Official Statistics &amp; Survey Methodology</a> which contains 132 packages. While some surveys are part of an experimental study, most often they generate observational data.</p>
-<div class="layout-chunk" data-layout="l-body">
-<div class="toggle-code">
-<div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>end</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/Sys.time.html'>Sys.Date</a></span><span class='op'>(</span><span class='op'>)</span> <span class='op'>-</span> <span class='fl'>2</span> <span class='co'># usually 1-2 days are not available yet</span>
-<span class='va'>start</span> <span class='op'>&lt;-</span> <span class='va'>end</span> <span class='op'>-</span> <span class='fu'><a href='http://lubridate.tidyverse.org/reference/period.html'>years</a></span><span class='op'>(</span><span class='fl'>5</span><span class='op'>)</span> <span class='op'>+</span> <span class='fu'><a href='http://lubridate.tidyverse.org/reference/period.html'>days</a></span><span class='op'>(</span><span class='fl'>2</span><span class='op'>)</span>
-<span class='va'>dldat</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://r-hub.github.io/cranlogs/reference/cran_downloads.html'>cran_downloads</a></span><span class='op'>(</span><span class='va'>doe_pkgs</span>, from <span class='op'>=</span> <span class='va'>start</span>, to <span class='op'>=</span> <span class='va'>end</span><span class='op'>)</span>
-</code></pre>
-</div>
-</div>
-</div>
 <p>Below I have a number of different analysis for these DoE packages. If you push the button on the top right corner of this article, you can toggle the display for the code or alternatively you can have a look at the source Rmd document.</p>
 <h2 id="bigram-of-doe-package-titles-and-descriptions">Bigram of DoE package titles and descriptions</h2>
 <div class="layout-chunk" data-layout="l-body">
@@ -2016,6 +2006,16 @@ Figure 1: The network of imports and dependency among DoE packages alone. Each n
 <div class="layout-chunk" data-layout="l-body">
 <div class="toggle-code">
 <div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>end</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/Sys.time.html'>Sys.Date</a></span><span class='op'>(</span><span class='op'>)</span> <span class='op'>-</span> <span class='fl'>2</span> <span class='co'># usually 1-2 days are not available yet</span>
+<span class='va'>start</span> <span class='op'>&lt;-</span> <span class='va'>end</span> <span class='op'>-</span> <span class='fu'><a href='http://lubridate.tidyverse.org/reference/period.html'>years</a></span><span class='op'>(</span><span class='fl'>5</span><span class='op'>)</span> <span class='op'>+</span> <span class='fu'><a href='http://lubridate.tidyverse.org/reference/period.html'>days</a></span><span class='op'>(</span><span class='fl'>2</span><span class='op'>)</span>
+<span class='va'>dldat</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://r-hub.github.io/cranlogs/reference/cran_downloads.html'>cran_downloads</a></span><span class='op'>(</span><span class='va'>doe_pkgs</span>, from <span class='op'>=</span> <span class='va'>start</span>, to <span class='op'>=</span> <span class='va'>end</span><span class='op'>)</span>
+</code></pre>
+</div>
+</div>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<div class="toggle-code">
+<div class="sourceCode">
 <pre class="sourceCode r"><code class="sourceCode r"><span class='va'>dldat</span> <span class='op'>%&gt;%</span> 
     <span class='fu'>group_by</span><span class='op'>(</span><span class='va'>package</span><span class='op'>)</span> <span class='op'>%&gt;%</span> 
     <span class='fu'>summarise</span><span class='op'>(</span>total <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/sum.html'>sum</a></span><span class='op'>(</span><span class='va'>count</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>%&gt;%</span>
@@ -2040,6 +2040,7 @@ Figure 2: Histogram of the total download count over last 5 years of the DoE pac
 </p>
 </div>
 </div>
+<h2 id="top-5-doe-packages">Top 5 DoE packages</h2>
 <div class="layout-chunk" data-layout="l-body">
 <div class="toggle-code">
 <div class="sourceCode">
@@ -2061,7 +2062,6 @@ Figure 2: Histogram of the total download count over last 5 years of the DoE pac
 </div>
 </div>
 </div>
-<h2 id="top-5-doe-packages">Top 5 DoE packages</h2>
 <p>The top 5 downloaded DoE packages at the time of this writing are <code>AlgDesign</code>, <code>agricolae</code>, <code>lhs</code>, <code>ez</code>, and <code>DoE.base</code>. You can see the download counts in Figure <a href="#fig:download-barplot">3</a>.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="toggle-code">
