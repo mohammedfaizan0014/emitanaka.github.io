@@ -1,8 +1,25 @@
 [
   {
+    "path": "teach/2020-12-01-data-wrangling-with-r/",
+    "title": "Data Wrangling with R",
+    "description": "Last hosted by Statistical Society of Australia NSW Branch",
+    "author": [
+      {
+        "name": "Emi Tanaka",
+        "url": "https://emitanaka.org"
+      }
+    ],
+    "date": "2020-12-01",
+    "categories": [],
+    "contents": "\n\n\nd-byline, d-appendix {\n  display: none!important;\n}\n\n Workshop Homepage\n\n\n\n",
+    "preview": {},
+    "last_modified": "2021-02-08T17:03:29+11:00",
+    "input_file": {}
+  },
+  {
     "path": "teach/2020-11-11-data-visualisation-with-r/",
     "title": "Data Visualisation with R",
-    "description": {},
+    "description": "Last hosted by Statistical Society of Australia VIC Branch",
     "author": [
       {
         "name": "Emi Tanaka",
@@ -15,9 +32,84 @@
     ],
     "date": "2020-11-11",
     "categories": [],
-    "contents": "\n\n\nd-byline, d-appendix {\n  display: none!important; \n}\n\n Workshop Homepage\n\n\n\n",
+    "contents": "\n\n\nd-byline, d-appendix {\n  display: none!important;\n}\n\n Workshop Homepage\n\n\n\n",
     "preview": {},
-    "last_modified": "2021-02-08T16:31:53+11:00",
+    "last_modified": "2021-02-08T17:10:06+11:00",
+    "input_file": {}
+  },
+  {
+    "path": "teach/2019-12-01-tidyverse-and-r-markdown-workshop/",
+    "title": "Tidyverse and R Markdown Workshop",
+    "description": "Last hosted by International Biometrics Society Australasia Region",
+    "author": [
+      {
+        "name": "Emi Tanaka",
+        "url": "https://emitanaka.org"
+      }
+    ],
+    "date": "2019-12-01",
+    "categories": [],
+    "contents": "\n\n\nd-byline, d-appendix {\n  display: none!important;\n}\n\n Workshop Homepage\n\n\n\n",
+    "preview": {},
+    "last_modified": "2021-02-08T17:12:53+11:00",
+    "input_file": {}
+  },
+  {
+    "path": "teach/2019-11-19-r-package-r-markdown-workshop/",
+    "title": "R Package & R Markdown Workshop",
+    "description": "Last hosted by Statistical Society of Australia VIC Branch",
+    "author": [
+      {
+        "name": "‪Damjan Vukcevic‬",
+        "url": "http://damjan.vukcevic.net/"
+      },
+      {
+        "name": "Emi Tanaka",
+        "url": "https://emitanaka.org"
+      }
+    ],
+    "date": "2019-11-19",
+    "categories": [],
+    "contents": "\n\n\nd-byline, d-appendix {\n  display: none!important;\n}\n\n Workshop Homepage\n\n\n\n",
+    "preview": {},
+    "last_modified": "2021-02-08T17:09:58+11:00",
+    "input_file": {}
+  },
+  {
+    "path": "teach/2018-11-13-statistical-methods-for-omics-assisted-breeding/",
+    "title": "Statistical Methods for Omics Assisted Breeding",
+    "description": "Last hosted by the University of Tokyo.",
+    "author": [
+      {
+        "name": "Emi Tanaka",
+        "url": "https://emitanaka.org"
+      },
+      {
+        "name": "Gota Morota",
+        "url": {}
+      },
+      {
+        "name": "Diego Jarquin",
+        "url": {}
+      },
+      {
+        "name": "Malachy Campbell",
+        "url": {}
+      },
+      {
+        "name": "Jessica Tressou",
+        "url": {}
+      },
+      {
+        "name": "Hiroyoshi Iwata",
+        "url": {}
+      }
+    ],
+    "date": "2018-11-12",
+    "categories": [],
+    "contents": "\n\n\nd-byline, d-appendix {\n  display: none!important;\n}\n\n Workshop Homepage\nSlides to components I taught:\nData Visualization in R\nIntroduction to ASReml-R\nFactor Analytic Model\nSpatial Analysis of Crop Field Trials\nExperimental Design\n\n\n\n",
+    "preview": {},
+    "last_modified": "2021-02-08T17:22:58+11:00",
     "input_file": {}
   }
 ]

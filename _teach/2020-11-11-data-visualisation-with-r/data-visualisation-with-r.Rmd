@@ -1,5 +1,7 @@
 ---
 title: "Data Visualisation with R"
+description: >
+  Last hosted by Statistical Society of Australia VIC Branch
 author:
   - name: Emi Tanaka
     url: https://emitanaka.org
@@ -12,8 +14,7 @@ output:
 
 ```{css, echo = FALSE}
 d-byline, d-appendix {
-  display: none!important; 
+  display: none!important;
 }
 ```
-
 <i class="fas fa-link"></i> [Workshop Homepage](https://emitanaka.org/datavis-workshop-ssavic/)

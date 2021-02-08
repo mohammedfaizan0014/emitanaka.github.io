@@ -1,8 +1,23 @@
 ---
-title: "Teaching and Workshop"
+title: "Workshop"
 description: |
   This section contains the list of workshops and teaching.
 listing: teach
 ---
 
+<div class="l-page" style="margin-top:40px;">
 
+<h1 style="font-size:2em;font-weight:400;">Teaching</h1>
+
+At Monash University, I teach:
+
+  * [**ETC5512 Wild Caught Data**](https://wcd.numbat.space/) (25%)
+  * [**ETC5521 Exploratory Data Analysis**](https://eda.numbat.space/) (50%)
+  * [**ETC5523 Communicating with Data**](https://cwd.numbat.space/) (50%)
+
+In the past I have taught:
+
+* **STAT3012 Applied Linear Models** at The University of Sydney and
+* **STAT906 Experimental Design** at the University of Wollongong.
+
+</div>

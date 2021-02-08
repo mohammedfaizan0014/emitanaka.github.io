@@ -1,0 +1,19 @@
+---
+title: "Tidyverse and R Markdown Workshop"
+description: |
+  Last hosted by International Biometrics Society Australasia Region
+author:
+  - name: Emi Tanaka
+    url: https://emitanaka.org
+date: 2019-12-01
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+```{css, echo = FALSE}
+d-byline, d-appendix {
+  display: none!important;
+}
+```
+<i class="fas fa-link"></i> [Workshop Homepage](https://biometrics2019.netlify.app/)
