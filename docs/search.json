@@ -42,8 +42,8 @@
       "title": "Workshop",
       "description": "This section contains the list of workshops and teaching.\n",
       "author": [],
-      "contents": "\n\n\nTeaching\n\nAt Monash University, I teach:\nETC5512 Wild Caught Data (25%)\nETC5521 Exploratory Data Analysis (50%)\nETC5523 Communicating with Data (50%)\nIn the past I have taught:\nSTAT3012 Applied Linear Models at The University of Sydney and\nSTAT906 Experimental Design at the University of Wollongong.\n\n\n\n\n",
-      "last_modified": "2021-02-08T17:37:43+11:00"
+      "contents": "\n\n\nTeaching\n\nAt Monash University, I teach:\nETC5512 Wild Caught Data (25%)\nETC5521 Exploratory Data Analysis (50%)\nETC5523 Communicating with Data (50%)\nIn the past I have taught:\nSTAT5002 Introduction to Statistics (50%) at The University of Sydney,\nSTAT3012 Applied Linear Models (75%) at The University of Sydney,\nSTAT906 Experimental Design (100%) at the University of Wollongong,\nand tutored various mathematics and statistics courses at The Univeristy of Sydney including lecturing for MATH1013 Mathematical Modelling (50%).\n\n\n\n\n",
+      "last_modified": "2021-02-08T17:47:59+11:00"
     }
   ],
   "collections": ["posts/posts.json", "talks/talks.json", "teach/teach.json"]

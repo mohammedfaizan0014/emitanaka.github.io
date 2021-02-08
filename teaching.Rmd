@@ -17,7 +17,10 @@ At Monash University, I teach:
 
 In the past I have taught:
 
-* **STAT3012 Applied Linear Models** at The University of Sydney and
-* **STAT906 Experimental Design** at the University of Wollongong.
+* **STAT5002 Introduction to Statistics** (50%) at The University of Sydney,
+* **STAT3012 Applied Linear Models** (75%) at The University of Sydney,
+* **STAT906 Experimental Design** (100%) at the University of Wollongong,
+
+and tutored various mathematics and statistics courses at The Univeristy of Sydney including lecturing for *MATH1013 Mathematical Modelling* (50%).
 
 </div>
