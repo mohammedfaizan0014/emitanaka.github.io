@@ -1,0 +1,23 @@
+[
+  {
+    "path": "teach/2020-11-11-data-visualisation-with-r/",
+    "title": "Data Visualisation with R",
+    "description": {},
+    "author": [
+      {
+        "name": "Emi Tanaka",
+        "url": "https://emitanaka.org"
+      },
+      {
+        "name": "Di Cook",
+        "url": "http://dicook.org/"
+      }
+    ],
+    "date": "2020-11-11",
+    "categories": [],
+    "contents": "\n\n\nd-byline, d-appendix {\n  display: none!important; \n}\n\n Workshop Homepage\n\n\n\n",
+    "preview": {},
+    "last_modified": "2021-02-08T16:31:53+11:00",
+    "input_file": {}
+  }
+]

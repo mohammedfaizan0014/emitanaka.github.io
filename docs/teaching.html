@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
   <meta name="generator" content="distill" />
+  <link rel="alternate" type="application/rss+xml" href="https://emitanaka.org/teaching.xml" />
 
   <style type="text/css">
   /* Hide doc at startup (prevent jankiness while JS renders/transforms) */
@@ -85,29 +86,32 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
 
   <!--radix_placeholder_meta_tags-->
-  <title>Emi Tanaka</title>
+  <title>Emi Tanaka: Teaching and Workshop</title>
 
+  <meta property="description" itemprop="description" content="This section contains the list of workshops and teaching."/>
 
   <link rel="license" href="https://creativecommons.org/licenses/by/4.0/"/>
   <link rel="icon" type="image/png" href="images/avatar.png"/>
 
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="Emi Tanaka"/>
+  <meta property="og:title" content="Emi Tanaka: Teaching and Workshop"/>
   <meta property="og:type" content="article"/>
+  <meta property="og:description" content="This section contains the list of workshops and teaching."/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="Emi Tanaka"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="Emi Tanaka"/>
+  <meta property="twitter:title" content="Emi Tanaka: Teaching and Workshop"/>
+  <meta property="twitter:description" content="This section contains the list of workshops and teaching."/>
   <meta property="twitter:site" content="@statsgen"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","site"]}},"value":[{"type":"character","attributes":{},"value":["Emi Tanaka"]},{"type":"character","attributes":{},"value":["distill::distill_website"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","listing"]}},"value":[{"type":"character","attributes":{},"value":["Teaching and Workshop"]},{"type":"character","attributes":{},"value":["This section contains the list of workshops and teaching.\n"]},{"type":"character","attributes":{},"value":["teach"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2492,12 +2496,12 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 </head>
 
-<body>
+<body class="layout-listing">
 
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Emi Tanaka","authors":[]}
+{"title":"Teaching and Workshop","description":"This section contains the list of workshops and teaching.","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2533,287 +2537,180 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_navigation_before_body-->
 <!--radix_placeholder_site_before_body-->
 <!--/radix_placeholder_site_before_body-->
+<!--radix_placeholder_article_listing-->
+
+
+<script type="application/javascript">
+
+function init_posts_list() {
+
+  function load_image(img) {
+    var src = $(img).attr('data-src');
+    if (src) {
+      $(img).attr('src', src);
+      $(img).load(function() {
+        img.removeAttribute('data-src');
+      });
+    }
+  }
+
+  function set_posts_visible(posts, visible) {
+    if (visible) {
+
+      // show bottom border by default
+      $(posts).removeClass('post-preview-last');
+
+      // apply limits if need be
+      var max_posts = 25;
+      var apply_limits = $('.posts-container').hasClass('posts-apply-limit');
+      if (apply_limits && posts.length > max_posts) {
+        posts = $(posts).slice(0, max_posts);
+      } else {
+        $('.posts-more a').addClass('hidden');
+      }
+
+      // apply last style
+      $(posts.slice(-1)[0]).addClass('post-preview-last');
+
+      $(posts).removeClass('hidden');
+      $(posts).find('img[data-src]').each(function(i, img) {
+        load_image(img);
+      });
+    } else {
+      $(posts).addClass('hidden');
+    }
+  }
+
+  function apply_hash_filter() {
+
+    // clear active state
+    $('.categories .active').removeClass('active');
+
+    // mark all posts invisible to start
+    set_posts_visible($('.posts-list').children('a'), false);
+
+    // if we have a hash filter
+    if (window.location.hash && window.location.hash.startsWith("#category:")) {
+
+      // mark posts that match the category visible
+      var page_category = window.location.hash.replace(/^#category:/, "");
+      var posts = $('.post-metadata').map(function(idx, script) {
+        var metadata = $.parseJSON($(script).html());
+        var post = null;
+        $.each(metadata.categories, function(idx, category) {
+          category = category.replace(/ /g,"_");
+          if ((page_category || '').toLowerCase() === "articles" || category === page_category) {
+            post = $(script).parent().get();
+            return false;
+          }
+        });
+        return post;
+      });
+      set_posts_visible(posts, true);
+
+      // mark the hash active
+      $('.categories li>a[href="' + window.location.hash + '"]').addClass('active');
+
+      // update the list_caption
+      var list_caption = $('.posts-list-caption');
+      var caption = (page_category || '').toLowerCase() === "articles"
+        ? list_caption.attr('data-caption')
+        : ('Category: ' + page_category.replace(/_/g," "));
+      list_caption.text(caption);
+
+    } else {
+
+      // no hash filter, make all posts visible (subject to max display)
+      set_posts_visible($('.posts-list').children(), true);
+
+      // reset list caption
+      var list_caption = $('.posts-list-caption');
+      list_caption.text(list_caption.attr('data-caption'));
+
+
+    }
+  }
+
+  // more articles
+  function apply_post_limits(apply) {
+    if (apply) {
+      $('.posts-container').addClass('posts-apply-limit');
+      $('.posts-more a').removeClass('hidden');
+    } else {
+      $('.posts-container').removeClass('posts-apply-limit');
+      $('.posts-more a').addClass('hidden');
+    }
+  }
+
+  // click handling for tags
+  $('.dt-tag').click(function(ev) {
+    window.location.hash = '#category:' + $(this).text().replace(/ /g, "_");
+    return false;
+  })
+
+  // hash filter handling
+  apply_hash_filter();
+  $(window).on('hashchange',function() {
+    apply_post_limits(true);
+    apply_hash_filter();
+  });
+
+  // more articles link
+  $('.posts-more a').click(function(e) {
+    e.preventDefault();
+    apply_post_limits(false);
+    apply_hash_filter();
+    return false;
+  });
+
+}
+
+</script>
+
+
+
+<div class="posts-container posts-apply-limit l-page">
+<div class="posts-list">
+<h1 class="posts-list-caption" data-caption="Teaching and Workshop">Teaching and Workshop</h1>
+<a href="teach/2020-11-11-data-visualisation-with-r/" class="post-preview">
+<script class="post-metadata" type="text/json">{"categories":[]}</script>
+<div class="metadata">
+<div class="publishedDate">Nov. 11, 2020</div>
+<div class="dt-authors">
+<div class="dt-author">Emi Tanaka</div>
+<div class="dt-author">Di Cook</div>
+</div>
+</div>
+<div class="thumbnail"></div>
+<div class="description">
+<h2>Data Visualisation with R</h2>
+<div class="dt-tags"></div>
+<p></p>
+</div>
+</a>
+</div>
+<div class="posts-more">
+<a href="#">More articles &raquo;</a>
+</div>
+</div>
+<!--/radix_placeholder_article_listing-->
 
 <div class="d-title">
-<h1>Emi Tanaka</h1>
+<h1>Teaching and Workshop</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-
+<p><p>This section contains the list of workshops and teaching.</p></p>
 </div>
 
 
 <div class="d-article">
 <div class="layout-chunk" data-layout="l-body">
 <style type="text/css">
-body {
-  background: linear-gradient(130deg, #AD0059 25%, #79003e 75%);
-}
-
-
-html {
-  /*-- Main font colors --*/
-  --title-color:     #ffffff;
-  --header-color:    rgba(255, 255, 255, 0.8);
-  --body-color:      rgba(255, 255, 255, 1);
-  --aside-color:     rgba(255, 255, 255, 0.6);
-  --fig-cap-color:   rgba(255, 255, 255, 0.6);
-}
-
-.distill-site-footer {
-  --text-color:       rgba(0, 0, 0, 1);
-  --text-size:        15px;
-  --hover-color:      black;
-  --bkgd-color:       white;
-}
-
-d-appendix {
-  display: none!important;
-}
-
-d-article {
-  color: white;
-}
-
-
-.profile-photo {
-  vertical-align: middle;
-  padding: 1.5rem!important;
-  box-sizing: border-box;
-}
-
-.profile-photo img {
-  // border: 1px solid black;
-  border-radius: 50%!important;
-  width: 12rem!important;
-}
-
-
-/* --- github calender --- */
-
-:root {
-  --color-calendar-graph-day-bg: #dddbdb;
-  --color-calendar-graph-day-L1-bg: #cd669b;
-  --color-calendar-graph-day-L2-bg: #bd327a;
-  --color-calendar-graph-day-L3-bg: #ad0059;
-  --color-calendar-graph-day-L4-bg: #79003e;
-}
-
-.calendar {
-    width: 100%;
-    background-color: white;
-    font-family: Helvetica, arial;
-    border: 1px solid #DDDDDD;
-    border-radius: 3px;
-    min-height: 243px;
-    text-align: center;
-    margin: 0 auto;
-    padding: 10px;
-    color: black;
-}
-
-.js-calendar-graph-svg {
-  width: 100%;
-}
-
-.calendar-graph text.wday,
-.calendar-graph text.month {
-    font-size: 10px;
-    fill: #aaa;
-}
-
-.contrib-legend {
-    text-align: right;
-    padding: 0 10px 10px 0;
-    display: inline-block;
-    float: right;
-}
-
-.contrib-legend .legend {
-    display: inline-block;
-    list-style: none;
-    margin: 0 5px;
-    position: relative;
-    bottom: -1px;
-    padding: 0;
-}
-
-.contrib-legend .legend li {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-}
-
-.text-small {
-    font-size: 12px;
-    color: #767676;
-}
-
-.calendar-graph {
-    padding: 5px 0 0;
-    text-align: center;
-}
-
-.contrib-column {
-    padding: 15px 0;
-    text-align: center;
-    border-left: 1px solid #ddd;
-    border-top: 1px solid #ddd;
-    font-size: 11px;
-}
-
-.contrib-column-first {
-    border-left: 0;
-}
-
-.table-column {
-    display: table-cell;
-    width: 5%;
-    padding-right: 10px;
-    padding-left: 10px;
-    vertical-align: top;
-}
-
-.contrib-number {
-    font-weight: 300;
-    line-height: 1.3em;
-    font-size: 24px;
-    display: block;
-    color: #333;
-}
-
-.calendar img.spinner {
-    width: 70px;
-    margin-top: 50px;
-    min-height: 70px;
-}
-
-.monospace {
-    text-align: center;
-    color: #000;
-    font-family: monospace;
-}
-
-.monospace a {
-    color: #1D75AB;
-    text-decoration: none;
-}
-
-.contrib-footer {
-    font-size: 11px;
-    padding: 0 10px 12px;
-    text-align: left;
-    width: 100%;
-    box-sizing: border-box;
-    height: 26px;
-}
-
-.left.text-muted {
-    float: left;
-    margin-left: 9px;
-    color: #767676;
-}
-.left.text-muted a {
-    color: #4078c0;
-    text-decoration: none;
-}
-.left.text-muted a:hover,
-.monospace a:hover {
-    text-decoration: underline;
-}
-
-h2.f4.text-normal.mb-3 {
-    display: none;
-}
-
-.float-left.text-gray {
-    float: left;
-}
-#user-activity-overview{
-    display:none;
-}
-
-.day-tooltip {
-    white-space: nowrap;
-    position: absolute;
-    z-index: 99999;
-    padding: 10px;
-    font-size: 12px;
-    color: #959da5;
-    text-align: center;
-    background: rgba(0,0,0,.85);
-    border-radius: 3px;
-    display: none;
-    pointer-events: none;
-}
-.day-tooltip strong {
-    color: #dfe2e5;
-}
-.day-tooltip.is-visible {
-    display: block;
-}
-.day-tooltip:after {
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    width: 5px;
-    height: 5px;
-    box-sizing: border-box;
-    margin: 0 0 0 -5px;
-    content: " ";
-    border: 5px solid transparent;
-    border-top-color: rgba(0,0,0,.85)
+.thumbnail {
+  border: 1px solid black;
 }
 </style>
 </div>
-<div class="profile-photo">
-<p><img  src="images/avatar.jpg" alt="Profile photo"></p>
-</div>
-<h2 id="hi-welcome-to-my-website">Hi! Welcome to my website!</h2>
-<p>I’m a lecturer (equivalent to assistant professor) in statistics at Monash University, Melbourne, Australia. Research-wise, I’m interested in developing useful statistical tools and methods. My experience in application is in bioinformatics and agriculture (particularly crop breeding). My active research areas are <strong>experimental design</strong>, <strong>mixed models</strong> and <strong>statistical graphics</strong>.</p>
-<p>I speak English, Japanese (conversational) and R (base + tidyverse) fluently. I’ve lived in Australia almost all of my life (+-10 years standard deviation) and my university major was mathematics and statistics. My PhD, obtained at the School of Mathematics and Statistics, University of Sydney in 2015, is in statistical bioinformatics with most of my code written in Python + Bash (both of which I am rusty now). I also like to dabble on front-end web development (HTML/CSS/JS).</p>
-<script
-  src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
-</script>
-<div class="l-body-outset">
-<a href="https://github.com/emitanaka">
-<div class="calendar">
-<p>Loading my github calendar data.</p>
-</div>
-<p></a></p>
-</div>
-<script>
-GitHubCalendar(".calendar", "emitanaka", { responsive: true });
-</script>
-<h2 id="you-can-find-me-at">You can find me at …</h2>
-<div class="layout-chunk" data-layout="l-body">
-<table>
-<colgroup>
-<col style="width: 25%" />
-<col style="width: 74%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;"><i class="fab fa-twitter"></i></td>
-<td style="text-align: left;"><a href="https://twitter.com/statsgen">statsgen</a></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><i class="fab fa-github"></i></td>
-<td style="text-align: left;"><a href="https://github.com/emitanaka">emitanaka</a></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><i class="fas fa-envelope"></i></td>
-<td style="text-align: left;"><a href="mailto:emitanaka@monash.edu">emitanaka@monash.edu</a></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><i class="fas fa-map-marker-alt"></i></td>
-<td style="text-align: left;">Monash University<br>Monash Business School<br>Menzies Building E776<br>Clayton campus, VIC 3800<br>Australia</td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>You can also find me at various conferences and events. I’m a regular at the <a href="http://biometrics.org.au/conferences.html">International Biometrics Australiasia Region Conferences</a>, involved a lot with <a href="https://www.statsoc.org.au/Events-listing">Statistical Society of Australia</a> (mostly Victorian Branch) and attend <a href="https://www.meetup.com/en-AU/rladies-melbourne/">R-Ladies Melbourne</a> (or other chapters sometimes).</p>
-<h2 id="website-construction">Website construction 👷🏻‍♀</h2>
-<p>I decided to redo my website using the <a href="https://rstudio.github.io/distill/">distill</a> R-package and so some parts of my website is in construction. If you are interested in the source code of this website, you can find it <a href="https://github.com/emitanaka/emitanaka.github.io">here</a>.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->

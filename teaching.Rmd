@@ -1,0 +1,8 @@
+---
+title: "Teaching and Workshop"
+description: |
+  This section contains the list of workshops and teaching.
+listing: teach
+---
+
+

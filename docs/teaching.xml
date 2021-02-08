@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>Emi Tanaka</title>
+    <link>https://emitanaka.org</link>
+    <atom:link href="https://emitanaka.org/teaching.xml" rel="self" type="application/rss+xml"/>
+    <description>Emi Tanaka's website and blog that mainly features about
+statistics, data science, R and academia. 
+</description>
+    <image>
+      <title>Emi Tanaka</title>
+      <url>https://emitanaka.org/images/avatar.png</url>
+      <link>https://emitanaka.org</link>
+    </image>
+    <generator>Distill</generator>
+    <lastBuildDate>Wed, 11 Nov 2020 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Data Visualisation with R</title>
+      <dc:creator>Emi Tanaka</dc:creator>
+      <dc:creator>Di Cook</dc:creator>
+      <link>https://emitanaka.org/teach/2020-11-11-data-visualisation-with-r</link>
+      <description>Data Visualisation with R</description>
+      <guid>https://emitanaka.org/teach/2020-11-11-data-visualisation-with-r</guid>
+      <pubDate>Wed, 11 Nov 2020 00:00:00 +0000</pubDate>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,19 @@
+---
+title: "Data Visualisation with R"
+author:
+  - name: Emi Tanaka
+    url: https://emitanaka.org
+  - name: Di Cook
+    url: http://dicook.org/
+date: 2020-11-11
+output:
+  distill::distill_article
+---
+
+```{css, echo = FALSE}
+d-byline, d-appendix {
+  display: none!important; 
+}
+```
+
+<i class="fas fa-link"></i> [Workshop Homepage](https://emitanaka.org/datavis-workshop-ssavic/)

@@ -18,11 +18,15 @@
   </url>
   <url>
     <loc>https://emitanaka.org/talks.html</loc>
-    <lastmod>2021-02-03T09:01:54+11:00</lastmod>
+    <lastmod>2021-02-08T16:03:32+11:00</lastmod>
+  </url>
+  <url>
+    <loc>https://emitanaka.org/teaching.html</loc>
+    <lastmod>2021-02-08T16:31:00+11:00</lastmod>
   </url>
   <url>
     <loc>https://emitanaka.org/posts/2021-02-03-current-state-of-experimental-design-r-packages/</loc>
-    <lastmod>2021-02-07T18:36:13+11:00</lastmod>
+    <lastmod>2021-02-07T18:36:14+11:00</lastmod>
   </url>
   <url>
     <loc>https://emitanaka.org/posts/2021-01-29-uml-seq-diag/</loc>
@@ -38,7 +42,7 @@
   </url>
   <url>
     <loc>https://emitanaka.org/talks/2021-01-23-tokyor2021/</loc>
-    <lastmod>2021-02-05T08:16:49+11:00</lastmod>
+    <lastmod>2021-02-07T14:02:40+11:00</lastmod>
   </url>
   <url>
     <loc>https://emitanaka.org/talks/2020-11-27-SSAWebinar2020/</loc>
@@ -51,5 +55,9 @@
   <url>
     <loc>https://emitanaka.org/talks/2020-06-30-rladiesSSA2020/</loc>
     <lastmod>2021-02-03T09:09:46+11:00</lastmod>
+  </url>
+  <url>
+    <loc>https://emitanaka.org/teach/2020-11-11-data-visualisation-with-r/</loc>
+    <lastmod>2021-02-08T16:31:53+11:00</lastmod>
   </url>
 </urlset>
