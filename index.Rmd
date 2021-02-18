@@ -282,7 +282,7 @@ df <- data.frame(what = c('<i class="fab fa-twitter"></i>',
                            '<i class="fas fa-map-marker-alt"></i>'),
                  where = c("[statsgen](https://twitter.com/statsgen)",
                            "[emitanaka](https://github.com/emitanaka)",
-                           "[emitanaka@monash.edu](mailto:emitanaka@monash.edu)",
+                           "[emi.tanaka@monash.edu](mailto:emi.tanaka@monash.edu)",
                            "Monash University<br>Monash Business School<br>Menzies Building E776<br>Clayton campus, VIC 3800<br>Australia"))
 knitr::kable(df, col.names = c("", ""), escape = FALSE)
 ```
