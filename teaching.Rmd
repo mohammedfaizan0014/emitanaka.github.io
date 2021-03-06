@@ -1,13 +1,26 @@
 ---
-title: "Workshop"
+title: "Teaching + Workshop"
 description: |
-  This section contains the list of workshops and teaching.
-listing: teach
+  This section contains the list of my workshops and teaching.
 ---
 
-<div class="l-page" style="margin-top:40px;">
+<style>
+d-title {
+ display:none;
+}
+</style>
 
-<h1 style="font-size:2em;font-weight:400;">Teaching</h1>
+```{r setup, include = FALSE}
+library(tidyverse)
+knitr::opts_chunk$set(echo = FALSE,
+                      message = FALSE,
+                      warning = FALSE)
+```
+
+
+<br>
+
+# Teaching
 
 At Monash University, I teach:
 
@@ -23,4 +36,30 @@ In the past I have taught:
 
 and tutored various mathematics and statistics courses at The Univeristy of Sydney including lecturing for *MATH1013 Mathematical Modelling* (50%).
 
-</div>
+
+# Workshop
+
+<ul>
+```{r, results="asis"}
+small <- function(x) paste0("<span style='font-size:0.75rem;line-height:0.9rem;'>", x, "</span>")
+dat <- read_csv("../cv/data/workshops.csv")
+dat %>% 
+  filter(parent!="no") %>% 
+  mutate(text = glue::glue("<li><b>{title}</b> <a href='{url}'><i class='fas fa-globe'></i></a><br> {small(paste0('Last hosted by the <b>', host, '</b> at ', date_start))}</li>")) %>% 
+  pull(text) %>% 
+  paste(collapse = "\n") %>% 
+  cat()
+```
+<ul>
+```{r, results="asis"}
+dat %>% 
+  filter(group=="SMfOMAB1",
+         parent=="no") %>% 
+  mutate(text = glue::glue("<li style='font-size:0.85rem;'>{title} <a href='{url}'><i class='fas fa-link'></i></a></li>")) %>% 
+  pull(text) %>% 
+  paste(collapse = "\n") %>% 
+  cat()
+```
+</ul>
+</ul>
+

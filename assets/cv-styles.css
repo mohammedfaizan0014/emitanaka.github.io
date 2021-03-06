@@ -57,7 +57,8 @@ main > h2, main > h3, main > h4 {
     position: relative;
     top: 0;
     left: 0;
-    padding: 0;
+    padding: 0.3in;
+    width: 8.5in;
     -webkit-box-shadow: none;
           box-shadow: none;
   }
