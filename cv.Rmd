@@ -11,9 +11,9 @@ description: |
 
 ```{r setup, include = FALSE}
 library(tidyverse)
-library(bibtex)
 library(lubridate)
 library(knitr)
+library(glue)
 library(kableExtra)
 opts_chunk$set(
   echo = FALSE,
@@ -58,11 +58,11 @@ experimental design, mixed models, statistical graphics, bioinformatics, statist
 
 ## employment
 
-```{r}
-dat <- read_csv("../cv/data/employment.csv") %>% 
+```{r work}
+work <- read_csv("../cv/data/employment.csv") %>% 
   mutate(start = dmy(start),
          end = dmy(end))
-dat %>% 
+work %>% 
   mutate(start = sprintf("%d/%.2d", year(start), month(start)),
          end = sprintf("%d/%.2d", year(end), month(end)),
          end = ifelse(end=="NA/NA", "current", end),
@@ -89,22 +89,95 @@ The University of Sydney
 
 ## publications
 
-```{r, results="asis"}
-res <- read.bib("../cv/data/pubs.bib")
-res[names(res)!="Tanaka2015-od"] # remove thesis
+<ol>
+```{r pubs, results='asis'}
+pubs_key <- read_csv("../cv/data/pubs-key.csv") %>% 
+  separate_rows(pubid, sep = ", ")
+scholar <- scholar::get_publications("v8FN0qoAAAAJ") %>% 
+  select(pubid, cites, year) %>% 
+  right_join(pubs_key, by = "pubid") %>% 
+  group_by(id) %>% 
+  summarise(citations = sum(cites),
+            year = max(year))
+pubs <- vitae::bibliography_entries("../cv/data/pubs.bib") %>% 
+  left_join(scholar, by = "id") %>% 
+  as_tibble() %>% 
+  arrange(desc(issued))
+
+pubs %>% 
+  mutate(author = map(author, ~map_chr(.x, function(x) {
+            if(x$family=="Tanaka" & x$given=="Emi") {
+              glue("<b>{x$family}, {substr(x$given, 1, 1)}</b>")
+            } else {
+              glue("{x$family}, {substr(x$given, 1, 1)}")
+            } 
+          })),
+         author = map_chr(author, ~knitr::combine_words(.x, and = " & ")),
+         journal = ifelse(is.na(`container-title`), "PhD Thesis", `container-title`)) %>% 
+  mutate(text = glue("{author} ({year}) {title}. <i>{journal}</i>"),
+         text = case_when(!is.na(volume) & !is.na(issue) ~ glue("{text}, {volume}({issue})"),
+                          !is.na(volume) ~ glue("{text}, {volume}"),
+                          TRUE ~ text),
+         text = ifelse(!is.na(page), glue("{text}, {page}"), text),
+         text = ifelse(citations > 0, glue("{text}. <i>Citations: <b>{citations}</b></i>."), text)) %>% 
+  pull(text) %>% 
+  paste0("<li>", ., "</li>") %>% 
+  cat()
 ```
+</ol>
 
+<span style="font-size:0.7rem">Citation counts are sourced from Google Scholar at `r today()`.</span>
 
-## presentations
+## talks
+
+(Note: work-in-progress - data incomplete)
+
+<span style="font-size:0.7rem">
+List of talks (and links to the slides if available) are at <b>https://emitanaka.org/talks.html</b>.  
+Below show the last 10 talks.
+</span>
+
+```{r talk}
+read_csv("../cv/data/talks.csv") %>% 
+  filter(type=="external") %>% 
+  mutate(date = dmy(date)) %>% 
+  slice_max(order_by = date, n = 10) %>% 
+  select(date, title, host) %>% 
+  mutate(date = small(date),
+         host = small(host)) %>% 
+  kable(col.names = c("", "", ""), escape = FALSE) %>% 
+  column_spec(2, width = "25em") %>% 
+  column_spec(c(1, 3), extra_css = "vertical-align: top;")
+```
 
 
 ## workshops
 
+(Note: work-in-progress -  data incomplete)
+
+```{r workshop}
+read_csv("../cv/data/workshops.csv") %>% 
+  filter(parent!="no") %>% 
+  mutate(date = dmy(date_start),
+         date = small(glue("{year(date)}/{month(date)}")),
+         text = title,
+         text = ifelse(is.na(copresenters), 
+                       text, 
+                       paste0(text, small(glue("<i>Co-presented with {copresenters}.</i>")))),
+         text = ifelse(is.na(host), 
+                       text, 
+                       paste0(text, small(glue("<i>Hosted by {host}.</i>"))))) %>% 
+  select(date, text) %>% 
+  kable(col.names = c("", ""), escape = FALSE) %>% 
+  column_spec(c(1, 2), extra_css = "vertical-align: top;")
+```
+
+
 ## service
 
-```{r}
-dat <- read_csv("../cv/data/service.csv")
-dat %>% 
+```{r service}
+service <- read_csv("../cv/data/service.csv")
+service %>% 
   mutate(end = ifelse(is.na(end), "ongoing", end),
          date = small(paste0(start, "-", end)),
          org = paste0(org, ", ", suborg)) %>% 
@@ -113,14 +186,22 @@ dat %>%
   column_spec(c(1, 2, 3), extra_css = "vertical-align: top;")
 ```
 
+## professional memberships
+
+* Statistical Society of Australia 
+* International Biometrics Society
+
 ## awards & distinctions
 
 ```{r}
-dat <- read_csv("../cv/data/awards.csv")
-dat %>% 
-  mutate(main = paste(name, small(significance)),
+awards <- read_csv("../cv/data/awards.csv") 
+awards %>% 
+  mutate(significance = replace_na(significance, ""),
+         main = name,
+         main = ifelse(is.na(lead), main, paste(main, small(paste("Lead:", lead)))),
+         main = paste(main, small(significance)),
          money = scales::dollar(money),
-         money = ifelse(is.na(money), "", money)) %>% 
+         money = replace_na(money, "")) %>% 
   select(award_year, main, money) %>% 
   kable(col.names = c("", "", ""), escape = FALSE) %>% 
   column_spec(2, width = "30em") %>% 
