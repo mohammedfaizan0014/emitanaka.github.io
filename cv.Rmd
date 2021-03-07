@@ -139,7 +139,6 @@ Below show the last 10 talks.
 
 ```{r talk}
 read_csv("../cv/data/talks.csv") %>% 
-  filter(type=="external") %>% 
   mutate(date = dmy(date)) %>% 
   slice_max(order_by = date, n = 10) %>% 
   select(date, title, host) %>% 
