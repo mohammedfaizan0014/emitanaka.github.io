@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
   <meta name="generator" content="distill" />
+  <link rel="alternate" type="application/rss+xml" href="https://emitanaka.org/talks.xml" />
 
   <style type="text/css">
   /* Hide doc at startup (prevent jankiness while JS renders/transforms) */
@@ -85,32 +86,32 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
 
   <!--radix_placeholder_meta_tags-->
-  <title>Emi Tanaka: Curriculum vitae</title>
+  <title>Emi Tanaka: Selected Talk listing</title>
 
-  <meta property="description" itemprop="description" content="This page is still under construction.  &#10;You can download the pdf version [here](cv.pdf)."/>
+  <meta property="description" itemprop="description" content="This section contains the list of my talks and workshops where made available. Some outputs are missing."/>
 
   <link rel="license" href="https://creativecommons.org/licenses/by/4.0/"/>
   <link rel="icon" type="image/png" href="images/avatar.png"/>
 
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="Emi Tanaka: Curriculum vitae"/>
+  <meta property="og:title" content="Emi Tanaka: Selected Talk listing"/>
   <meta property="og:type" content="article"/>
-  <meta property="og:description" content="This page is still under construction.  &#10;You can download the pdf version [here](cv.pdf)."/>
+  <meta property="og:description" content="This section contains the list of my talks and workshops where made available. Some outputs are missing."/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="Emi Tanaka"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="Emi Tanaka: Curriculum vitae"/>
-  <meta property="twitter:description" content="This page is still under construction.  &#10;You can download the pdf version [here](cv.pdf)."/>
+  <meta property="twitter:title" content="Emi Tanaka: Selected Talk listing"/>
+  <meta property="twitter:description" content="This section contains the list of my talks and workshops where made available. Some outputs are missing."/>
   <meta property="twitter:site" content="@statsgen"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description"]}},"value":[{"type":"character","attributes":{},"value":["Curriculum vitae"]},{"type":"character","attributes":{},"value":["This page is still under construction.  \nYou can download the pdf version [here](cv.pdf)."]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","listing"]}},"value":[{"type":"character","attributes":{},"value":["Selected Talk listing"]},{"type":"character","attributes":{},"value":["This section contains the list of my talks and workshops where made available. Some outputs are missing. \n"]},{"type":"character","attributes":{},"value":["talks"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2474,8 +2475,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   }</style>
   <!--/radix_placeholder_distill-->
   <script src="site_libs/header-attrs-2.6.6/header-attrs.js"></script>
-  <script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
-  <link href="site_libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2497,12 +2496,12 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 </head>
 
-<body>
+<body class="layout-listing">
 
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Curriculum vitae","description":"This page is still under construction.  \nYou can download the pdf version [here](cv.pdf).","authors":[]}
+{"title":"Selected Talk listing","description":"This section contains the list of my talks and workshops where made available. Some outputs are missing.","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2538,386 +2537,257 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_navigation_before_body-->
 <!--radix_placeholder_site_before_body-->
 <!--/radix_placeholder_site_before_body-->
+<!--radix_placeholder_article_listing-->
+
+
+<script type="application/javascript">
+
+function init_posts_list() {
+
+  function load_image(img) {
+    var src = $(img).attr('data-src');
+    if (src) {
+      $(img).attr('src', src);
+      $(img).load(function() {
+        img.removeAttribute('data-src');
+      });
+    }
+  }
+
+  function set_posts_visible(posts, visible) {
+    if (visible) {
+
+      // show bottom border by default
+      $(posts).removeClass('post-preview-last');
+
+      // apply limits if need be
+      var max_posts = 25;
+      var apply_limits = $('.posts-container').hasClass('posts-apply-limit');
+      if (apply_limits && posts.length > max_posts) {
+        posts = $(posts).slice(0, max_posts);
+      } else {
+        $('.posts-more a').addClass('hidden');
+      }
+
+      // apply last style
+      $(posts.slice(-1)[0]).addClass('post-preview-last');
+
+      $(posts).removeClass('hidden');
+      $(posts).find('img[data-src]').each(function(i, img) {
+        load_image(img);
+      });
+    } else {
+      $(posts).addClass('hidden');
+    }
+  }
+
+  function apply_hash_filter() {
+
+    // clear active state
+    $('.categories .active').removeClass('active');
+
+    // mark all posts invisible to start
+    set_posts_visible($('.posts-list').children('a'), false);
+
+    // if we have a hash filter
+    if (window.location.hash && window.location.hash.startsWith("#category:")) {
+
+      // mark posts that match the category visible
+      var page_category = window.location.hash.replace(/^#category:/, "");
+      var posts = $('.post-metadata').map(function(idx, script) {
+        var metadata = $.parseJSON($(script).html());
+        var post = null;
+        $.each(metadata.categories, function(idx, category) {
+          category = category.replace(/ /g,"_");
+          if ((page_category || '').toLowerCase() === "articles" || category === page_category) {
+            post = $(script).parent().get();
+            return false;
+          }
+        });
+        return post;
+      });
+      set_posts_visible(posts, true);
+
+      // mark the hash active
+      $('.categories li>a[href="' + window.location.hash + '"]').addClass('active');
+
+      // update the list_caption
+      var list_caption = $('.posts-list-caption');
+      var caption = (page_category || '').toLowerCase() === "articles"
+        ? list_caption.attr('data-caption')
+        : ('Category: ' + page_category.replace(/_/g," "));
+      list_caption.text(caption);
+
+    } else {
+
+      // no hash filter, make all posts visible (subject to max display)
+      set_posts_visible($('.posts-list').children(), true);
+
+      // reset list caption
+      var list_caption = $('.posts-list-caption');
+      list_caption.text(list_caption.attr('data-caption'));
+
+
+    }
+  }
+
+  // more articles
+  function apply_post_limits(apply) {
+    if (apply) {
+      $('.posts-container').addClass('posts-apply-limit');
+      $('.posts-more a').removeClass('hidden');
+    } else {
+      $('.posts-container').removeClass('posts-apply-limit');
+      $('.posts-more a').addClass('hidden');
+    }
+  }
+
+  // click handling for tags
+  $('.dt-tag').click(function(ev) {
+    window.location.hash = '#category:' + $(this).text().replace(/ /g, "_");
+    return false;
+  })
+
+  // hash filter handling
+  apply_hash_filter();
+  $(window).on('hashchange',function() {
+    apply_post_limits(true);
+    apply_hash_filter();
+  });
+
+  // more articles link
+  $('.posts-more a').click(function(e) {
+    e.preventDefault();
+    apply_post_limits(false);
+    apply_hash_filter();
+    return false;
+  });
+
+}
+
+</script>
+
+
+
+<div class="posts-container posts-with-sidebar posts-apply-limit l-screen-inset">
+<div class="posts-list">
+<h1 class="posts-list-caption" data-caption="Selected Talk listing">Selected Talk listing</h1>
+<a href="talks/2021-01-23-tokyor2021/" class="post-preview">
+<script class="post-metadata" type="text/json">{"categories":["日本語","Experimental Design"]}</script>
+<div class="metadata">
+<div class="publishedDate">Jan. 23, 2021</div>
+</div>
+<div class="thumbnail">
+<img src="talks/2021-01-23-tokyor2021/preview.png"/>
+</div>
+<div class="description">
+<h2>Grammar of Experimental Design: 実験計画法の「文法」</h2>
+<div class="dt-tags">
+<div class="dt-tag">日本語</div>
+<div class="dt-tag">Experimental Design</div>
+</div>
+<p>A presentation at the 89th Tokyo R Meeting.</p>
+</div>
+</a>
+<a href="talks/2020-11-27-SSAWebinar2020/" class="post-preview">
+<script class="post-metadata" type="text/json">{"categories":["Experimental Design"]}</script>
+<div class="metadata">
+<div class="publishedDate">Nov. 27, 2020</div>
+</div>
+<div class="thumbnail">
+<img src="talks/2020-11-27-SSAWebinar2020/preview.png"/>
+</div>
+<div class="description">
+<h2>Advent of "Grammar": Bridging Statistics and Data Science for the Design of Experiments</h2>
+<div class="dt-tags">
+<div class="dt-tag">Experimental Design</div>
+</div>
+<p>A talk for the Statistical Society of Australia Webinar Series</p>
+</div>
+</a>
+<a href="talks/2020-09-30-SSAWA-YSW2020/" class="post-preview">
+<script class="post-metadata" type="text/json">{"categories":["Skill","Service"]}</script>
+<div class="metadata">
+<div class="publishedDate">Sept. 30, 2020</div>
+</div>
+<div class="thumbnail">
+<img src="talks/2020-09-30-SSAWA-YSW2020/preview.png"/>
+</div>
+<div class="description">
+<h2>What every young statistician should know: Developing your identity, networking and marketing</h2>
+<div class="dt-tags">
+<div class="dt-tag">Skill</div>
+<div class="dt-tag">Service</div>
+</div>
+<p>A talk for the Young Statistician Workshop for the Statistical Society of Australia Western Australia Branch</p>
+</div>
+</a>
+<a href="talks/2020-06-30-rladiesSSA2020/" class="post-preview">
+<script class="post-metadata" type="text/json">{"categories":["Skill","Service"]}</script>
+<div class="metadata">
+<div class="publishedDate">June 30, 2020</div>
+</div>
+<div class="thumbnail">
+<img src="talks/2020-06-30-rladiesSSA2020/preview.png"/>
+</div>
+<div class="description">
+<h2>Beyond Beamer: Modern and Dynamic Presentations with R Markdown</h2>
+<div class="dt-tags">
+<div class="dt-tag">Skill</div>
+<div class="dt-tag">Service</div>
+</div>
+<p>A talk for the joint meeting of Statistical Society of Australia NSW and Canberra Branches hosted with R-Ladies Canberra and R-Ladies Sydney.</p>
+</div>
+</a>
+</div>
+<div class="posts-sidebar">
+<div class="sidebar-section categories">
+<h3>Categories</h3>
+<ul>
+<li>
+<a href="#category:Articles">Articles</a>
+<span class="category-count">(4)</span>
+</li>
+<li>
+<a href="#category:Experimental_Design">Experimental Design</a>
+<span class="category-count">(2)</span>
+</li>
+<li>
+<a href="#category:Service">Service</a>
+<span class="category-count">(2)</span>
+</li>
+<li>
+<a href="#category:Skill">Skill</a>
+<span class="category-count">(2)</span>
+</li>
+<li>
+<a href="#category:日本語">日本語</a>
+<span class="category-count">(1)</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="posts-more">
+<a href="#">More articles &raquo;</a>
+</div>
+</div>
+<!--/radix_placeholder_article_listing-->
 
 <div class="d-title">
-<h1>Curriculum vitae</h1>
+<h1>Selected Talk listing</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-<p><p>This page is still under construction.<br />
-You can download the pdf version <a href="cv.pdf">here</a>.</p></p>
+<p><p>This section contains the list of my talks and workshops where made available. Some outputs are missing.</p></p>
 </div>
 
 
 <div class="d-article">
-<p><link rel="stylesheet" href="assets/cv-styles.css"></p>
-<!--
-Needs to be knitted twice for pdf to be updated to the latest.
--->
-<main class="cv-canvas">
-<h1 id="emi-tanaka"><span class="bigger">E</span>MI <span class="bigger">T</span>ANAKA</h1>
-<p><i class="fas fa-envelope"></i> <a href="mailto:emi.tanaka@monash.edu" class="email">emi.tanaka@monash.edu</a> <i class="fab fa-twitter"></i> <span class="citation" data-cites="statsgen">@statsgen</span> <i class="fab fa-github"></i> emitanaka <i class="fas fa-globe"></i> emitanaka.org</p>
-<h3 id="skill-stack">skill stack</h3>
-<div class="half">
-<p>R, HTML/CSS, LaTeX, Git/GitHub</p>
-</div>
-<h3 id="research-interests">research interests</h3>
-<div class="half">
-<p>experimental design, mixed models, statistical graphics, bioinformatics, statistical genetics</p>
-</div>
-<h2 id="employment">employment</h2>
 <div class="layout-chunk" data-layout="l-body">
-<table>
-<thead>
-<tr>
-<th style="text-align:left;">
-</th>
-<th style="text-align:left;">
-</th>
-<th style="text-align:right;">
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left;">
-<div style="font-size:0.75rem;line-height:0.9rem;">
-2020/01-current
-</div>
-</td>
-<td style="text-align:left;">
-Lecturer
-</td>
-<td style="text-align:right;">
-<div style="font-size:0.75rem;line-height:0.9rem;">
-Monash University, Department of Econometrics and Business Statistics
-</div>
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-<div style="font-size:0.75rem;line-height:0.9rem;">
-2017/01-2019/12
-</div>
-</td>
-<td style="text-align:left;">
-Lecturer
-</td>
-<td style="text-align:right;">
-<div style="font-size:0.75rem;line-height:0.9rem;">
-The University of Sydney, School of Mathematics and Statistics
-</div>
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-<div style="font-size:0.75rem;line-height:0.9rem;">
-2014/01-2017/01
-</div>
-</td>
-<td style="text-align:left;">
-Research fellow
-</td>
-<td style="text-align:right;">
-<div style="font-size:0.75rem;line-height:0.9rem;">
-University of Wollongong, School of Mathematics and Applied Statistics
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-<h2 id="education">education</h2>
-<p><strong>PhD, Statistics</strong><br />
-Statistical Methods for Improving Motif Evaluation<br />
-Supervisor: Dr. Uri Keich<br />
-School of Mathematics and Statistics<br />
-The University of Sydney<br />
-2015 | Sydney, Australia</p>
-<p><strong>BSci (Adv Maths), Honour I</strong><br />
-Major in Mathematics and Statistics<br />
-The University of Sydney<br />
-2010 | Sydney, Australia</p>
-<h2 id="publications">publications</h2>
-<div class="layout-chunk" data-layout="l-body">
-<p>Morota G, Cheng H, Cook D, Tanaka E (2021). “ASAS-NANP SYMPOSIUM: prospects for interactive and dynamic graphics in the era of data-rich animal science.” <em>Journal of animal science</em>, <em>99</em>(2). ISSN 0021-8812, 1525-3163, doi: 10.1093/jas/skaa402 (URL: <a href="https://doi.org/10.1093/jas/skaa402" class="uri">https://doi.org/10.1093/jas/skaa402</a>).</p>
-<p>Tanaka E (2020). “Simple outlier detection for a multi-environmental field trial.” <em>Biometrics</em>. ISSN 0006-341X, 1541-0420, doi: 10.1111/biom.13216 (URL: <a href="https://doi.org/10.1111/biom.13216" class="uri">https://doi.org/10.1111/biom.13216</a>).</p>
-<p>Tanaka E, Hui FKC (2019). “Symbolic Formulae for Linear Mixed Models.” In <em>Statistics and Data Science</em>, 3-21. doi: 10.1007/978-981-15-1960-4_1 (URL: <a href="https://doi.org/10.1007/978-981-15-1960-4_1" class="uri">https://doi.org/10.1007/978-981-15-1960-4_1</a>).</p>
-<p>Norman A, Taylor J, Tanaka E, Telfer P, Edwards J, Martinant J, Kuchel H (2017). “Increased genomic prediction accuracy in wheat breeding using a large Australian panel.” <em>TAG. Theoretical and applied genetics. Theoretische und angewandte Genetik</em>, <em>130</em>(12), 2543-2555. ISSN 0040-5752, 1432-2242, doi: 10.1007/s00122-017-2975-4 (URL: <a href="https://doi.org/10.1007/s00122-017-2975-4" class="uri">https://doi.org/10.1007/s00122-017-2975-4</a>).</p>
-<p>Tanaka E, Ral JF, Li S, Gaire R, Cavanagh CR, Cullis BR, Whan A (2017). “Increased accuracy of starch granule type quantification using mixture distributions.” <em>Plant methods</em>, <em>13</em>, 107. ISSN 1746-4811, doi: 10.1186/s13007-017-0259-2 (URL: <a href="https://doi.org/10.1186/s13007-017-0259-2" class="uri">https://doi.org/10.1186/s13007-017-0259-2</a>).</p>
-<p>Hui FKC, Tanaka E, Warton DI (2018). “Order selection and sparsity in latent variable models via the ordered factor LASSO.” <em>Biometrics</em>, <em>74</em>(4), 1311-1319. ISSN 0006-341X, 1541-0420, doi: 10.1111/biom.12888 (URL: <a href="https://doi.org/10.1111/biom.12888" class="uri">https://doi.org/10.1111/biom.12888</a>).</p>
-<p>Tanaka E, Bailey TL, Keich U (2014). “Improving MEME via a two-tiered significance analysis.” <em>Bioinformatics</em>, <em>30</em>(14), 1965-1973. ISSN 1367-4803, 1367-4811, doi: 10.1093/bioinformatics/btu163 (URL: <a href="https://doi.org/10.1093/bioinformatics/btu163" class="uri">https://doi.org/10.1093/bioinformatics/btu163</a>).</p>
-<p>Liachko I, Tanaka E, Cox K, Chung SCC, Yang L, Seher A, Hallas L, Cha E, Kang G, Pace H, Barrow J, Inada M, Tye B, Keich U (2011). “Novel features of ARS selection in budding yeast Lachancea kluyveri.” <em>BMC genomics</em>, <em>12</em>, 633. ISSN 1471-2164, doi: 10.1186/1471-2164-12-633 (URL: <a href="https://doi.org/10.1186/1471-2164-12-633" class="uri">https://doi.org/10.1186/1471-2164-12-633</a>).</p>
-<p>Tanaka E, Bailey T, Grant CE, Noble WS, Keich U (2011). “Improved similarity scores for comparing motifs.” <em>Bioinformatics</em>, <em>27</em>(12), 1603-1609. ISSN 1367-4803, 1367-4811, doi: 10.1093/bioinformatics/btr257 (URL: <a href="https://doi.org/10.1093/bioinformatics/btr257" class="uri">https://doi.org/10.1093/bioinformatics/btr257</a>).</p>
-</div>
-<h2 id="presentations">presentations</h2>
-<h2 id="workshops">workshops</h2>
-<h2 id="service">service</h2>
-<div class="layout-chunk" data-layout="l-body">
-<table>
-<thead>
-<tr>
-<th style="text-align:left;">
-</th>
-<th style="text-align:left;">
-</th>
-<th style="text-align:left;">
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left;vertical-align: top;">
-<div style="font-size:0.75rem;line-height:0.9rem;">
-2020/03-2021/03
-</div>
-</td>
-<td style="text-align:left;vertical-align: top;">
-Statistical Society of Australia, Victoria Branch
-</td>
-<td style="text-align:left;vertical-align: top;">
-Vice President
-</td>
-</tr>
-<tr>
-<td style="text-align:left;vertical-align: top;">
-<div style="font-size:0.75rem;line-height:0.9rem;">
-2021/03-2023/03
-</div>
-</td>
-<td style="text-align:left;vertical-align: top;">
-Statistical Society of Australia, Victoria Branch
-</td>
-<td style="text-align:left;vertical-align: top;">
-President
-</td>
-</tr>
-<tr>
-<td style="text-align:left;vertical-align: top;">
-<div style="font-size:0.75rem;line-height:0.9rem;">
-2023/03-2024/03
-</div>
-</td>
-<td style="text-align:left;vertical-align: top;">
-Statistical Society of Australia, Victoria Branch
-</td>
-<td style="text-align:left;vertical-align: top;">
-Vice President
-</td>
-</tr>
-<tr>
-<td style="text-align:left;vertical-align: top;">
-<div style="font-size:0.75rem;line-height:0.9rem;">
-2017/03-2018/03
-</div>
-</td>
-<td style="text-align:left;vertical-align: top;">
-Statistical Society of Australia, NSW Branch
-</td>
-<td style="text-align:left;vertical-align: top;">
-Assistant Secretary
-</td>
-</tr>
-<tr>
-<td style="text-align:left;vertical-align: top;">
-<div style="font-size:0.75rem;line-height:0.9rem;">
-2018/03-2020/03
-</div>
-</td>
-<td style="text-align:left;vertical-align: top;">
-Statistical Society of Australia, NSW Branch
-</td>
-<td style="text-align:left;vertical-align: top;">
-Secretary
-</td>
-</tr>
-<tr>
-<td style="text-align:left;vertical-align: top;">
-<div style="font-size:0.75rem;line-height:0.9rem;">
-2018/01-ongoing
-</div>
-</td>
-<td style="text-align:left;vertical-align: top;">
-International Biometrics Society, Australaisan Region
-</td>
-<td style="text-align:left;vertical-align: top;">
-Social Media Coordinator
-</td>
-</tr>
-<tr>
-<td style="text-align:left;vertical-align: top;">
-<div style="font-size:0.75rem;line-height:0.9rem;">
-2021/03-2021/03
-</div>
-</td>
-<td style="text-align:left;vertical-align: top;">
-useR! 2021, Program Committee
-</td>
-<td style="text-align:left;vertical-align: top;">
-Member
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-<h2 id="awards-distinctions">awards &amp; distinctions</h2>
-<div class="layout-chunk" data-layout="l-body">
-<table>
-<thead>
-<tr>
-<th style="text-align:right;">
-</th>
-<th style="text-align:left;">
-</th>
-<th style="text-align:left;">
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:right;vertical-align: top;">
-2019
-</td>
-<td style="text-align:left;width: 30em; ">
-ARC Industrial Transformation Training Centre
-<div style="font-size:0.75rem;line-height:0.9rem;">
-NA
-</div>
-</td>
-<td style="text-align:left;vertical-align: top;">
-$3,973,202
-</td>
-</tr>
-<tr>
-<td style="text-align:right;vertical-align: top;">
-2019
-</td>
-<td style="text-align:left;width: 30em; ">
-R Consortium Grant
-<div style="font-size:0.75rem;line-height:0.9rem;">
-NA
-</div>
-</td>
-<td style="text-align:left;vertical-align: top;">
-$6,000
-</td>
-</tr>
-<tr>
-<td style="text-align:right;vertical-align: top;">
-2018
-</td>
-<td style="text-align:left;width: 30em; ">
-Sydney Institute of Agriculture Research Project Grant
-<div style="font-size:0.75rem;line-height:0.9rem;">
-Competitive grant with 36% success rate.
-</div>
-</td>
-<td style="text-align:left;vertical-align: top;">
-$90,000
-</td>
-</tr>
-<tr>
-<td style="text-align:right;vertical-align: top;">
-2011
-</td>
-<td style="text-align:left;width: 30em; ">
-SSA NSW Branch J. B. Douglas Award Prize
-<div style="font-size:0.75rem;line-height:0.9rem;">
-Each school/department in NSW nominates one near-final or recently-completed postgraduate student then the nominated student is required to make a 15-20 minute presentation to the audience and judging panel, followed by 5 minutes of questions. I was nominated in the second year of my Ph.D. candidature (almost all nominated students are 3rd or 4th year Ph.D. students) and I won second prize.
-</div>
-</td>
-<td style="text-align:left;vertical-align: top;">
-$500
-</td>
-</tr>
-<tr>
-<td style="text-align:right;vertical-align: top;">
-2010
-</td>
-<td style="text-align:left;width: 30em; ">
-Winter School Student Travel Bursaries
-<div style="font-size:0.75rem;line-height:0.9rem;">
-Selected by Selection Committee of Winter School in Mathematical &amp; Computational Biology to attend Winter School in Mathematical &amp; Computational Biology 2011, University of Queensland, Queensland.
-</div>
-</td>
-<td style="text-align:left;vertical-align: top;">
-$250
-</td>
-</tr>
-<tr>
-<td style="text-align:right;vertical-align: top;">
-2010
-</td>
-<td style="text-align:left;width: 30em; ">
-Statistical Society of Australia Inc. Student Travel Grant
-<div style="font-size:0.75rem;line-height:0.9rem;">
-Selected by Statistical Society of Australia NSW Branch Council to attend the Australian Statistical Conference 2010, Fremantle, Australia.
-</div>
-</td>
-<td style="text-align:left;vertical-align: top;">
-$300
-</td>
-</tr>
-<tr>
-<td style="text-align:right;vertical-align: top;">
-2010
-</td>
-<td style="text-align:left;width: 30em; ">
-Australian Postgraduate Award
-<div style="font-size:0.75rem;line-height:0.9rem;">
-Funded by the Australian Federal Government and awarded to students of exceptional research potential.
-</div>
-</td>
-<td style="text-align:left;vertical-align: top;">
-$78,750
-</td>
-</tr>
-<tr>
-<td style="text-align:right;vertical-align: top;">
-2008
-</td>
-<td style="text-align:left;width: 30em; ">
-Dean’s List for Academic Excellence
-<div style="font-size:0.75rem;line-height:0.9rem;">
-Awarded for academic excellence.
-</div>
-</td>
-<td style="text-align:left;vertical-align: top;">
-</td>
-</tr>
-<tr>
-<td style="text-align:right;vertical-align: top;">
-2008
-</td>
-<td style="text-align:left;width: 30em; ">
-Tim Brown Prize II
-<div style="font-size:0.75rem;line-height:0.9rem;">
-The Tim Brown Prize II is awarded for proficiency in Senior Statistics at the School of Mathematics and Statistics, The University of Sydney.
-</div>
-</td>
-<td style="text-align:left;vertical-align: top;">
-$275
-</td>
-</tr>
-<tr>
-<td style="text-align:right;vertical-align: top;">
-2008
-</td>
-<td style="text-align:left;width: 30em; ">
-Barker Scholarship IV
-<div style="font-size:0.75rem;line-height:0.9rem;">
-Awarded for proficiency in Senior units of study in the School of Mathematics and Statistics at the School of Mathematics and Statistics, The University of Sydney.
-</div>
-</td>
-<td style="text-align:left;vertical-align: top;">
-$750
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</main>
-<div class="layout-chunk" data-layout="l-body">
-
+<style type="text/css">
+.thumbnail {
+  border: 1px solid black;
+}
+</style>
 </div>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
