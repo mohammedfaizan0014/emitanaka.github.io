@@ -1,0 +1,39 @@
+#disclaimer, #disclaimer a {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+#aside {
+  color: black;
+}
+
+#aside h2 {
+  color: #79003e;
+}
+
+#aside a {
+  color: #79003e;
+}
+
+#disclaimer {
+  display: none;
+}
+
+#canvas {
+    max-width: var(--page-width);
+    margin: auto;
+}
+
+.download {
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 200px;
+  font-size: 0.7rem;
+  margin: auto;
+  margin-bottom: 3rem;
+  margin-top: 1rem;
+}
+
+h1, h2 {
+  font-family: var(--heading-font);
+}

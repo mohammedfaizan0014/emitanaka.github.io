@@ -1,217 +1,45 @@
 ---
 title: "Curriculum vitae"
-description: |
-  This page is still under construction.  
-  You can download the pdf version [here](cv.pdf).
+description: ""
+output:
+  html_document:
+    css: 
+      - assets/cv/css/style.css
+      - assets/cv/css/aos.css
+      - assets/cv_custom.css
+    template: assets/cv/template.html 
+    includes:
+      after_body: assets/cv_after_body.html
 ---
 
-
-
-<link rel="stylesheet" href="assets/cv-styles.css">
-
-```{r setup, include = FALSE}
-library(tidyverse)
-library(lubridate)
-library(knitr)
-library(glue)
-library(kableExtra)
-opts_chunk$set(
-  echo = FALSE,
-  warning = FALSE,
-  message = FALSE
-)
-knit_pdf <- TRUE
-
-small <- function(x) paste0("<div style='font-size:0.75rem;line-height:0.9rem;'>", x, "</div>")
+```{css, echo = FALSE}
+.navbar {
+  display: none;
+}
 ```
 
-<!--
-Needs to be knitted twice for pdf to be updated to the latest.
--->
+<div id="canvas">
 
+<div class="download">
+<i class="fas fa-file-pdf"></i> PDF version can be found [here](cv.pdf).
+</div>
 
-<main class="cv-canvas">
-
-# [E]{.bigger}MI [T]{.bigger}ANAKA
-
-<i class="fas fa-envelope"></i> emi.tanaka@monash.edu
-<i class="fab fa-twitter"></i> @statsgen
-<i class="fab fa-github"></i> emitanaka
-<i class="fas fa-globe"></i> emitanaka.org
-
-
-### skill stack
-
-::: half
-
-R, HTML/CSS, LaTeX, Git/GitHub
-
-:::
-
-### research interests
-
-::: half
-
-experimental design, mixed models, statistical graphics, bioinformatics, statistical genetics
-
-:::
-
-## employment
-
-```{r work}
-work <- read_csv("../cv/data/employment.csv") %>% 
-  mutate(start = dmy(start),
-         end = dmy(end))
-work %>% 
-  mutate(start = sprintf("%d/%.2d", year(start), month(start)),
-         end = sprintf("%d/%.2d", year(end), month(end)),
-         end = ifelse(end=="NA/NA", "current", end),
-         date = small(paste0(start, "-", end)),
-         org = small(paste0(org, ", ", suborg))) %>% 
-  select(date, position, org) %>% 
-  kable(col.names = c("", "", ""), escape = FALSE,
-        align = "llr")
+```{r, child="../cv/cv.Rmd"}
 ```
 
-## education
-
-**PhD, Statistics**  
-Statistical Methods for Improving Motif Evaluation  
-Supervisor: Dr. Uri Keich  
-School of Mathematics and Statistics  
-The University of Sydney  
-2015 | Sydney, Australia  
-
-**BSci (Adv Maths), Honour I**  
-Major in Mathematics and Statistics  
-The University of Sydney  
-2010 | Sydney, Australia  
-
-## publications
-
-<ol>
-```{r pubs, results='asis'}
-pubs_key <- read_csv("../cv/data/pubs-key.csv") %>% 
-  separate_rows(pubid, sep = ", ")
-scholar <- scholar::get_publications("v8FN0qoAAAAJ") %>% 
-  select(pubid, cites, year) %>% 
-  right_join(pubs_key, by = "pubid") %>% 
-  group_by(id) %>% 
-  summarise(citations = sum(cites),
-            year = max(year))
-pubs <- vitae::bibliography_entries("../cv/data/pubs.bib") %>% 
-  left_join(scholar, by = "id") %>% 
-  as_tibble() %>% 
-  arrange(desc(issued))
-
-pubs %>% 
-  mutate(author = map(author, ~map_chr(.x, function(x) {
-            if(x$family=="Tanaka" & x$given=="Emi") {
-              glue("<b>{x$family}, {substr(x$given, 1, 1)}</b>")
-            } else {
-              glue("{x$family}, {substr(x$given, 1, 1)}")
-            } 
-          })),
-         author = map_chr(author, ~knitr::combine_words(.x, and = " & ")),
-         journal = ifelse(is.na(`container-title`), "PhD Thesis", `container-title`)) %>% 
-  mutate(text = glue("{author} ({year}) {title}. <i>{journal}</i>"),
-         text = case_when(!is.na(volume) & !is.na(issue) ~ glue("{text}, {volume}({issue})"),
-                          !is.na(volume) ~ glue("{text}, {volume}"),
-                          TRUE ~ text),
-         text = ifelse(!is.na(page), glue("{text}, {page}"), text),
-         text = ifelse(citations > 0, glue("{text}. <i>Citations: <b>{citations}</b></i>."), text)) %>% 
-  pull(text) %>% 
-  paste0("<li>", ., "</li>") %>% 
-  cat()
-```
-</ol>
-
-<span style="font-size:0.7rem">Citation counts are sourced from Google Scholar at `r today()`.</span>
-
-## talks
-
-(Note: work-in-progress - data incomplete)
-
-<span style="font-size:0.7rem">
-List of talks (and links to the slides if available) are at <b>https://emitanaka.org/talks.html</b>.  
-Below show the last 10 talks.
-</span>
-
-```{r talk}
-read_csv("../cv/data/talks.csv") %>% 
-  mutate(date = dmy(date)) %>% 
-  slice_max(order_by = date, n = 10) %>% 
-  select(date, title, host) %>% 
-  mutate(date = small(date),
-         host = small(host)) %>% 
-  kable(col.names = c("", "", ""), escape = FALSE) %>% 
-  column_spec(2, width = "25em") %>% 
-  column_spec(c(1, 3), extra_css = "vertical-align: top;")
-```
+</div>
 
 
-## workshops
 
-(Note: work-in-progress -  data incomplete)
-
-```{r workshop}
-read_csv("../cv/data/workshops.csv") %>% 
-  filter(parent!="no") %>% 
-  mutate(date = dmy(date_start),
-         date = small(glue("{year(date)}/{month(date)}")),
-         text = title,
-         text = ifelse(is.na(copresenters), 
-                       text, 
-                       paste0(text, small(glue("<i>Co-presented with {copresenters}.</i>")))),
-         text = ifelse(is.na(host), 
-                       text, 
-                       paste0(text, small(glue("<i>Hosted by {host}.</i>"))))) %>% 
-  select(date, text) %>% 
-  kable(col.names = c("", ""), escape = FALSE) %>% 
-  column_spec(c(1, 2), extra_css = "vertical-align: top;")
-```
-
-
-## service
-
-```{r service}
-service <- read_csv("../cv/data/service.csv")
-service %>% 
-  mutate(end = ifelse(is.na(end), "ongoing", end),
-         date = small(paste0(start, "-", end)),
-         org = paste0(org, ", ", suborg)) %>% 
-  select(date, org, position) %>% 
-  kable(col.names = c("", "", ""), escape = FALSE) %>% 
-  column_spec(c(1, 2, 3), extra_css = "vertical-align: top;")
-```
-
-## professional memberships
-
-* Statistical Society of Australia 
-* International Biometrics Society
-
-## awards & distinctions
-
-```{r}
-awards <- read_csv("../cv/data/awards.csv") 
-awards %>% 
-  mutate(significance = replace_na(significance, ""),
-         main = name,
-         main = ifelse(is.na(lead), main, paste(main, small(paste("Lead:", lead)))),
-         main = paste(main, small(significance)),
-         money = scales::dollar(money),
-         money = replace_na(money, "")) %>% 
-  select(award_year, main, money) %>% 
-  kable(col.names = c("", "", ""), escape = FALSE) %>% 
-  column_spec(2, width = "30em") %>% 
-  column_spec(c(1, 3), extra_css = "vertical-align: top;")
-```
-
-
-</main>
-
-```{r, eval=knit_pdf}
-pagedown::chrome_print(input = "docs/cv.html",
-                       output = "cv.pdf")
+```{r, include = FALSE}
+fs::dir_copy("../cv/css/", "assets/cv/css", overwrite = TRUE)
+fs::dir_copy("../cv/js/", "assets/cv/js", overwrite = TRUE)
+fs::file_copy("../cv/template.html", "assets/cv/", overwrite = TRUE)
+options(knitr.duplicate.label = "allow")
+rmarkdown::render("../cv/cv.Rmd", 
+                  output_file = "../cv/cv.html",
+                  knit_root_dir = "../cv/")
+pagedown::chrome_print("../cv/cv.html", 
+                       output = "docs/cv.pdf")
 ```
 
