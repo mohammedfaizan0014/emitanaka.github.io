@@ -14,20 +14,58 @@ output:
 
 ```{css, echo = FALSE}
 .navbar {
-  display: none;
+  display: none; 
+}
+#navigation .navbar {
+ display: block;
 }
 ```
 
+<div class="container">
+<div id="navigation" class="menu-two">
+<div class="navbar navbar-expand-lg">
+<div class="navbar-header">
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"><i class="fa fa-align-justify"></i></span>
+</button>
+</div>
+<div id="navbar-collapse" class="collapse navbar-collapse">
+<nav id="mainmenu">
+<ul class="nav navbar-nav">
+<li class="scroll"><a href="#title">Home</a></li>
+<li class="scroll"><a href="#experience">Experience</a></li>
+<li class="scroll"><a href="#publications">Publications</a></li>
+<li class="scroll"><a href="#software">Software</a></li>
+<li class="scroll"><a href="#talks">Talks</a></li>
+<li class="scroll"><a href="#workshops">Workshops</a></li>
+<li class="scroll"><a href="#service">Service</a></li>
+<li class="scroll"><a href="#talks">Talks</a></li>
+<li class="scroll"><a href="#awards">Awards</a></li>
+<li class="scroll"><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+</div>
+
 <div id="canvas">
 
-<div class="download">
-<i class="fas fa-file-pdf"></i> PDF version can be found [here](cv.pdf).
-</div>
+
 
 ```{r, child="../cv/cv.Rmd"}
 ```
 
+
+
+
 </div>
+
+<a href="cv.pdf">
+<div class="download">
+<i class="fas fa-file-pdf"></i> Click here for the PDF version.
+</div>
+</a>
 
 
 

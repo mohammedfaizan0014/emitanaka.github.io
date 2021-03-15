@@ -25,15 +25,63 @@
 
 .download {
   padding: 10px;
-  border: 2px solid black;
+  border: 2px solid transparent;
   border-radius: 10px;
-  width: 200px;
-  font-size: 0.7rem;
-  margin: auto;
+  width: 150px;
   margin-bottom: 3rem;
-  margin-top: 1rem;
+  margin-top: 3rem;
+  margin-left: 3rem;
+  background-color: #AD0059;
+  color: white;
+  text-align: center;
 }
+
 
 h1, h2 {
   font-family: var(--heading-font);
+}
+
+.container {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  z-index: 999; 
+  background-color: white;
+}
+
+
+@media (min-width: 768px) {
+ .navbar-expand-lg .navbar-toggler {
+    display: none;
+ }
+}
+
+.scroll a {
+  color: #AD0059;
+}
+
+button {
+    appearance: auto;
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: #AD0059;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    background-color: -internal-light-dark(rgb(239, 239, 239), rgb(59, 59, 59));
+    box-sizing: border-box;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    padding: 1px 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: #AD0059;
+    border-radius: 3px;
+    border-image: initial;
 }

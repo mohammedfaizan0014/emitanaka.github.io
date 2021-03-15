@@ -1186,13 +1186,60 @@
 
 <style type="text/css">
 .navbar {
-  display: none;
+  display: none; 
+}
+#navigation .navbar {
+ display: block;
 }
 </style>
-<div id="canvas">
-<div class="download">
-<p><i class="fas fa-file-pdf"></i> PDF version can be found <a href="cv.pdf">here</a>.</p>
+<div class="container">
+<div id="navigation" class="menu-two">
+<div class="navbar navbar-expand-lg">
+<div class="navbar-header">
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"><i class="fa fa-align-justify"></i></span>
+</button>
 </div>
+<div id="navbar-collapse" class="collapse navbar-collapse">
+<nav id="mainmenu">
+<ul class="nav navbar-nav">
+<li class="scroll">
+<a href="#title">Home</a>
+</li>
+<li class="scroll">
+<a href="#experience">Experience</a>
+</li>
+<li class="scroll">
+<a href="#publications">Publications</a>
+</li>
+<li class="scroll">
+<a href="#software">Software</a>
+</li>
+<li class="scroll">
+<a href="#talks">Talks</a>
+</li>
+<li class="scroll">
+<a href="#workshops">Workshops</a>
+</li>
+<li class="scroll">
+<a href="#service">Service</a>
+</li>
+<li class="scroll">
+<a href="#talks">Talks</a>
+</li>
+<li class="scroll">
+<a href="#awards">Awards</a>
+</li>
+<li class="scroll">
+<a href="#contact">Contact</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+</div>
+<div id="canvas">
 <div id="aside">
 <div id="contact" class="section level2">
 <h2><i class="fas fa-address-card"></i> Contact</h2>
@@ -1219,7 +1266,7 @@
 </ul>
 <div id="disclaimer">
 <p>This resume was made with the R package <a href="https://github.com/rstudio/pagedown"><strong>pagedown</strong></a>.</p>
-<p>Last updated on 2021-03-15.</p>
+<p>Last updated on 2021-03-16.</p>
 </div>
 </div>
 </div>
@@ -1229,7 +1276,7 @@
 <div id="experience" class="section level2">
 <h2><i class="fas fa-briefcase"></i> Work Experience</h2>
 <div class="timeline">
-<div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="300">
+<div class="timeline-card" data-aos="fade-in" data-aos-delay="300">
 <div class="timeline-head">
 Lecturer
 </div>
@@ -1247,7 +1294,7 @@ Monash University,<br>Department of Econometrics and Business Statistics
 </div>
 </div>
 </div>
-<div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="300">
+<div class="timeline-card" data-aos="fade-in" data-aos-delay="300">
 <div class="timeline-head">
 Lecturer
 </div>
@@ -1265,7 +1312,7 @@ The University of Sydney,<br>School of Mathematics and Statistics
 </div>
 </div>
 </div>
-<div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="300">
+<div class="timeline-card" data-aos="fade-in" data-aos-delay="300">
 <div class="timeline-head">
 Research fellow
 </div>
@@ -1336,7 +1383,7 @@ Liachko, I, <span style="font-weight:400;">Tanaka, E</span>, Cox, K, Chung, S, Y
 <span style="font-weight:400;">Tanaka, E</span>, Bailey, T, Grant, C, Noble, W, &amp; Keich, U (2011) Improved similarity scores for comparing motifs. <i>Bioinformatics</i>, 27(12), 1603-1609. <i>Citations: <span style="font-weight:400;">49</span></i>.
 </li>
 </ol>
-<p><span style="font-size:0.7rem">Citation counts are sourced from Google Scholar at 2021-03-15.</span></p>
+<p><span style="font-size:0.7rem">Citation counts are sourced from Google Scholar at 2021-03-16.</span></p>
 </div>
 <div id="software" class="section level2">
 <h2><i class="fas fa-code"></i> Software</h2>
@@ -1377,7 +1424,7 @@ monash
 xaringan
 </div>
 <div class="software-body">
-<p><i class='fab fa-r-project'></i> An R package for creating slideshows with remark.js through R Markdown. <br> <i>Contributor. My contribution is the adaptation of the ninja-theme shown in the Documentation. GitHub stars:<span style="font-weight:400;"> 1128 </span></i><br> <i class='fas fa-link'></i> Source: <a href="https://github.com/yihui/xaringan" class="uri">https://github.com/yihui/xaringan</a> <br> <i class='fas fa-link'></i> Documentation: <a href="https://github.com/emitanaka/ninja-theme" class="uri">https://github.com/emitanaka/ninja-theme</a></p>
+<p><i class='fab fa-r-project'></i> An R package for creating slideshows with remark.js through R Markdown. <br> <i>Contributor. My contribution is the adaptation of the ninja-theme shown in the Documentation. GitHub stars:<span style="font-weight:400;"> 1129 </span></i><br> <i class='fas fa-link'></i> Source: <a href="https://github.com/yihui/xaringan" class="uri">https://github.com/yihui/xaringan</a> <br> <i class='fas fa-link'></i> Documentation: <a href="https://github.com/emitanaka/ninja-theme" class="uri">https://github.com/emitanaka/ninja-theme</a></p>
 </div>
 </div>
 <div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="300">
@@ -1419,7 +1466,7 @@ Tomtom
 <p><span style="font-size:0.7rem"> List of talks (and links to the slides if available) are at <b><a href="https://emitanaka.org/talks.html" class="uri">https://emitanaka.org/talks.html</a></b>.<br />
 Below show the last 10 talks. </span></p>
 <div class="timeline">
-<div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="300">
+<div class="timeline-card" data-aos="fade-in" data-aos-delay="300">
 <div class="timeline-head">
 The Grammar of Experimental Design
 </div>
@@ -1437,7 +1484,7 @@ TokyoR
 </div>
 </div>
 </div>
-<div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="300">
+<div class="timeline-card" data-aos="fade-in" data-aos-delay="300">
 <div class="timeline-head">
 Advent of “Grammar”: Bridging Statistics and Data Science for the Design of Experiments
 </div>
@@ -1455,7 +1502,7 @@ Statistical Society of Australia
 </div>
 </div>
 </div>
-<div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="300">
+<div class="timeline-card" data-aos="fade-in" data-aos-delay="300">
 <div class="timeline-head">
 Rethinking the framework to specify the design of experiments
 </div>
@@ -1473,7 +1520,7 @@ Department of Agriculture and Fisheries, Queensland
 </div>
 </div>
 </div>
-<div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="300">
+<div class="timeline-card" data-aos="fade-in" data-aos-delay="300">
 <div class="timeline-head">
 What every young statistician should know: Developing your identity, networking and marketing
 </div>
@@ -1491,7 +1538,7 @@ Statistical Society of Australia Western Australian Branch
 </div>
 </div>
 </div>
-<div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="300">
+<div class="timeline-card" data-aos="fade-in" data-aos-delay="300">
 <div class="timeline-head">
 Advent of “Grammar”: Bridging Statistics and Data Science for the Design of Experiments
 </div>
@@ -1509,7 +1556,7 @@ Monash Bioinformatics Seminar
 </div>
 </div>
 </div>
-<div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="300">
+<div class="timeline-card" data-aos="fade-in" data-aos-delay="300">
 <div class="timeline-head">
 Beyond Beamer: Modern and Dynamic Presentations with R Markdown
 </div>
@@ -1527,7 +1574,7 @@ Statististical Society of Australia Canberra &amp; NSW Branch
 </div>
 </div>
 </div>
-<div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="300">
+<div class="timeline-card" data-aos="fade-in" data-aos-delay="300">
 <div class="timeline-head">
 Software design, selection and estimation for latent variable models
 </div>
@@ -1545,7 +1592,7 @@ WOMBAT
 </div>
 </div>
 </div>
-<div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="300">
+<div class="timeline-card" data-aos="fade-in" data-aos-delay="300">
 <div class="timeline-head">
 Symbolic model formulae for linear mixed models illustrated with the analysis of agricultural data
 </div>
@@ -1563,7 +1610,7 @@ Department of Mathematics and Statistics, Macquarie University
 </div>
 </div>
 </div>
-<div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="300">
+<div class="timeline-card" data-aos="fade-in" data-aos-delay="300">
 <div class="timeline-head">
 Symbolic model formulae for linear mixed models illustrated with the analysis of agricultural data
 </div>
@@ -1581,7 +1628,7 @@ Research School of Finance, Actuarial Studies and Statistics, Australian Nationa
 </div>
 </div>
 </div>
-<div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="300">
+<div class="timeline-card" data-aos="fade-in" data-aos-delay="300">
 <div class="timeline-head">
 Statistical modelling for plant breeding trials for accurate genotype-by-environment effect predictions
 </div>
@@ -1603,7 +1650,7 @@ Sydney Institute of Agriculture
 </div>
 <div id="workshops" class="section level2">
 <h2><i class="fas fa-toolbox"></i> Workshops</h2>
-<div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="300">
+<div class="timeline-card" data-aos="fade-in" data-aos-delay="300">
 <div class="timeline-head">
 Data Wrangling with R
 </div>
@@ -1620,7 +1667,7 @@ Data Wrangling with R
 </div>
 </div>
 </div>
-<div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="300">
+<div class="timeline-card" data-aos="fade-in" data-aos-delay="300">
 <div class="timeline-head">
 Data Visualisation with R
 </div>
@@ -1640,7 +1687,7 @@ Data Visualisation with R
 </div>
 </div>
 </div>
-<div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="300">
+<div class="timeline-card" data-aos="fade-in" data-aos-delay="300">
 <div class="timeline-head">
 Tidyverse and R Markdown Workshop
 </div>
@@ -1657,7 +1704,7 @@ Tidyverse and R Markdown Workshop
 </div>
 </div>
 </div>
-<div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="300">
+<div class="timeline-card" data-aos="fade-in" data-aos-delay="300">
 <div class="timeline-head">
 R Package &amp; R Markdown Workshop
 </div>
@@ -1677,7 +1724,7 @@ R Package &amp; R Markdown Workshop
 </div>
 </div>
 </div>
-<div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="300">
+<div class="timeline-card" data-aos="fade-in" data-aos-delay="300">
 <div class="timeline-head">
 Statistical Methods for Omics Assisted Breeding
 </div>
@@ -1700,7 +1747,7 @@ Statistical Methods for Omics Assisted Breeding
 </div>
 <div id="service" class="section level2">
 <h2><i class="fas fa-concierge-bell"></i> Service</h2>
-<div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="300">
+<div class="timeline-card" data-aos="fade-in" data-aos-delay="300">
 <div class="timeline-head">
 Vice President
 </div>
@@ -1716,7 +1763,7 @@ Statistical Society of Australia, Victoria Branch
 </div>
 </div>
 </div>
-<div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="300">
+<div class="timeline-card" data-aos="fade-in" data-aos-delay="300">
 <div class="timeline-head">
 President
 </div>
@@ -1732,7 +1779,7 @@ Statistical Society of Australia, Victoria Branch
 </div>
 </div>
 </div>
-<div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="300">
+<div class="timeline-card" data-aos="fade-in" data-aos-delay="300">
 <div class="timeline-head">
 Vice President
 </div>
@@ -1748,7 +1795,7 @@ Statistical Society of Australia, Victoria Branch
 </div>
 </div>
 </div>
-<div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="300">
+<div class="timeline-card" data-aos="fade-in" data-aos-delay="300">
 <div class="timeline-head">
 Assistant Secretary
 </div>
@@ -1764,7 +1811,7 @@ Statistical Society of Australia, NSW Branch
 </div>
 </div>
 </div>
-<div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="300">
+<div class="timeline-card" data-aos="fade-in" data-aos-delay="300">
 <div class="timeline-head">
 Secretary
 </div>
@@ -1780,7 +1827,7 @@ Statistical Society of Australia, NSW Branch
 </div>
 </div>
 </div>
-<div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="300">
+<div class="timeline-card" data-aos="fade-in" data-aos-delay="300">
 <div class="timeline-head">
 Social Media Coordinator
 </div>
@@ -1796,7 +1843,7 @@ International Biometrics Society, Australaisan Region
 </div>
 </div>
 </div>
-<div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="300">
+<div class="timeline-card" data-aos="fade-in" data-aos-delay="300">
 <div class="timeline-head">
 Member
 </div>
@@ -1822,7 +1869,7 @@ useR! 2021, Program Committee
 </div>
 <div id="awards" class="section level2">
 <h2><i class="fas fa-award"></i> Awards &amp; Distinctions</h2>
-<div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="300">
+<div class="timeline-card" data-aos="fade-in" data-aos-delay="300">
 <div class="timeline-head">
 ARC Industrial Transformation Training Centre
 </div>
@@ -1842,7 +1889,7 @@ $3,973,202
 </div>
 </div>
 </div>
-<div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="300">
+<div class="timeline-card" data-aos="fade-in" data-aos-delay="300">
 <div class="timeline-head">
 R Consortium Grant
 </div>
@@ -1862,7 +1909,7 @@ $6,000
 </div>
 </div>
 </div>
-<div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="300">
+<div class="timeline-card" data-aos="fade-in" data-aos-delay="300">
 <div class="timeline-head">
 Sydney Institute of Agriculture Research Project Grant
 </div>
@@ -1882,7 +1929,7 @@ $90,000
 </div>
 </div>
 </div>
-<div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="300">
+<div class="timeline-card" data-aos="fade-in" data-aos-delay="300">
 <div class="timeline-head">
 SSA NSW Branch J. B. Douglas Award Prize
 </div>
@@ -1899,7 +1946,7 @@ $500
 </div>
 </div>
 </div>
-<div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="300">
+<div class="timeline-card" data-aos="fade-in" data-aos-delay="300">
 <div class="timeline-head">
 Winter School Student Travel Bursaries
 </div>
@@ -1916,7 +1963,7 @@ $250
 </div>
 </div>
 </div>
-<div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="300">
+<div class="timeline-card" data-aos="fade-in" data-aos-delay="300">
 <div class="timeline-head">
 Statistical Society of Australia Inc. Student Travel Grant
 </div>
@@ -1933,7 +1980,7 @@ $300
 </div>
 </div>
 </div>
-<div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="300">
+<div class="timeline-card" data-aos="fade-in" data-aos-delay="300">
 <div class="timeline-head">
 Australian Postgraduate Award
 </div>
@@ -1950,7 +1997,7 @@ $78,750
 </div>
 </div>
 </div>
-<div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="300">
+<div class="timeline-card" data-aos="fade-in" data-aos-delay="300">
 <div class="timeline-head">
 Dean’s List for Academic Excellence
 </div>
@@ -1967,7 +2014,7 @@ Dean’s List for Academic Excellence
 </div>
 </div>
 </div>
-<div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="300">
+<div class="timeline-card" data-aos="fade-in" data-aos-delay="300">
 <div class="timeline-head">
 Tim Brown Prize II
 </div>
@@ -1984,7 +2031,7 @@ $275
 </div>
 </div>
 </div>
-<div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="300">
+<div class="timeline-card" data-aos="fade-in" data-aos-delay="300">
 <div class="timeline-head">
 Barker Scholarship IV
 </div>
@@ -2005,6 +2052,11 @@ $750
 </div>
 </div>
 </div>
+<a href="cv.pdf">
+<div class="download">
+<p><i class="fas fa-file-pdf"></i> Click here for the PDF version.</p>
+</div>
+<p></a></p>
 
 <script>
 (function() {

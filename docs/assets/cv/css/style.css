@@ -87,7 +87,6 @@ img{
 #main {
   width: var(--main-width);
   padding: 0 0.25in 0 0.25in;
-  float: left;
 }
 
 #main h1 {
