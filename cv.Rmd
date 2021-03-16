@@ -20,7 +20,7 @@ output:
  display: block;
 }
 ```
-
+<!---
 <div class="container">
 <div id="navigation" class="menu-two">
 <div class="navbar navbar-expand-lg">
@@ -48,6 +48,7 @@ output:
 </div>
 </div>
 </div>
+--->
 
 <div id="canvas">
 
