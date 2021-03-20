@@ -287,6 +287,7 @@ df <- data.frame(what = c('<i class="fab fa-twitter"></i>',
 knitr::kable(df, col.names = c("", ""), escape = FALSE)
 ```
 
+<iframe src="https://www.google.com/maps/d/embed?mid=1EXPRDXpv02esVOHEyQuPPS8gogoyR9JX" width="640" height="480"></iframe>
 
 You can also find me at various conferences and events. I'm a regular at the [International Biometrics Australiasia Region Conferences](http://biometrics.org.au/conferences.html), involved a lot with [Statistical Society of Australia](https://www.statsoc.org.au/Events-listing) (mostly Victorian Branch) and attend [R-Ladies Melbourne](https://www.meetup.com/en-AU/rladies-melbourne/) (or other chapters sometimes). 
 
