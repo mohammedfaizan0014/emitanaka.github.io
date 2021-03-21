@@ -11,6 +11,9 @@ body {
   margin: 1in 0.5in 1in 0.25in;
 }
 
+a {
+  color: #FFB6C1;
+}
 
 *{
   box-sizing: border-box;
