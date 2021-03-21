@@ -50,6 +50,8 @@ navbar:
       href: talks.html
     - text: "Blog"
       href: blog.html
+    - text: "About"
+      href: about.html
   right:
     - icon: fab fa-github
       href: https://github.com/emitanaka

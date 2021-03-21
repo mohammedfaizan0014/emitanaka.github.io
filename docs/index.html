@@ -2514,6 +2514,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <a href="teaching.html">Teaching</a>
 <a href="talks.html">Talks</a>
 <a href="blog.html">Blog</a>
+<a href="about.html">About</a>
 <input id="distill-search" class="nav-search hidden" type="text" placeholder="Search..."/>
 </div>
 <div class="nav-right">
@@ -2543,297 +2544,42 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
 <div class="d-article">
-<div class="layout-chunk" data-layout="l-body">
-<style type="text/css">
-body {
-  background: linear-gradient(130deg, #AD0059 25%, #79003e 75%);
-}
-
-
-html {
-  /*-- Main font colors --*/
-  --title-color:     #ffffff;
-  --header-color:    rgba(255, 255, 255, 0.8);
-  --body-color:      rgba(255, 255, 255, 1);
-  --aside-color:     rgba(255, 255, 255, 0.6);
-  --fig-cap-color:   rgba(255, 255, 255, 0.6);
-}
-
-.distill-site-footer {
-  --text-color:       rgba(0, 0, 0, 1);
-  --text-size:        15px;
-  --hover-color:      black;
-  --bkgd-color:       white;
-}
-
+<style>
 d-appendix {
-  display: none!important;
-}
-
-d-article {
-  color: white;
-}
-
-
-.profile-photo {
-  vertical-align: middle;
-  padding: 1.5rem!important;
-  box-sizing: border-box;
-}
-
-.profile-photo img {
-  // border: 1px solid black;
-  border-radius: 50%!important;
-  width: 12rem!important;
-}
-
-
-/* --- github calender --- */
-
-:root {
-  --color-calendar-graph-day-bg: #dddbdb;
-  --color-calendar-graph-day-L1-bg: #cd669b;
-  --color-calendar-graph-day-L2-bg: #bd327a;
-  --color-calendar-graph-day-L3-bg: #ad0059;
-  --color-calendar-graph-day-L4-bg: #79003e;
-}
-
-rect.ContributionCalendar-day[data-level='0'] {
-    fill: var(--color-calendar-graph-day-bg);
-}
-
-rect.ContributionCalendar-day[data-level='1'] {
-    fill: var(--color-calendar-graph-day-L1-bg);
-}
-
-rect.ContributionCalendar-day[data-level='2'] {
-    fill: var(--color-calendar-graph-day-L2-bg);
-}
-
-rect.ContributionCalendar-day[data-level='3'] {
-    fill: var(--color-calendar-graph-day-L3-bg);
-}
-
-rect.ContributionCalendar-day[data-level='4'] {
-    fill: var(--color-calendar-graph-day-L4-bg);
-}
-
-.calendar {
-    width: 100%;
-    background-color: white;
-    font-family: Helvetica, arial;
-    border: 1px solid #DDDDDD;
-    border-radius: 3px;
-    min-height: 243px;
-    text-align: center;
-    margin: 0 auto;
-    padding: 10px;
-    color: black;
-}
-
-.js-calendar-graph-svg {
-  width: 100%;
-}
-
-.calendar-graph text.wday,
-.calendar-graph text.month {
-    font-size: 10px;
-    fill: #aaa;
-}
-
-.contrib-legend {
-    text-align: right;
-    padding: 0 10px 10px 0;
-    display: inline-block;
-    float: right;
-}
-
-.contrib-legend .legend {
-    display: inline-block;
-    list-style: none;
-    margin: 0 5px;
-    position: relative;
-    bottom: -1px;
-    padding: 0;
-}
-
-.contrib-legend .legend li {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-}
-
-.text-small {
-    font-size: 12px;
-    color: #767676;
-}
-
-.calendar-graph {
-    padding: 5px 0 0;
-    text-align: center;
-}
-
-.contrib-column {
-    padding: 15px 0;
-    text-align: center;
-    border-left: 1px solid #ddd;
-    border-top: 1px solid #ddd;
-    font-size: 11px;
-}
-
-.contrib-column-first {
-    border-left: 0;
-}
-
-.table-column {
-    display: table-cell;
-    width: 5%;
-    padding-right: 10px;
-    padding-left: 10px;
-    vertical-align: top;
-}
-
-.contrib-number {
-    font-weight: 300;
-    line-height: 1.3em;
-    font-size: 24px;
-    display: block;
-    color: #333;
-}
-
-.calendar img.spinner {
-    width: 70px;
-    margin-top: 50px;
-    min-height: 70px;
-}
-
-.monospace {
-    text-align: center;
-    color: #000;
-    font-family: monospace;
-}
-
-.monospace a {
-    color: #1D75AB;
-    text-decoration: none;
-}
-
-.contrib-footer {
-    font-size: 11px;
-    padding: 0 10px 12px;
-    text-align: left;
-    width: 100%;
-    box-sizing: border-box;
-    height: 26px;
-}
-
-.left.text-muted {
-    float: left;
-    margin-left: 9px;
-    color: #767676;
-}
-.left.text-muted a {
-    color: #4078c0;
-    text-decoration: none;
-}
-.left.text-muted a:hover,
-.monospace a:hover {
-    text-decoration: underline;
-}
-
-h2.f4.text-normal.mb-3 {
-    display: none;
-}
-
-.float-left.text-gray {
-    float: left;
-}
-#user-activity-overview{
-    display:none;
-}
-
-.day-tooltip {
-    white-space: nowrap;
-    position: absolute;
-    z-index: 99999;
-    padding: 10px;
-    font-size: 12px;
-    color: #959da5;
-    text-align: center;
-    background: rgba(0,0,0,.85);
-    border-radius: 3px;
-    display: none;
-    pointer-events: none;
-}
-.day-tooltip strong {
-    color: #dfe2e5;
-}
-.day-tooltip.is-visible {
-    display: block;
-}
-.day-tooltip:after {
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    width: 5px;
-    height: 5px;
-    box-sizing: border-box;
-    margin: 0 0 0 -5px;
-    content: " ";
-    border: 5px solid transparent;
-    border-top-color: rgba(0,0,0,.85)
+ display: none!important;
 }
 </style>
-</div>
-<div class="profile-photo">
-<p><img  src="images/avatar.jpg" alt="Profile photo"></p>
-</div>
-<h2 id="hi-welcome-to-my-website">Hi! Welcome to my website!</h2>
-<p>I’m a lecturer (equivalent to assistant professor) in statistics at Monash University, Melbourne, Australia. Research-wise, I’m interested in developing useful statistical tools and methods. My experience in application is in bioinformatics and agriculture (particularly crop breeding). My active research areas are <strong>experimental design</strong>, <strong>mixed models</strong> and <strong>statistical graphics</strong>.</p>
-<p>I speak English, Japanese (conversational) and R (base + tidyverse) fluently. I’ve lived in Australia almost all of my life (+-10 years standard deviation) and my university major was mathematics and statistics. My PhD, obtained at the School of Mathematics and Statistics, University of Sydney in 2015, is in statistical bioinformatics with most of my code written in Python + Bash (both of which I am rusty now). I also like to dabble on front-end web development (HTML/CSS/JS).</p>
-<script
-  src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
-</script>
-<div class="l-body-outset">
-<a href="https://github.com/emitanaka">
-<div class="calendar">
-<p>Loading my github calendar data.</p>
-</div>
-<p></a></p>
-</div>
-<script>
-GitHubCalendar(".calendar", "emitanaka", { responsive: true });
-</script>
-<h2 id="you-can-find-me-at">You can find me at …</h2>
-<div class="layout-chunk" data-layout="l-body">
-<table>
-<colgroup>
-<col style="width: 25%" />
-<col style="width: 74%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;"><i class="fab fa-twitter"></i></td>
-<td style="text-align: left;"><a href="https://twitter.com/statsgen">statsgen</a></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><i class="fab fa-github"></i></td>
-<td style="text-align: left;"><a href="https://github.com/emitanaka">emitanaka</a></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><i class="fas fa-envelope"></i></td>
-<td style="text-align: left;"><a href="mailto:emi.tanaka@monash.edu">emi.tanaka@monash.edu</a></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><i class="fas fa-map-marker-alt"></i></td>
-<td style="text-align: left;">Monash University<br>Monash Business School<br>Menzies Building E776<br>Clayton campus, VIC 3800<br>Australia</td>
-</tr>
-</tbody>
-</table>
-</div>
-<iframe src="https://www.google.com/maps/d/embed?mid=1EXPRDXpv02esVOHEyQuPPS8gogoyR9JX" width="640" height="480">
-</iframe>
-<p>You can also find me at various conferences and events. I’m a regular at the <a href="http://biometrics.org.au/conferences.html">International Biometrics Australiasia Region Conferences</a>, involved a lot with <a href="https://www.statsoc.org.au/Events-listing">Statistical Society of Australia</a> (mostly Victorian Branch) and attend <a href="https://www.meetup.com/en-AU/rladies-melbourne/">R-Ladies Melbourne</a> (or other chapters sometimes).</p>
+<h2 id="recent-news">Recent news</h2>
+<ol class="fa-ul">
+<li>
+<span class="fa-li"><i class="fas fa-university"></i></span>Hiring for two <a href="https://careers.pageuppeople.com/513/cw/en/job/613511/lecturer-senior-lecturer-in-business-analytics">lecturer/senior lecturer (equivalent to assistant professor) in our department</a>
+</li>
+<ul style="line-height:1;font-size:0.8rem;">
+<li>
+Closing date: Wednesday 21 April 2021, 11:55 pm AEST
+</li>
+</ul>
+<li>
+<span class="fa-li"><i class="fab fa-r-project"></i></span><a href="https://github.com/emitanaka/nestr"><code>nestr</code> R-package</a> is now on CRAN
+</li>
+<li>
+<span class="fa-li"><i class="fas fa-code"></i></span><a href="https://statsoc.org.au/event-4191172">Data visualisation with R workshop</a>
+</li>
+<ul style="line-height:1;font-size:0.8rem;">
+<li>
+9am - 12:30pm AEST
+</li>
+<li>
+15 &amp; 16 April 2021
+</li>
+<li>
+Online via Zoom
+</li>
+<li>
+Early bird price until 31st March
+</li>
+</ul>
+</ol>
 <h2 id="website-construction">Website construction 👷🏻‍♀</h2>
 <p>I decided to redo my website using the <a href="https://rstudio.github.io/distill/">distill</a> R-package and so some parts of my website is in construction. If you are interested in the source code of this website, you can find it <a href="https://github.com/emitanaka/emitanaka.github.io">here</a>.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
