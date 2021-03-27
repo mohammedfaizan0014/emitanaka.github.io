@@ -13,7 +13,18 @@ statistics, data science, R and academia.
       <link>https://emitanaka.org</link>
     </image>
     <generator>Distill</generator>
-    <lastBuildDate>Sat, 23 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 27 Mar 2021 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Visual Inference: 絵による推論</title>
+      <dc:creator>Emi Tanaka</dc:creator>
+      <link>https://emitanaka.org/talks/2021-03-27-fukuokar2021</link>
+      <description>A presentation at the 17th Fukuoka R Meeting.</description>
+      <category>日本語</category>
+      <category>Visual Inference</category>
+      <guid>https://emitanaka.org/talks/2021-03-27-fukuokar2021</guid>
+      <pubDate>Sat, 27 Mar 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://emitanaka.org/talks/2021-03-27-fukuokar2021/preview.png" medium="image" type="image/png" width="1733" height="962"/>
+    </item>
     <item>
       <title>Grammar of Experimental Design: 実験計画法の「文法」</title>
       <dc:creator>Emi Tanaka</dc:creator>
