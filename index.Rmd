@@ -11,6 +11,10 @@ d-appendix {
 ## Recent news
 
 <ol class="fa-ul">
+<li><span class="fa-li"><i class="fas fa-comment"></i></span>Speaking (in Japanese) at the [17th Fukuoka R](https://fukuoka-r.connpass.com/event/206105/)</li>
+<ul style="line-height:1.2;font-size:0.8rem;">
+<li>27th March 2021 7PM AEST</li>
+</ul>
   <li><span class="fa-li"><i class="fas fa-university"></i></span>Hiring two [lecturer/senior lecturer (equivalent to assistant professor) in our department](https://careers.pageuppeople.com/513/cw/en/job/613511/lecturer-senior-lecturer-in-business-analytics)
 </li>
 <ul style="line-height:1.2;font-size:0.8rem;">
