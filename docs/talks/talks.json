@@ -129,5 +129,27 @@
     "input_file": "rladiesSSA2020.utf8.md",
     "preview_width": 1448,
     "preview_height": 817
+  },
+  {
+    "path": "talks/2019-11-28-WOMBAT2019/",
+    "title": "Software design, selection and estimation for latent variable models",
+    "description": "A talk for WOMBAT 2019.",
+    "author": [
+      {
+        "name": "Emi Tanaka",
+        "url": "https://emitanaka.org"
+      }
+    ],
+    "date": "2019-11-29",
+    "categories": [
+      "Skill",
+      "Service"
+    ],
+    "contents": "\nClick here about WOMBAT2019.\nClick below for the slide.\n\n\n\n\n\n\n\n\n\n\n\n",
+    "preview": "talks/2019-11-28-WOMBAT2019/preview.png",
+    "last_modified": "2021-03-28T11:45:34+11:00",
+    "input_file": "WOMBAT2019.utf8.md",
+    "preview_width": 1730,
+    "preview_height": 975
   }
 ]

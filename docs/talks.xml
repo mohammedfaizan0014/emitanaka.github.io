@@ -79,5 +79,16 @@ statistics, data science, R and academia.
       <pubDate>Tue, 30 Jun 2020 00:00:00 +0000</pubDate>
       <media:content url="https://emitanaka.org/talks/2020-06-30-rladiesSSA2020/preview.png" medium="image" type="image/png" width="1448" height="817"/>
     </item>
+    <item>
+      <title>Software design, selection and estimation for latent variable models</title>
+      <dc:creator>Emi Tanaka</dc:creator>
+      <link>https://emitanaka.org/talks/2019-11-28-WOMBAT2019</link>
+      <description>A talk for WOMBAT 2019.</description>
+      <category>Skill</category>
+      <category>Service</category>
+      <guid>https://emitanaka.org/talks/2019-11-28-WOMBAT2019</guid>
+      <pubDate>Fri, 29 Nov 2019 00:00:00 +0000</pubDate>
+      <media:content url="https://emitanaka.org/talks/2019-11-28-WOMBAT2019/preview.png" medium="image" type="image/png" width="1730" height="975"/>
+    </item>
   </channel>
 </rss>
