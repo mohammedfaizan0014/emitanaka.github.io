@@ -34,8 +34,8 @@
       "path": "index.html",
       "title": "Emi Tanaka",
       "author": [],
-      "contents": "\n\nd-appendix {\n display: none!important;\n}\nRecent news\n\nSpeaking (in Japanese) at the 17th Fukuoka R\n\n\n27th March 2021 7PM AEST\n\n\nHiring two lecturer/senior lecturer (equivalent to assistant professor) in our department\n\n\nClosing date: Wednesday 21 April 2021, 11:55 pm AEST\n\n\nPhD in statistics, machine learning, data science, operational research, or a closely-related discipline required\n\n\nnestr R-package is now on CRAN\n\n\nData visualisation with R workshop\n\n\n9am - 12:30pm AEST\n\n\n15 & 16 April 2021\n\n\nOnline via Zoom\n\n\nEarly bird price until 31st March\n\nWebsite construction 👷🏻‍♀\nI decided to redo my website using the distill R-package and so some parts of my website is in construction. If you are interested in the source code of this website, you can find it here.\n\n\n\n",
-      "last_modified": "2021-03-27T15:01:39+11:00"
+      "contents": "\n\nd-appendix {\n display: none!important;\n}\nRecent news\n\nHiring two lecturer/senior lecturer (equivalent to assistant professor) in our department\n\n\nClosing date: Wednesday 21 April 2021, 11:55 pm AEST\n\n\nPhD in statistics, machine learning, data science, operational research, or a closely-related discipline required\n\n\nnestr R-package is now on CRAN\n\n\nData visualisation with R workshop\n\n\n9am - 12:30pm AEST\n\n\n15 & 16 April 2021\n\n\nOnline via Zoom\n\n\nEarly bird price until 31st March\n\nWebsite construction 👷🏻‍♀\nI decided to redo my website using the distill R-package and so some parts of my website is in construction. If you are interested in the source code of this website, you can find it here.\n\n\n\n",
+      "last_modified": "2021-03-28T11:23:21+11:00"
     },
     {
       "path": "talks.html",

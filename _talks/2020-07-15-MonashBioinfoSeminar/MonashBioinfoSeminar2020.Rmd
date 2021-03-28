@@ -1,15 +1,15 @@
 ---
-title: "Beyond Beamer: Modern and Dynamic Presentations with R Markdown"
+title: 'Advent of "Grammar": Bridging Statistics and Data Science for Experimental Design'
 description: |
-  A talk for the joint meeting of Statistical Society of Australia NSW and Canberra Branches hosted with R-Ladies Canberra and R-Ladies Sydney. 
+  A talk for the Monash Bioinformatics Seminar.
 author:
   - name: Emi Tanaka
     url: https://emitanaka.org
     affiliation: Monash University
     affiliation_url: https://numbat.space/
-url: https://emitanaka.org/slides/rladiesSSA2020
 preview: preview.png
-date: 06-30-2020
+date: 07-15-2020
+url: https://emitanaka.org/slides/MonashBioinfo2020
 base_url: http://emitanaka.org/
 twitter:
   creator: "@statsgen"
@@ -26,7 +26,9 @@ knitr::opts_chunk$set(echo = FALSE,
                       out.extra="style='border:1px solid black;'")
 ```
 
-Click below for the slide. 
+Errata: there was an error in my script (where duplicates were not removed) for the count for the number of R packages in CRAN Task View of Design of Experiments. The slides specify there are about 200 R-packages. After removing duplicates, there was about 100 R-packages. 
+
+*Click below for the slide.*
 
 <a href="`r rmarkdown::metadata$url`">
 ```{r}

@@ -58,6 +58,17 @@ statistics, data science, R and academia.
       <media:content url="https://emitanaka.org/talks/2020-09-30-SSAWA-YSW2020/preview.png" medium="image" type="image/png" width="1447" height="810"/>
     </item>
     <item>
+      <title>Advent of "Grammar": Bridging Statistics and Data Science for Experimental Design</title>
+      <dc:creator>Emi Tanaka</dc:creator>
+      <link>https://emitanaka.org/talks/2020-07-15-MonashBioinfoSeminar</link>
+      <description>A talk for the Monash Bioinformatics Seminar.</description>
+      <category>Skill</category>
+      <category>Service</category>
+      <guid>https://emitanaka.org/talks/2020-07-15-MonashBioinfoSeminar</guid>
+      <pubDate>Wed, 15 Jul 2020 00:00:00 +0000</pubDate>
+      <media:content url="https://emitanaka.org/talks/2020-07-15-MonashBioinfoSeminar/preview.png" medium="image" type="image/png" width="1729" height="974"/>
+    </item>
+    <item>
       <title>Beyond Beamer: Modern and Dynamic Presentations with R Markdown</title>
       <dc:creator>Emi Tanaka</dc:creator>
       <link>https://emitanaka.org/talks/2020-06-30-rladiesSSA2020</link>
