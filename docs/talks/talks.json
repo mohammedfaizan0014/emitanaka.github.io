@@ -81,8 +81,8 @@
     ],
     "contents": "\n\n\n\n\n\n\n\n\n\n\n\n",
     "preview": "talks/2020-09-30-SSAWA-YSW2020/preview.png",
-    "last_modified": "2021-03-28T11:33:36+11:00",
-    "input_file": "SSAWA-YSW2020.utf8.md",
+    "last_modified": "2021-03-28T11:33:37+11:00",
+    "input_file": {},
     "preview_width": 1447,
     "preview_height": 810
   },
@@ -104,7 +104,7 @@
     "contents": "\nErrata: there was an error in my script (where duplicates were not removed) for the count for the number of R packages in CRAN Task View of Design of Experiments. The slides specify there are about 200 R-packages. After removing duplicates, there was about 100 R-packages.\nClick below for the slide.\n\n\n\n\n\n\n\n\n\n\n\n",
     "preview": "talks/2020-07-15-MonashBioinfoSeminar/preview.png",
     "last_modified": "2021-03-28T11:31:30+11:00",
-    "input_file": "MonashBioinfoSeminar2020.utf8.md",
+    "input_file": {},
     "preview_width": 1729,
     "preview_height": 974
   },
@@ -126,7 +126,7 @@
     "contents": "\nClick below for the slide.\n\n\n\n\n\n\n\n\n\n\n\n",
     "preview": "talks/2020-06-30-rladiesSSA2020/preview.png",
     "last_modified": "2021-03-28T11:33:07+11:00",
-    "input_file": "rladiesSSA2020.utf8.md",
+    "input_file": {},
     "preview_width": 1448,
     "preview_height": 817
   },
@@ -147,8 +147,8 @@
     ],
     "contents": "\nClick here about WOMBAT2019.\nClick below for the slide.\n\n\n\n\n\n\n\n\n\n\n\n",
     "preview": "talks/2019-11-28-WOMBAT2019/preview.png",
-    "last_modified": "2021-03-28T11:45:34+11:00",
-    "input_file": "WOMBAT2019.utf8.md",
+    "last_modified": "2021-03-28T11:45:35+11:00",
+    "input_file": {},
     "preview_width": 1730,
     "preview_height": 975
   }

@@ -6,6 +6,11 @@ site: distill::distill_website
 d-appendix {
  display: none!important;
 }
+.twitter-border {
+ border: 1px dashed black;
+ width: 300px;
+ border-radius: 5px;
+}
 </style>
 
 ## Recent news
@@ -28,7 +33,10 @@ d-appendix {
 </ul>
 </ol>
 
-
+<div class="twitter-border">
+<a class="twitter-timeline" data-height="400" data-width="300"  href="https://twitter.com/statsgen?ref_src=twsrc%5Etfw">Tweets by statsgen</a>
+</div>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## Website construction 👷🏻‍♀
 
