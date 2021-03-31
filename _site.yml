@@ -50,6 +50,8 @@ navbar:
       href: talks.html
     - text: "Blog"
       href: blog.html
+    - text: "Resources"
+      href: resources.html
     - text: "About"
       href: about.html
   right:

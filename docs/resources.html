@@ -7,7 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
   <meta name="generator" content="distill" />
-  <link rel="alternate" type="application/rss+xml" href="https://emitanaka.org/blog.xml" />
 
   <style type="text/css">
   /* Hide doc at startup (prevent jankiness while JS renders/transforms) */
@@ -86,32 +85,32 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
 
   <!--radix_placeholder_meta_tags-->
-  <title>Emi Tanaka: Blog listing</title>
+  <title>Emi Tanaka: Resources</title>
 
-  <meta property="description" itemprop="description" content="This blog contains a mixture of posts on statistics, data science, R and academia."/>
+  <meta property="description" itemprop="description" content="This section contains some resources that are perhaps useful for others."/>
 
   <link rel="license" href="https://creativecommons.org/licenses/by/4.0/"/>
   <link rel="icon" type="image/png" href="images/avatar.png"/>
 
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="Emi Tanaka: Blog listing"/>
+  <meta property="og:title" content="Emi Tanaka: Resources"/>
   <meta property="og:type" content="article"/>
-  <meta property="og:description" content="This blog contains a mixture of posts on statistics, data science, R and academia."/>
+  <meta property="og:description" content="This section contains some resources that are perhaps useful for others."/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="Emi Tanaka"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="Emi Tanaka: Blog listing"/>
-  <meta property="twitter:description" content="This blog contains a mixture of posts on statistics, data science, R and academia."/>
+  <meta property="twitter:title" content="Emi Tanaka: Resources"/>
+  <meta property="twitter:description" content="This section contains some resources that are perhaps useful for others."/>
   <meta property="twitter:site" content="@statsgen"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","listing"]}},"value":[{"type":"character","attributes":{},"value":["Blog listing"]},{"type":"character","attributes":{},"value":["This blog contains a mixture of posts on statistics, data science, R and academia.\n"]},{"type":"character","attributes":{},"value":["posts"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description"]}},"value":[{"type":"character","attributes":{},"value":["Resources"]},{"type":"character","attributes":{},"value":["This section contains some resources that are perhaps useful for others."]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2496,12 +2495,12 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 </head>
 
-<body class="layout-listing">
+<body>
 
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Blog listing","description":"This blog contains a mixture of posts on statistics, data science, R and academia.","authors":[]}
+{"title":"Resources","description":"This section contains some resources that are perhaps useful for others.","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2539,283 +2538,45 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_navigation_before_body-->
 <!--radix_placeholder_site_before_body-->
 <!--/radix_placeholder_site_before_body-->
-<!--radix_placeholder_article_listing-->
-
-
-<script type="application/javascript">
-
-function init_posts_list() {
-
-  function load_image(img) {
-    var src = $(img).attr('data-src');
-    if (src) {
-      $(img).attr('src', src);
-      $(img).load(function() {
-        img.removeAttribute('data-src');
-      });
-    }
-  }
-
-  function set_posts_visible(posts, visible) {
-    if (visible) {
-
-      // show bottom border by default
-      $(posts).removeClass('post-preview-last');
-
-      // apply limits if need be
-      var max_posts = 25;
-      var apply_limits = $('.posts-container').hasClass('posts-apply-limit');
-      if (apply_limits && posts.length > max_posts) {
-        posts = $(posts).slice(0, max_posts);
-      } else {
-        $('.posts-more a').addClass('hidden');
-      }
-
-      // apply last style
-      $(posts.slice(-1)[0]).addClass('post-preview-last');
-
-      $(posts).removeClass('hidden');
-      $(posts).find('img[data-src]').each(function(i, img) {
-        load_image(img);
-      });
-    } else {
-      $(posts).addClass('hidden');
-    }
-  }
-
-  function apply_hash_filter() {
-
-    // clear active state
-    $('.categories .active').removeClass('active');
-
-    // mark all posts invisible to start
-    set_posts_visible($('.posts-list').children('a'), false);
-
-    // if we have a hash filter
-    if (window.location.hash && window.location.hash.startsWith("#category:")) {
-
-      // mark posts that match the category visible
-      var page_category = window.location.hash.replace(/^#category:/, "");
-      var posts = $('.post-metadata').map(function(idx, script) {
-        var metadata = $.parseJSON($(script).html());
-        var post = null;
-        $.each(metadata.categories, function(idx, category) {
-          category = category.replace(/ /g,"_");
-          if ((page_category || '').toLowerCase() === "articles" || category === page_category) {
-            post = $(script).parent().get();
-            return false;
-          }
-        });
-        return post;
-      });
-      set_posts_visible(posts, true);
-
-      // mark the hash active
-      $('.categories li>a[href="' + window.location.hash + '"]').addClass('active');
-
-      // update the list_caption
-      var list_caption = $('.posts-list-caption');
-      var caption = (page_category || '').toLowerCase() === "articles"
-        ? list_caption.attr('data-caption')
-        : ('Category: ' + page_category.replace(/_/g," "));
-      list_caption.text(caption);
-
-    } else {
-
-      // no hash filter, make all posts visible (subject to max display)
-      set_posts_visible($('.posts-list').children(), true);
-
-      // reset list caption
-      var list_caption = $('.posts-list-caption');
-      list_caption.text(list_caption.attr('data-caption'));
-
-
-    }
-  }
-
-  // more articles
-  function apply_post_limits(apply) {
-    if (apply) {
-      $('.posts-container').addClass('posts-apply-limit');
-      $('.posts-more a').removeClass('hidden');
-    } else {
-      $('.posts-container').removeClass('posts-apply-limit');
-      $('.posts-more a').addClass('hidden');
-    }
-  }
-
-  // click handling for tags
-  $('.dt-tag').click(function(ev) {
-    window.location.hash = '#category:' + $(this).text().replace(/ /g, "_");
-    return false;
-  })
-
-  // hash filter handling
-  apply_hash_filter();
-  $(window).on('hashchange',function() {
-    apply_post_limits(true);
-    apply_hash_filter();
-  });
-
-  // more articles link
-  $('.posts-more a').click(function(e) {
-    e.preventDefault();
-    apply_post_limits(false);
-    apply_hash_filter();
-    return false;
-  });
-
-}
-
-</script>
-
-
-
-<div class="posts-container posts-with-sidebar posts-apply-limit l-screen-inset">
-<div class="posts-list">
-<h1 class="posts-list-caption" data-caption="Blog listing">Blog listing</h1>
-<a href="posts/2021-02-03-current-state-of-experimental-design-r-packages/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["experimental design","R"]}</script>
-<div class="metadata">
-<div class="publishedDate">Feb. 3, 2021</div>
-</div>
-<div class="thumbnail">
-<img src="posts/2021-02-03-current-state-of-experimental-design-r-packages/figures/download-timeplot-1.png"/>
-</div>
-<div class="description">
-<h2>Current state of R packages for the design of experiments</h2>
-<div class="dt-tags">
-<div class="dt-tag">experimental design</div>
-<div class="dt-tag">R</div>
-</div>
-<p>Your analytical toolkit matters very little if the data are no good. Ideally you want to know to how the data were collected before delving into the analysis of the data; better yet, get involved _before_ the collection of data and design its collection. In this post I explore some of the top downloaded R packages for the design of experiments and analysis of experimental data.</p>
-</div>
-</a>
-<a href="posts/2021-01-29-uml-seq-diag/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["visualisation","diagram"]}</script>
-<div class="metadata">
-<div class="publishedDate">Jan. 29, 2021</div>
-</div>
-<div class="thumbnail">
-<img src="posts/2021-01-29-uml-seq-diag/seq-diag-omnigraffle.png"/>
-</div>
-<div class="description">
-<h2>Drawing a UML Sequence Diagram</h2>
-<div class="dt-tags">
-<div class="dt-tag">visualisation</div>
-<div class="dt-tag">diagram</div>
-</div>
-<p>Search for the way to draw a UML sequence diagram.</p>
-</div>
-</a>
-<a href="posts/travel2019/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["visualisation","interactive"]}</script>
-<div class="metadata">
-<div class="publishedDate">March 26, 2019</div>
-</div>
-<div class="thumbnail">
-<img/>
-</div>
-<div class="description">
-<h2>My Travel Schedule 2019: Building an interactive visualisation as twitter card</h2>
-<div class="dt-tags">
-<div class="dt-tag">visualisation</div>
-<div class="dt-tag">interactive</div>
-</div>
-<p>Making an interactive schedule heat map with
-interactive twitter card display.</p>
-</div>
-</a>
-<a href="posts/hexsticker/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["fun"]}</script>
-<div class="metadata">
-<div class="publishedDate">April 6, 2018</div>
-</div>
-<div class="thumbnail">
-<img src="posts/hexsticker/hexsticker.gif"/>
-</div>
-<div class="description">
-<h2>Making a Hexagon Sticker</h2>
-<div class="dt-tags">
-<div class="dt-tag">fun</div>
-</div>
-<p>Making hexagon stickers have become popular for
-R-packages with the range of packages associated with
-RStudio, such as `ggplot2`, `knitr`, `devtools` and so
-on, having its own hex stickers. For the sticker that I
-made for my R-package I found it easier, partly due to
-its long name, to use powerpoint to manipulate the
-image and create a semi-circular text.</p>
-</div>
-</a>
-</div>
-<div class="posts-sidebar">
-<div><div class="sidebar-section custom">
-  <h3>About</h3>
-  This blog contains a mixture of 
-  posts on statistics, data science, 
-  R and academia.
-</div></div>
-<div class="sidebar-section subscribe">
-<h3>Subscribe</h3>
-<form method='post' action='https://blogtrottr.com'>
-  <p>Enjoy this blog? Get notified of new posts via email:</p>
-  <input type='text' name='btr_email' />
-  <input type='hidden' name='btr_url'
-         value='https://emitanaka.org/blog.xml'/>
-  <input type='hidden' name='schedule_type' value='0' />
-  <input type='submit' value='Subscribe' />
-</form>
-</div>
-<div class="sidebar-section categories">
-<h3>Categories</h3>
-<ul>
-<li>
-<a href="#category:Articles">Articles</a>
-<span class="category-count">(4)</span>
-</li>
-<li>
-<a href="#category:diagram">diagram</a>
-<span class="category-count">(1)</span>
-</li>
-<li>
-<a href="#category:experimental_design">experimental design</a>
-<span class="category-count">(1)</span>
-</li>
-<li>
-<a href="#category:fun">fun</a>
-<span class="category-count">(1)</span>
-</li>
-<li>
-<a href="#category:interactive">interactive</a>
-<span class="category-count">(1)</span>
-</li>
-<li>
-<a href="#category:R">R</a>
-<span class="category-count">(1)</span>
-</li>
-<li>
-<a href="#category:visualisation">visualisation</a>
-<span class="category-count">(2)</span>
-</li>
-</ul>
-</div>
-</div>
-<div class="posts-more">
-<a href="#">More articles &raquo;</a>
-</div>
-</div>
-<!--/radix_placeholder_article_listing-->
 
 <div class="d-title">
-<h1>Blog listing</h1>
+<h1>Resources</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-<p><p>This blog contains a mixture of posts on statistics, data science, R and academia.</p></p>
+<p><p>This section contains some resources that are perhaps useful for others.</p></p>
 </div>
 
 
 <div class="d-article">
+<style>
+d-title {
+ display:none;
+}
+d-article li, d-article ul {
+  margin-bottom: 0em;
+}
+</style>
+<h1 id="resources">Resources</h1>
+<h2 id="australia">Australia</h2>
+<h3 id="professional-societies">Professional societies</h3>
+<ul>
+<li><a href="https://www.statsoc.org.au/">Statistical Society of Australia</a></li>
+<li><a href="http://biometrics.org.au/">International Biometrics Society Australasia Region</a></li>
+</ul>
+<h2 id="learning-r">Learning R</h2>
+<ul>
+<li>Australian Local <a href="https://rladies.org/">R-Ladies</a> Chapters:
+<ul>
+<li>R-Ladies Melbourne <a href="https://www.meetup.com/en-AU/rladies-melbourne/"><i class="fab fa-meetup"></i></a> <a href="https://twitter.com/RLadiesMelb"><i class="fab fa-twitter"></i></a></li>
+<li>R-Ladies Sydney <a href="https://www.meetup.com/en-AU/rladies-sydney/"><i class="fab fa-meetup"></i></a> <a href="https://twitter.com/RLadiesSydney"><i class="fab fa-twitter"></i></a></li>
+<li>R-Ladies Canberra <a href="https://www.meetup.com/en-AU/rladies-canberra/"><i class="fab fa-meetup"></i></a> <a href="https://twitter.com/RLadiesCanberra"><i class="fab fa-twitter"></i></a></li>
+<li>R-Ladies Perth <a href="https://www.meetup.com/en-AU/rladies-perth/"><i class="fab fa-meetup"></i></a> <a href="https://twitter.com/RLadiesPerth"><i class="fab fa-twitter"></i></a></li>
+<li>R-Ladies Adelaide <a href="https://www.meetup.com/en-AU/rladies-adelaide/"><i class="fab fa-meetup"></i></a> <a href="https://twitter.com/RLadiesAdelaide"><i class="fab fa-twitter"></i></a></li>
+<li>R-Ladies Brisbane <a href="https://www.meetup.com/en-AU/rladies-brisbane/"><i class="fab fa-meetup"></i></a> <a href="https://twitter.com/RLadiesBrisbane"><i class="fab fa-twitter"></i></a></li>
+</ul></li>
+<li>R for data science community <a href="https://www.rfordatasci.com/"><i class="fas fa-globe"></i></a> <a href="https://rfordatascience.slack.com/join/shared_invite/zt-n46lijeb-2RRzQ70U34eH530~PyZsmg#/shared-invite/email"><i class="fab fa-slack"></i></a></li>
+<li><a href="https://github.com/rfordatascience/tidytuesday">Tidy Tuesday</a></li>
+</ul>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
