@@ -11,6 +11,9 @@ d-title {
 d-article li, d-article ul {
   margin-bottom: 0em;
 }
+.small {
+  font-size: 0.8rem;
+}
 </style>
 
 # Resources
@@ -21,7 +24,11 @@ d-article li, d-article ul {
 
 * [Statistical Society of Australia](https://www.statsoc.org.au/)
 * [International Biometrics Society Australasia Region](http://biometrics.org.au/)
-
+* [Australian Mathematical Society](https://austms.org.au/)
+<div class="small">
+   * The society is (rightfully) mathematics oriented but occasionally features statistics. Contrary to common belief, statistics is *not* a subset of mathematics, although some areas of statistics have a large intersection with the field.
+   * For women, [Women in Mathematics Special Interest Group](https://austms.org.au/special-interest-groups/wimsig/) (WIMSIG) may be of interest. I find [their newsletter](https://austms.org.au/special-interest-groups/wimsig/wimsig-news/) to be excellent. 
+</div>
 
 ## Learning R 
 
