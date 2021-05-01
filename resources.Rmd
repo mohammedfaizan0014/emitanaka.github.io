@@ -23,6 +23,11 @@ d-article li, d-article ul {
 ### Professional societies 
 
 * [Statistical Society of Australia](https://www.statsoc.org.au/)
+   * ANZSTAT forum:
+      * [General topics](https://www.statsoc.org.au/Forum-general-topics)
+      * [Event announcment](https://www.statsoc.org.au/forum-event-announcements)
+      * [Job vancancies and scholarships](https://www.statsoc.org.au/forum-job-vacancies)
+   * [Events listing](https://www.statsoc.org.au/Events-listing)
 * [International Biometrics Society Australasia Region](http://biometrics.org.au/)
 * [Australian Mathematical Society](https://austms.org.au/)
 <div class="small">
@@ -41,3 +46,4 @@ d-article li, d-article ul {
   * R-Ladies Brisbane [<i class="fab fa-meetup"></i>](https://www.meetup.com/en-AU/rladies-brisbane/) [<i class="fab fa-twitter"></i>](https://twitter.com/RLadiesBrisbane)
 * R for data science community [<i class="fas fa-globe"></i>](https://www.rfordatasci.com/) [<i class="fab fa-slack"></i>](https://rfordatascience.slack.com/join/shared_invite/zt-n46lijeb-2RRzQ70U34eH530~PyZsmg#/shared-invite/email)
 * [Tidy Tuesday](https://github.com/rfordatascience/tidytuesday)
+* [Big Book of R](https://www.bigbookofr.com/)
