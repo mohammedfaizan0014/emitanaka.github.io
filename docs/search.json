@@ -42,8 +42,8 @@
       "title": "Resources",
       "description": "This section contains some resources that are perhaps useful for others.",
       "author": [],
-      "contents": "\n\nd-title {\n display:none;\n}\nd-article li, d-article ul {\n  margin-bottom: 0em;\n}\n.small {\n  font-size: 0.8rem;\n}\nResources\nAustralia\nProfessional societies\nStatistical Society of Australia\nInternational Biometrics Society Australasia Region\nAustralian Mathematical Society\n\nThe society is (rightfully) mathematics oriented but occasionally features statistics. Contrary to common belief, statistics is not a subset of mathematics, although some areas of statistics have a large intersection with the field.\nFor women, Women in Mathematics Special Interest Group (WIMSIG) may be of interest. I find their newsletter to be excellent.\n\nLearning R\nAustralian Local R-Ladies Chapters:\nR-Ladies Melbourne  \nR-Ladies Sydney  \nR-Ladies Canberra  \nR-Ladies Perth  \nR-Ladies Adelaide  \nR-Ladies Brisbane  \n\nR for data science community  \nTidy Tuesday\n\n\n\n",
-      "last_modified": "2021-04-01T19:36:07+11:00"
+      "contents": "\n\nd-title {\n display:none;\n}\nd-article li, d-article ul {\n  margin-bottom: 0em;\n}\n.small {\n  font-size: 0.8rem;\n}\nResources\nAustralia\nProfessional societies\nStatistical Society of Australia\nANZSTAT forum:\nGeneral topics\nEvent announcment\nJob vancancies and scholarships\n\nEvents listing\n\nInternational Biometrics Society Australasia Region\nAustralian Mathematical Society\n\nThe society is (rightfully) mathematics oriented but occasionally features statistics. Contrary to common belief, statistics is not a subset of mathematics, although some areas of statistics have a large intersection with the field.\nFor women, Women in Mathematics Special Interest Group (WIMSIG) may be of interest. I find their newsletter to be excellent.\n\nLearning R\nAustralian Local R-Ladies Chapters:\nR-Ladies Melbourne  \nR-Ladies Sydney  \nR-Ladies Canberra  \nR-Ladies Perth  \nR-Ladies Adelaide  \nR-Ladies Brisbane  \n\nR for data science community  \nTidy Tuesday\nBig Book of R\n\n\n\n",
+      "last_modified": "2021-06-05T13:54:31+10:00"
     },
     {
       "path": "talks.html",
@@ -51,7 +51,7 @@
       "description": "This section contains the list of my talks and workshops where made available. Some outputs are missing. \n",
       "author": [],
       "contents": "\n\n\n.thumbnail {\n  border: 1px solid black;\n}\n\n\n\n\n",
-      "last_modified": "2021-03-31T13:50:19+11:00"
+      "last_modified": "2021-06-05T13:54:31+10:00"
     },
     {
       "path": "teaching.html",

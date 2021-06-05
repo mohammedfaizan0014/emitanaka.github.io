@@ -1,5 +1,26 @@
 [
   {
+    "path": "talks/2021-05-19-DAF/",
+    "title": "Constructing and visualising experimental designs with the edibble R-package",
+    "description": "A presentation at the Queensland Department of Agriculture and Fisheries Biometry Workshop.",
+    "author": [
+      {
+        "name": "Emi Tanaka",
+        "url": "https://emitanaka.org"
+      }
+    ],
+    "date": "2021-05-20",
+    "categories": [
+      "Experimental Design"
+    ],
+    "contents": "\nClick below for the slide.\n\n\n\n\n\n\n\n\n\n\n\n",
+    "preview": "talks/2021-05-19-DAF/preview.png",
+    "last_modified": "2021-06-05T13:54:06+10:00",
+    "input_file": {},
+    "preview_width": 1625,
+    "preview_height": 914
+  },
+  {
     "path": "talks/2021-03-27-fukuokar2021/",
     "title": "Visual Inference: 絵による推論",
     "description": "A presentation at the 17th Fukuoka R Meeting.",

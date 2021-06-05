@@ -13,7 +13,17 @@ statistics, data science, R and academia.
       <link>https://emitanaka.org</link>
     </image>
     <generator>Distill</generator>
-    <lastBuildDate>Sat, 27 Mar 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 20 May 2021 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Constructing and visualising experimental designs with the edibble R-package</title>
+      <dc:creator>Emi Tanaka</dc:creator>
+      <link>https://emitanaka.org/talks/2021-05-19-DAF</link>
+      <description>A presentation at the Queensland Department of Agriculture and Fisheries Biometry Workshop.</description>
+      <category>Experimental Design</category>
+      <guid>https://emitanaka.org/talks/2021-05-19-DAF</guid>
+      <pubDate>Thu, 20 May 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://emitanaka.org/talks/2021-05-19-DAF/preview.png" medium="image" type="image/png" width="1625" height="914"/>
+    </item>
     <item>
       <title>Visual Inference: 絵による推論</title>
       <dc:creator>Emi Tanaka</dc:creator>
