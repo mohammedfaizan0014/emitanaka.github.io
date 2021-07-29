@@ -32,12 +32,24 @@ d-appendix {
 
 ## Recent news
 
+<br>
+
+You'll find me:
 <ol class="fa-ul">
+<li><span class="fa-li"><i class="fas fa-comment"></i></span> presenting (in English) in the invited session for the Japanese Joint Statistical Meeting 2021 </li>
+<li><span class="fa-li"><i class="fas fa-chalkboard-teacher"></i></span> delivering tutorials on:
+<ul>
+  <li>["Constructing experimental designs with the edibble R-package"](https://www.eventbrite.com/e/constructing-experimental-design-with-the-edibble-r-package-tickets-164006298253?aff=ebdsoporgprofile)</li>
+  <li>["Visualising experimental designs with the edibble and deggust R-packages"](https://www.eventbrite.com/e/visualising-experimental-designs-with-the-edibble-and-deggust-r-packages-tickets-164843365945?aff=ebdsoporgprofile)</li>
+  <li>["Linear mixed models for agricultural researchers with ASReml-R"](https://www.eventbrite.com/e/linear-mixed-models-for-agricultural-researchers-with-asreml-r-tickets-164844814277?aff=ebdsoporgprofile)</li>
 </ul>
-  <li><span class="fa-li"><i class="fab fa-r-project"></i></span>[`nestr` R-package](https://github.com/emitanaka/nestr) is now on CRAN </li>
-</ul>
+</li>
+<li><span class="fa-li"><i class="fab fa-r-project"></i></span> I have now hex stickers for the `edibble` and `deggust` R packages. If you see me in-person, feel free to ask for it!
 </ol>
 
+<div style="margin: 0 auto;">
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">If you ever see me in-person, feel free to ask me for hex stickers for my R packages ☺️ <a href="https://t.co/4VXdv091IM">pic.twitter.com/4VXdv091IM</a></p>&mdash; Emi Tanaka 🌾 (@statsgen) <a href="https://twitter.com/statsgen/status/1410842537485471744?ref_src=twsrc%5Etfw">July 2, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
 <br>
 
 <div class="twitter-border">
@@ -47,4 +59,4 @@ d-appendix {
 
 ## Website construction 👷🏻‍♀
 
-I decided to redo my website using the [distill](https://rstudio.github.io/distill/) R-package and so some parts of my website is in construction. If you are interested in the source code of this website, you can find it [here](https://github.com/emitanaka/emitanaka.github.io).
+This website is written using the [distill](https://rstudio.github.io/distill/) R-package. If you are interested in the source code of this website, you can find it [here](https://github.com/emitanaka/emitanaka.github.io).
