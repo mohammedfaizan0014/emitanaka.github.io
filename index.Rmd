@@ -32,9 +32,11 @@ d-appendix {
 
 ## Recent news
 
-<br>
+
 
 You'll find me:
+
+
 <ol class="fa-ul">
 <li><span class="fa-li"><i class="fas fa-comment"></i></span> presenting (in English) in the invited session for the Japanese Joint Statistical Meeting 2021 </li>
 <li><span class="fa-li"><i class="fas fa-chalkboard-teacher"></i></span> delivering tutorials on:
