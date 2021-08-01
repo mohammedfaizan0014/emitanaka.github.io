@@ -2548,12 +2548,15 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 <div class="d-article">
 <style>
+d-title {
+  display: none!important;
+}
 d-appendix {
  display: none!important;
 }
 .twitter-border {
  border: 1px dashed black;
- width: 300px;
+ width: 350px;
  position : relative;
  border-radius: 5px;
  margin-left: 40px;
@@ -2573,7 +2576,33 @@ d-appendix {
   margin-block-end: 0em;
   margin-bottom: 0em;
 }
+.home-with-sidebar {
+  padding-left: 45px;
+  padding-right: 45px;
+}
+.home-with-sidebar .home-main {
+  float: left;
+  width: 60%;
+}
+.home-main {
+  margin-top: 60px;
+  margin-bottom: 24px;
+}
+.home-with-sidebar .home-sidebar {
+  float: right;
+  width: 30%;
+  margin-top: 60px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.home-sidebar {
+  font-size: 16px;
+}
 </style>
+<div class="home-with-sidebar l-screen-inset">
+
+<div class="home-main">
+
 <h2 id="recent-news">Recent news</h2>
 <p>You’ll find me:</p>
 <ol class="fa-ul">
@@ -2597,7 +2626,7 @@ d-appendix {
 <li>
 <span class="fa-li"><i class="fab fa-r-project"></i></span> I have now hex stickers for the <code>edibble</code> and <code>deggust</code> R packages. If you see me in-person, feel free to ask for it!
 </ol>
-<div style="margin: 0 auto;">
+<div style="margin: 0 auto; width:50%;">
 <blockquote class="twitter-tweet">
 <p lang="en" dir="ltr">
 If you ever see me in-person, feel free to ask me for hex stickers for my R packages ☺️ <a href="https://t.co/4VXdv091IM">pic.twitter.com/4VXdv091IM</a>
@@ -2606,13 +2635,17 @@ If you ever see me in-person, feel free to ask me for hex stickers for my R pack
 </blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>
-<p><br></p>
+</div>
+<div class="home-sidebar">
 <div class="twitter-border">
-<p><a class="twitter-timeline" data-height="400" data-width="300"  href="https://twitter.com/statsgen?ref_src=twsrc%5Etfw">Tweets by statsgen</a></p>
+<p><a class="twitter-timeline" data-height="600" data-width="350"  href="https://twitter.com/statsgen?ref_src=twsrc%5Etfw">Tweets by statsgen</a></p>
 </div>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-<h2 id="website-construction">Website construction 👷🏻‍♀</h2>
-<p>This website is written using the <a href="https://rstudio.github.io/distill/">distill</a> R-package. If you are interested in the source code of this website, you can find it <a href="https://github.com/emitanaka/emitanaka.github.io">here</a>.</p>
+<center>
+<img src="images/ssa-digital-badge-2021.png" width="80%">
+</center>
+</div>
+</div>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
