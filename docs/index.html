@@ -2603,34 +2603,68 @@ d-appendix {
 .home-sidebar {
   font-size: 16px;
 }
+.news-container {
+  width: 400px;
+}
+
+.news-item {
+  line-height: 1.45em;
+  border-bottom: 1px solid #e3e4F0;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 0.9em;
+}
+.news-item h3:nth-child(1) {
+  color: #AD0059;
+  font-family: var(--body-font), var(--body-default);
+  margin-bottom: 0.2em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.9em;
+}
+.date {
+  color: gray;
+  display: block;
+  font-size: 0.75em;
+}
+.date::before {
+   font-family: "Font Awesome 5 Free";
+   font-weight: 900; 
+   content: "\f133";
+   padding-right: 2px;
+}
+
 </style>
 <div class="home-with-sidebar l-screen-inset">
-
-<div class="home-main">
-
-<h2 id="recent-news">Recent news</h2>
-<p>You’ll find me:</p>
-<ol class="fa-ul">
-<li>
-<span class="fa-li"><i class="fas fa-comment"></i></span> presenting (in English) in the invited session for the Japanese Joint Statistical Meeting 2021
-</li>
-<li>
-<span class="fa-li"><i class="fas fa-chalkboard-teacher"></i></span> delivering tutorials on:
+<section id="recent-news" class="home-main">
+<h2>Recent news</h2>
+<div class="news-container">
+<section id="commentary-published" class="news-item">
+<h3><i class="fas fa-newspaper"></i> Commentary published</h3>
+<p><a href="https://hdsr.mitpress.mit.edu/pub/mpdasaqt/release/1">The Foundation is Available for Thinking about Data Visualization Inferentially</a> by Cook, Reid &amp; Tanaka.</p>
+</section>
+<section id="invited-presentation-at-jjsm2021" class="news-item">
+<h3><i class="fas fa-comment"></i> Invited presentation at JJSM2021</h3>
+<p>I’ll be presenting (in English) in the invited session at the Japanese Joint Statistical Meeting 2021 <span class="date">Mon 6th Sep 2021</span></p>
+</section>
+<section id="delivering-tutorials-for-agricultural-researchers" class="news-item">
+<h3><i class="fas fa-chalkboard-teacher"></i> Delivering tutorials for agricultural researchers</h3>
+The organiser of these tutorials is Fazel Almasi. You can register for these tutorials by clicking on the links below.
 <ul>
 <li>
-<a href="https://www.eventbrite.com/e/constructing-experimental-design-with-the-edibble-r-package-tickets-164006298253?aff=ebdsoporgprofile">“Constructing experimental designs with the edibble R-package”</a>
+<a href="https://www.eventbrite.com/e/constructing-experimental-design-with-the-edibble-r-package-tickets-164006298253?aff=ebdsoporgprofile">“Constructing experimental designs with the edibble R-package”</a> <span class="date">Tue 9th Nov 2021</span>
 </li>
 <li>
-<a href="https://www.eventbrite.com/e/visualising-experimental-designs-with-the-edibble-and-deggust-r-packages-tickets-164843365945?aff=ebdsoporgprofile">“Visualising experimental designs with the edibble and deggust R-packages”</a>
+<a href="https://www.eventbrite.com/e/visualising-experimental-designs-with-the-edibble-and-deggust-r-packages-tickets-164843365945?aff=ebdsoporgprofile">“Visualising experimental designs with the edibble and deggust R-packages”</a> <span class="date">Thu 11th Nov 2021</span>
 </li>
 <li>
-<a href="https://www.eventbrite.com/e/linear-mixed-models-for-agricultural-researchers-with-asreml-r-tickets-164844814277?aff=ebdsoporgprofile">“Linear mixed models for agricultural researchers with ASReml-R”</a>
+<a href="https://www.eventbrite.com/e/linear-mixed-models-for-agricultural-researchers-with-asreml-r-tickets-164844814277?aff=ebdsoporgprofile">“Linear mixed models for agricultural researchers with ASReml-R”</a> <span class="date">Tue 16th Nov 2021</span>
 </li>
 </ul>
-</li>
-<li>
-<span class="fa-li"><i class="fab fa-r-project"></i></span> I have now hex stickers for the <code>edibble</code> and <code>deggust</code> R packages. If you see me in-person, feel free to ask for it!
-</ol>
+</section>
+<section id="hex-stickers" class="news-item">
+<h3><i class="fab fa-r-project"></i> Hex stickers</h3>
+I have now hex stickers for the <code>edibble</code> and <code>deggust</code> R packages. If you see me in-person, feel free to ask for it!
 <div style="margin: 0 auto; width:50%;">
 <blockquote class="twitter-tweet">
 <p lang="en" dir="ltr">
@@ -2640,7 +2674,9 @@ If you ever see me in-person, feel free to ask me for hex stickers for my R pack
 </blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>
+</section>
 </div>
+</section>
 <div class="home-sidebar">
 <div class="twitter-border">
 <p><a class="twitter-timeline" data-height="600" data-width="300"  href="https://twitter.com/statsgen?ref_src=twsrc%5Etfw">Tweets by statsgen</a></p>
