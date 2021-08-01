@@ -11,10 +11,10 @@ d-appendix {
 }
 .twitter-border {
  border: 1px dashed black;
- width: 350px;
+ width: 300px;
  position : relative;
  border-radius: 5px;
- margin-left: 40px;
+ margin: 0 auto;
 }
 .twitter-border::before {
  content: "\f099";
@@ -35,21 +35,26 @@ d-appendix {
   padding-left: 45px;
   padding-right: 45px;
 }
-.home-with-sidebar .home-main {
-  float: left;
-  width: 60%;
+@media (min-width: 1024px) {
+  .home-with-sidebar .home-main {
+    float: left;
+    width: 60%;
+  }
 }
 .home-main {
   margin-top: 60px;
   margin-bottom: 24px;
 }
-.home-with-sidebar .home-sidebar {
-  float: right;
-  width: 30%;
-  margin-top: 60px;
-  padding-top: 24px;
-  padding-bottom: 24px;
+@media (min-width: 1024px) {
+  .home-with-sidebar .home-sidebar {
+    float: right;
+    width: 30%;
+    margin-top: 60px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
 }
+
 .home-sidebar {
   font-size: 16px;
 }
@@ -85,12 +90,12 @@ You'll find me:
 
 <div class="home-sidebar">
 <div class="twitter-border">
-<a class="twitter-timeline" data-height="600" data-width="350"  href="https://twitter.com/statsgen?ref_src=twsrc%5Etfw">Tweets by statsgen</a>
+<a class="twitter-timeline" data-height="600" data-width="300"  href="https://twitter.com/statsgen?ref_src=twsrc%5Etfw">Tweets by statsgen</a>
 </div>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 <center>
-<img src="images/ssa-digital-badge-2021.png" width="80%">
+<img src="images/ssa-digital-badge-2021.png" width="80%" style="max-width:250px;">
 </center>
 </div>
 </div>
