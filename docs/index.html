@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
   <meta name="generator" content="distill" />
+  <link rel="alternate" type="application/rss+xml" href="https://hadisrezaee.org/index.xml" />
 
   <style type="text/css">
   /* Hide doc at startup (prevent jankiness while JS renders/transforms) */
@@ -86,7 +87,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
 
   <!--radix_placeholder_meta_tags-->
-  <title>Emi Tanaka</title>
+  <title>Hadis Rezaee</title>
 
 
   <link rel="license" href="https://creativecommons.org/licenses/by/4.0/"/>
@@ -94,21 +95,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="Emi Tanaka"/>
+  <meta property="og:title" content="Hadis Rezaee"/>
   <meta property="og:type" content="article"/>
   <meta property="og:locale" content="en_US"/>
-  <meta property="og:site_name" content="Emi Tanaka"/>
+  <meta property="og:site_name" content="Hadis Rezaee"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="Emi Tanaka"/>
+  <meta property="twitter:title" content="Hadis Rezaee"/>
   <meta property="twitter:site" content="@statsgen"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","site"]}},"value":[{"type":"character","attributes":{},"value":["Emi Tanaka"]},{"type":"character","attributes":{},"value":["distill::distill_website"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","site","listing"]}},"value":[{"type":"character","attributes":{},"value":["Hadis Rezaee"]},{"type":"character","attributes":{},"value":["distill::distill_website"]},{"type":"character","attributes":{},"value":["posts"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2471,7 +2472,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     color: var(--hover-color, white);
   }</style>
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.8/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.9/header-attrs.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2481,24 +2482,17 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <script src="site_libs/webcomponents-2.0.0/webcomponents.js"></script>
   <script src="site_libs/distill-2.2.21/template.v2.js"></script>
   <!--radix_placeholder_site_in_header-->
-  <script type="text/javascript" cookie-consent="tracking" async src="https://www.googletagmanager.com/gtag/js?id=UA-77195073-2"></script>
-  <script type="text/javascript" cookie-consent="tracking">
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'UA-77195073-2');
-  </script>
   <!--/radix_placeholder_site_in_header-->
 
 
 </head>
 
-<body>
+<body class="layout-listing">
 
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Emi Tanaka","authors":[]}
+{"title":"Hadis Rezaee","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2506,10 +2500,10 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <header class="header header--fixed" role="banner">
 <nav class="distill-site-nav distill-site-header">
 <div class="nav-left">
-<a class="logo" href="https://emitanaka.org/">
+<a class="logo" href="https://hadisrezaee.org/">
 <img src="images/avatar.png" alt="Logo"/>
 </a>
-<a href="index.html" class="title">Emi Tanaka</a>
+<a href="index.html" class="title">Hadis Rezaee</a>
 <a href="index.html">Home</a>
 <a href="cv.html">CV</a>
 <a href="projects.html">Projects</a>
@@ -2524,7 +2518,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <a href="https://github.com/emitanaka">
 <i class="fab fa-github" aria-hidden="true"></i>
 </a>
-<a href="https://twitter.com/statsgen">
+<a href="https://twitter.com/rezaeehadis99">
 <i class="fab fa-twitter" aria-hidden="true"></i>
 </a>
 <a href="blog.xml">
@@ -2537,9 +2531,203 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_navigation_before_body-->
 <!--radix_placeholder_site_before_body-->
 <!--/radix_placeholder_site_before_body-->
+<!--radix_placeholder_article_listing-->
+
+
+<script type="application/javascript">
+
+function init_posts_list() {
+
+  function load_image(img) {
+    var src = $(img).attr('data-src');
+    if (src) {
+      $(img).attr('src', src);
+      $(img).load(function() {
+        img.removeAttribute('data-src');
+      });
+    }
+  }
+
+  function set_posts_visible(posts, visible) {
+    if (visible) {
+
+      // show bottom border by default
+      $(posts).removeClass('post-preview-last');
+
+      // apply limits if need be
+      var max_posts = 25;
+      var apply_limits = $('.posts-container').hasClass('posts-apply-limit');
+      if (apply_limits && posts.length > max_posts) {
+        posts = $(posts).slice(0, max_posts);
+      } else {
+        $('.posts-more a').addClass('hidden');
+      }
+
+      // apply last style
+      $(posts.slice(-1)[0]).addClass('post-preview-last');
+
+      $(posts).removeClass('hidden');
+      $(posts).find('img[data-src]').each(function(i, img) {
+        load_image(img);
+      });
+    } else {
+      $(posts).addClass('hidden');
+    }
+  }
+
+  function apply_hash_filter() {
+
+    // clear active state
+    $('.categories .active').removeClass('active');
+
+    // mark all posts invisible to start
+    set_posts_visible($('.posts-list').children('a'), false);
+
+    // if we have a hash filter
+    if (window.location.hash && window.location.hash.startsWith("#category:")) {
+
+      // mark posts that match the category visible
+      var page_category = window.location.hash.replace(/^#category:/, "");
+      var posts = $('.post-metadata').map(function(idx, script) {
+        var metadata = $.parseJSON($(script).html());
+        var post = null;
+        $.each(metadata.categories, function(idx, category) {
+          category = category.replace(/ /g,"_");
+          if ((page_category || '').toLowerCase() === "articles" || category === page_category) {
+            post = $(script).parent().get();
+            return false;
+          }
+        });
+        return post;
+      });
+      set_posts_visible(posts, true);
+
+      // mark the hash active
+      $('.categories li>a[href="' + window.location.hash + '"]').addClass('active');
+
+      // update the list_caption
+      var list_caption = $('.posts-list-caption');
+      var caption = (page_category || '').toLowerCase() === "articles"
+        ? list_caption.attr('data-caption')
+        : ('Category: ' + page_category.replace(/_/g," "));
+      list_caption.text(caption);
+
+    } else {
+
+      // no hash filter, make all posts visible (subject to max display)
+      set_posts_visible($('.posts-list').children(), true);
+
+      // reset list caption
+      var list_caption = $('.posts-list-caption');
+      list_caption.text(list_caption.attr('data-caption'));
+
+
+    }
+  }
+
+  // more articles
+  function apply_post_limits(apply) {
+    if (apply) {
+      $('.posts-container').addClass('posts-apply-limit');
+      $('.posts-more a').removeClass('hidden');
+    } else {
+      $('.posts-container').removeClass('posts-apply-limit');
+      $('.posts-more a').addClass('hidden');
+    }
+  }
+
+  // click handling for tags
+  $('.dt-tag').click(function(ev) {
+    window.location.hash = '#category:' + $(this).text().replace(/ /g, "_");
+    return false;
+  })
+
+  // hash filter handling
+  apply_hash_filter();
+  $(window).on('hashchange',function() {
+    apply_post_limits(true);
+    apply_hash_filter();
+  });
+
+  // more articles link
+  $('.posts-more a').click(function(e) {
+    e.preventDefault();
+    apply_post_limits(false);
+    apply_hash_filter();
+    return false;
+  });
+
+}
+
+</script>
+
+
+
+<div class="posts-container posts-with-sidebar posts-apply-limit l-screen-inset">
+<div class="posts-list">
+<h1 class="posts-list-caption" data-caption="Hadis Rezaee">Hadis Rezaee</h1>
+<a href="posts/2021-01-29-uml-seq-diag/" class="post-preview">
+<script class="post-metadata" type="text/json">{"categories":["oil and gas","chemical engineering"]}</script>
+<div class="metadata">
+<div class="publishedDate">Jan. 29, 2021</div>
+</div>
+<div class="thumbnail">
+<img/>
+</div>
+<div class="description">
+<h2>Sample blog</h2>
+<div class="dt-tags">
+<div class="dt-tag">oil and gas</div>
+<div class="dt-tag">chemical engineering</div>
+</div>
+<p>Sample blog</p>
+</div>
+</a>
+</div>
+<div class="posts-sidebar">
+<div><div class="sidebar-section custom">
+  <h3>About</h3>
+  This blog contains a mixture of 
+  posts on statistics, data science, 
+  R and academia.
+</div></div>
+<div class="sidebar-section subscribe">
+<h3>Subscribe</h3>
+<form method='post' action='https://blogtrottr.com'>
+  <p>Enjoy this blog? Get notified of new posts via email:</p>
+  <input type='text' name='btr_email' />
+  <input type='hidden' name='btr_url'
+         value='https://emitanaka.org/blog.xml'/>
+  <input type='hidden' name='schedule_type' value='0' />
+  <input type='submit' value='Subscribe' />
+</form>
+</div>
+<div class="sidebar-section categories">
+<h3>Categories</h3>
+<ul>
+<li>
+<a href="#category:articles">articles</a>
+<span class="category-count">(1)</span>
+</li>
+<li>
+<a href="#category:chemical_engineering">chemical engineering</a>
+<span class="category-count">(1)</span>
+</li>
+<li>
+<a href="#category:oil_and_gas">oil and gas</a>
+<span class="category-count">(1)</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="posts-more">
+<a href="#">More articles &raquo;</a>
+</div>
+</div>
+<!--/radix_placeholder_article_listing-->
 
 <div class="d-title">
-<h1>Emi Tanaka</h1>
+<h1>Hadis Rezaee</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
 
@@ -2639,47 +2827,57 @@ d-appendix {
 <section id="recent-news" class="home-main">
 <h2>Recent news</h2>
 <div class="news-container">
-<section id="commentary-published" class="news-item">
-<h3><i class="fas fa-newspaper"></i> Commentary published</h3>
-<p><a href="https://hdsr.mitpress.mit.edu/pub/mpdasaqt/release/1">The Foundation is Available for Thinking about Data Visualization Inferentially</a> by Cook, Reid &amp; Tanaka.</p>
+<section id="publications" class="news-item">
+<h3><i class="fas fa-newspaper"></i> Publications</h3>
+<p><a href="">Nonextensive Local Composition Model for Excess Gibbs Energy of Electrolyte Systems (The 8th International Chemical Engineering Congress &amp; Exhibition (IChEC 2014))</a> by Hadis Rezaee</p>
+<p><a href="">A Nonextensive Electrolyte UNIQUAC Model for Prediction of Mean Activity Coefficients of Binary Electrolyte Solutions(Iranian Chemical Society, Phys. Chem. Res., Vol. 6, No. 4, 773-784, December 2018)</a> by Hadis Rezaee</p>
+<p><a href="">Submitted a review paper of catalysts for Oxidative Coupling of Methane.</a></p>
 </section>
-<section id="invited-presentation-at-jjsm2021" class="news-item">
-<h3><i class="fas fa-comment"></i> Invited presentation at JJSM2021</h3>
-<p>I’ll be presenting (in English) in the invited session at the Japanese Joint Statistical Meeting 2021 <span class="date">Mon 6th Sep 2021</span></p>
-</section>
-<section id="delivering-tutorials-for-agricultural-researchers" class="news-item">
-<h3><i class="fas fa-chalkboard-teacher"></i> Delivering tutorials for agricultural researchers</h3>
-The organiser of these tutorials is Fazel Almasi. You can register for these tutorials by clicking on the links below.
+<section id="invited-presentation" class="news-item">
+<h3><i class="fas fa-comment"></i> Invited presentation</h3>
 <ul>
 <li>
-<a href="https://www.eventbrite.com/e/constructing-experimental-design-with-the-edibble-r-package-tickets-164006298253?aff=ebdsoporgprofile">“Constructing experimental designs with the edibble R-package”</a> <span class="date">Tue 9th Nov 2021</span>
-</li>
-<li>
-<a href="https://www.eventbrite.com/e/visualising-experimental-designs-with-the-edibble-and-deggust-r-packages-tickets-164843365945?aff=ebdsoporgprofile">“Visualising experimental designs with the edibble and deggust R-packages”</a> <span class="date">Thu 11th Nov 2021</span>
-</li>
-<li>
-<a href="https://www.eventbrite.com/e/linear-mixed-models-for-agricultural-researchers-with-asreml-r-tickets-164844814277?aff=ebdsoporgprofile">“Linear mixed models for agricultural researchers with ASReml-R”</a> <span class="date">Tue 16th Nov 2021</span>
+Lectured on downstream industries in oil and gas and hydrocracking technologies and Corrosion Under Insulation and Fireproofing. I’ll be presenting (in English) in the invited session at the <span class="date">Mon 6th Sep 2021</span>
 </li>
 </ul>
 </section>
-<section id="hex-stickers" class="news-item">
-<h3><i class="fab fa-r-project"></i> Hex stickers</h3>
-I have now hex stickers for the <code>edibble</code> and <code>deggust</code> R packages. If you see me in-person, feel free to ask for it!
-<div style="margin: 0 auto; width:50%;">
-<blockquote class="twitter-tweet">
-<p lang="en" dir="ltr">
-If you ever see me in-person, feel free to ask me for hex stickers for my R packages ☺️ <a href="https://t.co/4VXdv091IM">pic.twitter.com/4VXdv091IM</a>
-</p>
-— Emi Tanaka 🌾 (<span class="citation" data-cites="statsgen">@statsgen</span>) <a href="https://twitter.com/statsgen/status/1410842537485471744?ref_src=twsrc%5Etfw">July 2, 2021</a>
-</blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-</div>
+<section id="research-interests" class="news-item">
+<h3><i class="fas fa-chalkboard-teacher"></i> Research Interests</h3>
+<ul>
+<li>
+Petroleum engineering
+</li>
+<li>
+Oil and gas process
+</li>
+<li>
+Environmental engineering
+</li>
+<li>
+Heterogenous Catalysis
+</li>
+<li>
+Nanostructures
+</li>
+<li>
+Energy Transition
+</li>
+<li>
+Hydrocracking technology
+</li>
+<li>
+Process design and operation
+</li>
+<li>
+Electrolyte Solutions and Ionic Liquids
+</li>
+</ul>
 </section>
 </div>
 </section>
 <div class="home-sidebar">
 <div class="twitter-border">
-<p><a class="twitter-timeline" data-height="600" data-width="300"  href="https://twitter.com/statsgen?ref_src=twsrc%5Etfw">Tweets by statsgen</a></p>
+<p><a class="twitter-timeline" data-height="600" data-width="300"  href="https://twitter.com/rezaeehadis99/">Tweets by Hadis</a></p>
 </div>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 <center>
@@ -2708,7 +2906,7 @@ If you ever see me in-person, feel free to ask me for hex stickers for my R pack
 <!--/radix_placeholder_appendices-->
 <!--radix_placeholder_navigation_after_body-->
 <div class="distill-site-nav distill-site-footer">
-<p>© Copyright 2021 Emi Tanaka</p>
+<p>© Copyright 2021 Hadis Rezaee</p>
 <p><span style="font-size:0.6rem;"><i class="fas fa-wrench"></i> The site made with the distill R-package <i class="fab fa-r-project"></i> powered by the distill web framework <i class="fab fa-js"></i></span></p>
 </div>
 <!--/radix_placeholder_navigation_after_body-->

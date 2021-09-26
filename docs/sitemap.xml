@@ -1,87 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" version="1.0">
   <url>
-    <loc>https://emitanaka.org/404.html</loc>
-    <lastmod>2021-01-26T15:34:34+11:00</lastmod>
+    <loc>https://hadisrezaee.org/404.html</loc>
+    <lastmod>2021-09-26T21:41:42+05:30</lastmod>
   </url>
   <url>
-    <loc>https://emitanaka.org/about.html</loc>
-    <lastmod>2021-03-21T14:54:21+11:00</lastmod>
+    <loc>https://hadisrezaee.org/about.html</loc>
+    <lastmod>2021-09-18T15:44:45+05:30</lastmod>
   </url>
   <url>
-    <loc>https://emitanaka.org/blog.html</loc>
-    <lastmod>2021-01-24T20:23:24+11:00</lastmod>
+    <loc>https://hadisrezaee.org/blog.html</loc>
+    <lastmod>2021-09-18T14:04:37+05:30</lastmod>
   </url>
   <url>
-    <loc>https://emitanaka.org/cv.html</loc>
-    <lastmod>2021-06-05T18:27:54+10:00</lastmod>
+    <loc>https://hadisrezaee.org/cv.html</loc>
+    <lastmod>2021-09-26T22:45:17+05:30</lastmod>
   </url>
   <url>
-    <loc>https://emitanaka.org/</loc>
-    <lastmod>2021-08-01T12:43:22+10:00</lastmod>
+    <loc>https://hadisrezaee.org/</loc>
+    <lastmod>2021-09-26T21:27:23+05:30</lastmod>
   </url>
   <url>
-    <loc>https://emitanaka.org/projects.html</loc>
-    <lastmod>2021-06-09T19:18:25+10:00</lastmod>
+    <loc>https://hadisrezaee.org/projects.html</loc>
+    <lastmod>2021-09-26T22:32:05+05:30</lastmod>
   </url>
   <url>
-    <loc>https://emitanaka.org/resources.html</loc>
-    <lastmod>2021-05-01T20:04:24+10:00</lastmod>
+    <loc>https://hadisrezaee.org/resources.html</loc>
+    <lastmod>2021-09-26T22:28:44+05:30</lastmod>
   </url>
   <url>
-    <loc>https://emitanaka.org/talks.html</loc>
-    <lastmod>2021-02-08T16:03:32+11:00</lastmod>
+    <loc>https://hadisrezaee.org/talks.html</loc>
+    <lastmod>2021-09-18T14:04:37+05:30</lastmod>
   </url>
   <url>
-    <loc>https://emitanaka.org/teaching.html</loc>
-    <lastmod>2021-03-06T22:32:30+11:00</lastmod>
+    <loc>https://hadisrezaee.org/teaching.html</loc>
+    <lastmod>2021-09-26T22:03:45+05:30</lastmod>
   </url>
   <url>
-    <loc>https://emitanaka.org/posts/2021-02-03-current-state-of-experimental-design-r-packages/</loc>
-    <lastmod>2021-02-07T18:36:14+11:00</lastmod>
+    <loc>https://hadisrezaee.org/posts/2021-01-29-uml-seq-diag/</loc>
+    <lastmod>2021-09-18T17:14:52+05:30</lastmod>
   </url>
   <url>
-    <loc>https://emitanaka.org/posts/2021-01-29-uml-seq-diag/</loc>
-    <lastmod>2021-02-03T08:54:04+11:00</lastmod>
-  </url>
-  <url>
-    <loc>https://emitanaka.org/posts/travel2019/</loc>
-    <lastmod>2021-02-03T08:53:28+11:00</lastmod>
-  </url>
-  <url>
-    <loc>https://emitanaka.org/posts/hexsticker/</loc>
-    <lastmod>2021-06-20T10:40:42+10:00</lastmod>
-  </url>
-  <url>
-    <loc>https://emitanaka.org/talks/2021-05-19-DAF/</loc>
-    <lastmod>2021-06-05T13:54:06+10:00</lastmod>
-  </url>
-  <url>
-    <loc>https://emitanaka.org/talks/2021-03-27-fukuokar2021/</loc>
-    <lastmod>2021-03-27T14:50:10+11:00</lastmod>
-  </url>
-  <url>
-    <loc>https://emitanaka.org/talks/2021-01-23-tokyor2021/</loc>
-    <lastmod>2021-02-07T14:02:40+11:00</lastmod>
-  </url>
-  <url>
-    <loc>https://emitanaka.org/talks/2020-11-27-SSAWebinar2020/</loc>
-    <lastmod>2021-02-07T18:20:31+11:00</lastmod>
-  </url>
-  <url>
-    <loc>https://emitanaka.org/talks/2020-09-30-SSAWA-YSW2020/</loc>
-    <lastmod>2021-03-28T11:33:37+11:00</lastmod>
-  </url>
-  <url>
-    <loc>https://emitanaka.org/talks/2020-07-15-MonashBioinfoSeminar/</loc>
-    <lastmod>2021-03-28T11:31:30+11:00</lastmod>
-  </url>
-  <url>
-    <loc>https://emitanaka.org/talks/2020-06-30-rladiesSSA2020/</loc>
-    <lastmod>2021-03-28T11:33:07+11:00</lastmod>
-  </url>
-  <url>
-    <loc>https://emitanaka.org/talks/2019-11-28-WOMBAT2019/</loc>
-    <lastmod>2021-03-28T11:45:35+11:00</lastmod>
+    <loc>https://hadisrezaee.org/talks/2021-05-19-DAF/</loc>
+    <lastmod>2021-09-26T22:24:28+05:30</lastmod>
   </url>
 </urlset>

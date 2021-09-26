@@ -1,176 +1,21 @@
 [
   {
     "path": "talks/2021-05-19-DAF/",
-    "title": "Constructing and visualising experimental designs with the edibble R-package",
-    "description": "A presentation at the Queensland Department of Agriculture and Fisheries Biometry Workshop.",
+    "title": "Sample",
+    "description": "Sample",
     "author": [
       {
-        "name": "Emi Tanaka",
-        "url": "https://emitanaka.org"
+        "name": "Hadis Rezaee",
+        "url": "https://hadisrezaee.org"
       }
     ],
     "date": "2021-05-20",
     "categories": [
-      "Experimental Design"
+      "Oil and Gas"
     ],
     "contents": "\nClick below for the slide.\n\n\n\n\n\n\n\n\n\n\n\n",
-    "preview": "talks/2021-05-19-DAF/preview.png",
-    "last_modified": "2021-06-05T13:54:06+10:00",
-    "input_file": {},
-    "preview_width": 1625,
-    "preview_height": 914
-  },
-  {
-    "path": "talks/2021-03-27-fukuokar2021/",
-    "title": "Visual Inference: 絵による推論",
-    "description": "A presentation at the 17th Fukuoka R Meeting.",
-    "author": [
-      {
-        "name": "Emi Tanaka",
-        "url": "https://emitanaka.org"
-      }
-    ],
-    "date": "2021-03-27",
-    "categories": [
-      "日本語",
-      "Visual Inference"
-    ],
-    "contents": "\nClick below for the slide.\n\n\n\n\n\n\n\n\n\n\n\n",
-    "preview": "talks/2021-03-27-fukuokar2021/preview.png",
-    "last_modified": "2021-03-27T14:50:10+11:00",
-    "input_file": {},
-    "preview_width": 1733,
-    "preview_height": 962
-  },
-  {
-    "path": "talks/2021-01-23-tokyor2021/",
-    "title": "Grammar of Experimental Design: 実験計画法の「文法」",
-    "description": "A presentation at the 89th Tokyo R Meeting.",
-    "author": [
-      {
-        "name": "Emi Tanaka",
-        "url": "https://emitanaka.org"
-      }
-    ],
-    "date": "2021-01-23",
-    "categories": [
-      "日本語",
-      "Experimental Design"
-    ],
-    "contents": "\nErrata: there was an error in my script (where duplicates were not removed) for the count for the number of R packages in CRAN Task View of Design of Experiments. The slides specify there are about 200 R-packages. After removing duplicates, there was about 100 R-packages.\nClick below for the slide.\n\n\n\n\n\n\n\n\n\n\n\n",
-    "preview": "talks/2021-01-23-tokyor2021/preview.png",
-    "last_modified": "2021-02-07T14:02:40+11:00",
-    "input_file": {},
-    "preview_width": 1447,
-    "preview_height": 815
-  },
-  {
-    "path": "talks/2020-11-27-SSAWebinar2020/",
-    "title": "Advent of \"Grammar\": Bridging Statistics and Data Science for the Design of Experiments",
-    "description": "A talk for the Statistical Society of Australia Webinar Series",
-    "author": [
-      {
-        "name": "Emi Tanaka",
-        "url": "https://emitanaka.org"
-      }
-    ],
-    "date": "2020-11-27",
-    "categories": [
-      "Experimental Design"
-    ],
-    "contents": "\nErrata: there was an error in my script (where duplicates were not removed) for the count for the number of R packages in CRAN Task View of Design of Experiments. The slides specify there are about 200 R-packages. After removing duplicates, there was about 100 R-packages.\nClick below for the slide.\n\n\n\n\n\nStatistics is a valuable tool for almost all scientific fields and industry to make sense of their data, yet as a field we lag behind to remain relevant, getting superseded by the so-called data science. What differentiates statistics from data science? And how does the design of experiments fit in with data science?\nIn this webinar, I will talk about the concept of the “grammar” and the momentum it is gaining to make data analysis more accessible to a diverse group. I’ll then present my prototype to the “grammar of experimental design” - a framework to construct the design of comparative experiments that cognitively enforces the experimental structure. I’ll explain some principles behind this prototype, showcase how my developmental R-package edibble will work, and how I think it helps to bridge the gap between experimental design theory and practice for the wider community.\n\n\n\n\n\n\n",
-    "preview": "talks/2020-11-27-SSAWebinar2020/preview.png",
-    "last_modified": "2021-02-07T18:20:31+11:00",
-    "input_file": {},
-    "preview_width": 1448,
-    "preview_height": 812
-  },
-  {
-    "path": "talks/2020-09-30-SSAWA-YSW2020/",
-    "title": "What every young statistician should know: Developing your identity, networking and marketing",
-    "description": "A talk for the Young Statistician Workshop for the Statistical Society of Australia Western Australia Branch",
-    "author": [
-      {
-        "name": "Emi Tanaka",
-        "url": "https://emitanaka.org"
-      }
-    ],
-    "date": "2020-09-30",
-    "categories": [
-      "Skill",
-      "Service"
-    ],
-    "contents": "\n\n\n\n\n\n\n\n\n\n\n\n",
-    "preview": "talks/2020-09-30-SSAWA-YSW2020/preview.png",
-    "last_modified": "2021-03-28T11:33:37+11:00",
-    "input_file": {},
-    "preview_width": 1447,
-    "preview_height": 810
-  },
-  {
-    "path": "talks/2020-07-15-MonashBioinfoSeminar/",
-    "title": "Advent of \"Grammar\": Bridging Statistics and Data Science for Experimental Design",
-    "description": "A talk for the Monash Bioinformatics Seminar.",
-    "author": [
-      {
-        "name": "Emi Tanaka",
-        "url": "https://emitanaka.org"
-      }
-    ],
-    "date": "2020-07-15",
-    "categories": [
-      "Skill",
-      "Service"
-    ],
-    "contents": "\nErrata: there was an error in my script (where duplicates were not removed) for the count for the number of R packages in CRAN Task View of Design of Experiments. The slides specify there are about 200 R-packages. After removing duplicates, there was about 100 R-packages.\nClick below for the slide.\n\n\n\n\n\n\n\n\n\n\n\n",
-    "preview": "talks/2020-07-15-MonashBioinfoSeminar/preview.png",
-    "last_modified": "2021-03-28T11:31:30+11:00",
-    "input_file": {},
-    "preview_width": 1729,
-    "preview_height": 974
-  },
-  {
-    "path": "talks/2020-06-30-rladiesSSA2020/",
-    "title": "Beyond Beamer: Modern and Dynamic Presentations with R Markdown",
-    "description": "A talk for the joint meeting of Statistical Society of Australia NSW and Canberra Branches hosted with R-Ladies Canberra and R-Ladies Sydney.",
-    "author": [
-      {
-        "name": "Emi Tanaka",
-        "url": "https://emitanaka.org"
-      }
-    ],
-    "date": "2020-06-30",
-    "categories": [
-      "Skill",
-      "Service"
-    ],
-    "contents": "\nClick below for the slide.\n\n\n\n\n\n\n\n\n\n\n\n",
-    "preview": "talks/2020-06-30-rladiesSSA2020/preview.png",
-    "last_modified": "2021-03-28T11:33:07+11:00",
-    "input_file": {},
-    "preview_width": 1448,
-    "preview_height": 817
-  },
-  {
-    "path": "talks/2019-11-28-WOMBAT2019/",
-    "title": "Software design, selection and estimation for latent variable models",
-    "description": "A talk for WOMBAT 2019.",
-    "author": [
-      {
-        "name": "Emi Tanaka",
-        "url": "https://emitanaka.org"
-      }
-    ],
-    "date": "2019-11-29",
-    "categories": [
-      "Skill",
-      "Service"
-    ],
-    "contents": "\nClick here about WOMBAT2019.\nClick below for the slide.\n\n\n\n\n\n\n\n\n\n\n\n",
-    "preview": "talks/2019-11-28-WOMBAT2019/preview.png",
-    "last_modified": "2021-03-28T11:45:35+11:00",
-    "input_file": {},
-    "preview_width": 1730,
-    "preview_height": 975
+    "preview": {},
+    "last_modified": "2021-09-26T22:24:28+05:30",
+    "input_file": {}
   }
 ]

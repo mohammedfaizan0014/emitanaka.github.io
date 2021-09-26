@@ -32,8 +32,8 @@ tile <- function(img, title, url) {
 
 ::: flex-container
 
-`r tile("https://raw.githubusercontent.com/emitanaka/edibble/master/man/figures/logo.png", "Grammar of<br>Experimental Designs", "https://github.com/emitanaka/edibble")`
+`r tile(here::here("image/projecticon.png"), "Chemical Engineering", "")`
 
-`r tile("https://raw.githubusercontent.com/emitanaka/deggust/master/man/figures/logo.png", "Visualising Experimental Designs", "https://github.com/emitanaka/deggust")`
+
 
 :::

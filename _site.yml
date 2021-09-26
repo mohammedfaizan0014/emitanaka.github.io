@@ -1,11 +1,10 @@
-name: "emitanaka.org"
-title: "Emi Tanaka"
+name: "hadisrezaee.org"
+title: "Hadis Rezaee"
 theme: assets/theme.css
 description: |
-  Emi Tanaka's website and blog that mainly features about
-  statistics, data science, R and academia. 
-base_url: https://emitanaka.org
-google_analytics: "UA-77195073-2"
+ Hadis Rezaee's website and blog that mainly features about
+   Oil and Gas and Chemical Engineering
+base_url: https://hadisrezaee.org
 favicon: images/avatar.png
 twitter: 
   site: "@statsgen"
@@ -38,7 +37,7 @@ output_dir: "docs"
 navbar:
   logo: 
     image: images/avatar.png
-    href: https://emitanaka.org/
+    href: https://hadisrezaee.org/
   left:
     - text: "Home"
       href: index.html
@@ -60,7 +59,7 @@ navbar:
     - icon: fab fa-github
       href: https://github.com/emitanaka
     - icon: fab fa-twitter
-      href: https://twitter.com/statsgen
+      href: https://twitter.com/rezaeehadis99
     - icon: fa fa-rss
       href: blog.xml
 output: distill::distill_article

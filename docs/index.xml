@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>Hadis Rezaee</title>
+    <link>https://hadisrezaee.org</link>
+    <atom:link href="https://hadisrezaee.org/index.xml" rel="self" type="application/rss+xml"/>
+    <description>Hadis Rezaee's website and blog that mainly features about
+  Oil and Gas and Chemical Engineering
+</description>
+    <image>
+      <title>Hadis Rezaee</title>
+      <url>https://hadisrezaee.org/images/avatar.png</url>
+      <link>https://hadisrezaee.org</link>
+    </image>
+    <generator>Distill</generator>
+    <lastBuildDate>Fri, 29 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Sample blog</title>
+      <dc:creator>Hadis Rezaee</dc:creator>
+      <link>https://hadisrezaee.org/posts/2021-01-29-uml-seq-diag</link>
+      <description>Sample blog</description>
+      <category>oil and gas</category>
+      <category>chemical engineering</category>
+      <guid>https://hadisrezaee.org/posts/2021-01-29-uml-seq-diag</guid>
+      <pubDate>Fri, 29 Jan 2021 00:00:00 +0000</pubDate>
+    </item>
+  </channel>
+</rss>

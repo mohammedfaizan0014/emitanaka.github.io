@@ -1,6 +1,7 @@
 ---
-title: Emi Tanaka
+title: Hadis Rezaee
 site: distill::distill_website
+listing: posts
 ---
 <style>
 d-title {
@@ -98,37 +99,48 @@ d-appendix {
 ## Recent news
 :::: news-container
 ::: news-item
-### <i class="fas fa-newspaper"></i> Commentary published 
-[The Foundation is Available for Thinking about Data Visualization Inferentially](https://hdsr.mitpress.mit.edu/pub/mpdasaqt/release/1) by Cook, Reid & Tanaka. 
+### <i class="fas fa-newspaper"></i> Publications
+[Nonextensive Local Composition Model for Excess Gibbs Energy of Electrolyte Systems (The 8th International Chemical Engineering Congress & Exhibition (IChEC 2014))]() by Hadis Rezaee
+
+[A Nonextensive Electrolyte    UNIQUAC Model for Prediction of Mean Activity Coefficients of Binary Electrolyte Solutions(Iranian Chemical Society,  Phys. Chem. Res., Vol. 6, No. 4, 773-784, December 2018)]() by Hadis Rezaee
+
+[Submitted a review paper of catalysts for Oxidative Coupling of Methane.]()
 :::
 ::: news-item
-### <i class="fas fa-comment"></i> Invited presentation at JJSM2021
-I'll be presenting (in English) in the invited session at the Japanese Joint Statistical Meeting 2021 
-[Mon 6th Sep 2021]{.date}
-:::
-::: news-item
-### <i class="fas fa-chalkboard-teacher"></i> Delivering tutorials for agricultural researchers
-The organiser of these tutorials is Fazel Almasi. You can register for these tutorials by clicking on the links below. 
+### <i class="fas fa-comment"></i> Invited presentation 
+
 <ul>
-  <li>["Constructing experimental designs with the edibble R-package"](https://www.eventbrite.com/e/constructing-experimental-design-with-the-edibble-r-package-tickets-164006298253?aff=ebdsoporgprofile) [Tue 9th Nov 2021]{.date} </li>
-  <li>["Visualising experimental designs with the edibble and deggust R-packages"](https://www.eventbrite.com/e/visualising-experimental-designs-with-the-edibble-and-deggust-r-packages-tickets-164843365945?aff=ebdsoporgprofile) [Thu 11th Nov 2021]{.date}</li>
-  <li>["Linear mixed models for agricultural researchers with ASReml-R"](https://www.eventbrite.com/e/linear-mixed-models-for-agricultural-researchers-with-asreml-r-tickets-164844814277?aff=ebdsoporgprofile) [Tue 16th Nov 2021]{.date}</li>
+  <li>Lectured on downstream industries in oil and gas and hydrocracking technologies and Corrosion Under Insulation and Fireproofing.
+I'll be presenting (in English) in the invited session at the 
+[Mon 6th Sep 2021]{.date}</li>
 </ul>
 :::
 ::: news-item
-### <i class="fab fa-r-project"></i> Hex stickers 
-I have now hex stickers for the `edibble` and `deggust` R packages. If you see me in-person, feel free to ask for it!
-<div style="margin: 0 auto; width:50%;">
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">If you ever see me in-person, feel free to ask me for hex stickers for my R packages ☺️ <a href="https://t.co/4VXdv091IM">pic.twitter.com/4VXdv091IM</a></p>&mdash; Emi Tanaka 🌾 (@statsgen) <a href="https://twitter.com/statsgen/status/1410842537485471744?ref_src=twsrc%5Etfw">July 2, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-</div>
+### <i class="fas fa-chalkboard-teacher"></i> Research Interests
+
+<ul>
+  <li>Petroleum engineering</li>
+  <li>	Oil and gas process</li>
+  <li>Environmental engineering</li>
+  <li>Heterogenous Catalysis</li>
+  <li>Nanostructures</li>
+  <li>Energy Transition</li>
+  <li>Hydrocracking technology</li>
+  <li>Process design and operation</li>
+  <li>Electrolyte Solutions and Ionic Liquids</li>
+</ul>
 :::
 ::::
+
+
+
+
 
 </div>
 
 <div class="home-sidebar">
 <div class="twitter-border">
-<a class="twitter-timeline" data-height="600" data-width="300"  href="https://twitter.com/statsgen?ref_src=twsrc%5Etfw">Tweets by statsgen</a>
+<a class="twitter-timeline" data-height="600" data-width="300"  href="https://twitter.com/rezaeehadis99/">Tweets by Hadis</a>
 </div>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
